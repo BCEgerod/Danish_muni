@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  4 OCT 2017 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  4 OCT 2017 15:27
 entering extended mode
 **./dpsa.tex
 (dpsa.tex
@@ -798,14 +798,14 @@ LaTeX Font Info:    ... okay on input line 83.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(101.17755pt, 395.15277pt, 101.17755pt)
+* h-part:(L,W,R)=(93.95122pt, 409.60544pt, 93.95122pt)
 * v-part:(T,H,B)=(93.95122pt, 657.14441pt, 93.95122pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=395.15277pt
+* \textwidth=409.60544pt
 * \textheight=657.14441pt
-* \oddsidemargin=28.90756pt
-* \evensidemargin=28.90756pt
+* \oddsidemargin=21.68123pt
+* \evensidemargin=21.68123pt
 * \topmargin=-15.31877pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -903,15 +903,15 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 113.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 117.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 121.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 125.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 129.
 
 
 Package caption Warning: Unused \captionsetup[figure] on input line 26.
@@ -921,7 +921,7 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[table] on input line 27.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -932,18 +932,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (dpsa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `dpsa.out' has not changed.
-(rerunfilecheck)             Checksum: 5520AE8846DF188681C3BA31C42692E5;619.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+(rerunfilecheck)             Checksum: 1C6769FB442B35915489DBED12451E7B;637.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
  9451 strings out of 493334
  136666 string characters out of 3139257
- 240488 words of memory out of 3000000
+ 240514 words of memory out of 3000000
  12789 multiletter control sequences out of 15000+200000
  59931 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -954,7 +954,7 @@ s/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplr.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplri.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on dpsa.pdf (2 pages, 88111 bytes).
+Output written on dpsa.pdf (2 pages, 88775 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
