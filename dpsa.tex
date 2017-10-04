@@ -1,0 +1,547 @@
+\documentclass[a4paper,11pt]{article}
+
+
+%calling packages
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[left=1.4in,right=1.4in,top=1.3in,bottom=1.3in]{geometry}
+\usepackage{setspace}
+\usepackage[round]{natbib}
+\usepackage{epstopdf}
+\usepackage{soul}
+\usepackage{lmodern}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%fonts
+\usepackage{tgpagella}
+\setcounter{secnumdepth}{0}
+%chanfing font of table headers
+\captionsetup[figure]{labelfont=bf}
+\captionsetup[table]{labelfont=bf}
+
+%changing header
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand*\footnoterule{}
+\let\svfootnoterule\footnoterule
+\renewcommand\footnoterule{\vspace{0.2in}\svfootnoterule}
+
+%set spacing
+
+\renewcommand{\sfdefault}{phv}
+
+\onehalfspacing
+\usepackage{titlesec}
+
+\titleformat*{\section}{\Large\sffamily}
+\titleformat*{\subsection}{\large\sffamily}
+\titlespacing*\section{0pt}{24pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing*\subsection{0pt}{20pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+
+%changing title settings
+\makeatletter
+\renewcommand{\maketitle}{
+	\begin{flushleft}
+		
+		\onehalfspacing
+		
+		\@title
+		
+		\lineskip .5em
+		\normalfont{\normalsize{\@author}}
+\end{flushleft}}
+\makeatother
+
+
+\newcommand{\beginsupplement}{%
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{S.\arabic{table}}%
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S.\arabic{figure}}%
+}
+
+
+%title
+\title{\bigskip \bigskip \sffamily \Huge  A Self-serving Bias in \\  Attribution of Political Responsibility}
+
+%author
+\author{Martin Vinæs Larsen,\footnote{Graduate Student, Department of Political Science, University of Copenhagen, e-mail: \texttt{vinaes@gmail.com}. For thoughtful comments and suggestions, the author thanks Rafael Ahlskog, Martin Bisgaard, Malte Dahl, Kasper Møller Hansen, Kristina Jessen Hansen, Leonie Huddy, Alexander Kuo, Steven Ludeke,  Asmus Olsen, Matthias Osmundsen, Morten Petterson, Søren Serritzlew, Rasmus Kibæk Skytte, Mary Stegmaier and Rune Stubager.} \vspace{-0.3in} \newline  University of Copenhagen} %e-mail
+
+
+
+\begin{document}
+	
+	
+	
+	
+	
+	
+	\begin{footnotesize} \noindent \today \end{footnotesize} %date
+	
+	\vspace{0.7in}
+	
+	\maketitle
+	
+	\bigskip
+	
+	\begin{quotation} %abstract
+		\singlespace
+		\small \noindent \emph{Abstract:} Individuals' desire to protect and enhance their own self-image often lead them to take personal responsibility for good outcomes yet externalize responsibility for adverse outcomes. In this article, I show that this self-serving bias in attribution has important implications for how voters assign political responsibility in settings where it is unclear whether outcomes are a result of government intervention or individuals' own behavior. In these settings, voters assign political responsibility in a self-serving way, downplaying the governments' role in producing desirable outcomes, and highlighting the governments' role in producing undesirable outcomes. I demonstrate that voters attribute responsibility in this way using election studies from three different continents, a survey asking detailed question about attributions, and a set of survey experiments.
+		
+	\end{quotation}
+	
+	
+	\thispagestyle{empty} %removing page number from page one
+	
+	
+	\section{Introduction} %first section goes here
+	\noindent Protection and enhancement of one's self-image is  an important motivation underlying human behavior \citep{sedikides1995multiply,beauregard1998turning,baumeister1999self}. This is reflected in a ubiquitous self-serving bias in attribution, which motivates people to draw causal inferences that make themselves look good \citep{kunda1999social,heider2013psychology,stephan1976egotism}. In particular, because of this bias, people tend to take personal responsibility for desirable outcomes and externalize responsibility for undesirable outcomes. Arguably, this self-serving bias is also present when people make attributions about outcomes of political decisions, and it might therefore, in some cases, affect how voters attribute political responsibility. In spite of this, no study has examined whether or under what conditions the self-serving bias affect voters' political attributions.
+	
+	While the previous literature has not examined whether voters' desire to make \textit{themselves} look good affect how they attribute responsibility for policy outcomes, a large number of studies have found that voters' desire to make their \textit{preferred party} look good does make a difference. As such, voters who identify with, or feel close to, a particular party will hold this party responsible for desirable policy outcomes yet exculpate the party for undesirable outcomes \citep{rudolph2003s,rudolph2006triangulating,malhotra2008attributing,marsh2010attribution,tilley2011government,bisgaard2015bias,healy2014partisan}. This fits nicely with a larger literature on how attachment to a party fundamentally alters voters' political cognition \citep[e.g.,][]{campbell1960american}. A partisan bias in attribution is also consistent with a self-enhancement motive, as partisans might selectively attribute in order to protect the image of themselves as someone who supports a successful party \citep[for an argument along these lines, see][319]{tilley2011government}. However, the effects of voters' self-serving motives on their political attributions might extend beyond any role these play in driving the partisan bias.
+	
+	
+	This article argues that self-serving motives shape how voters assign political responsibility in settings where it is unclear whether outcomes are the result of government intervention or individuals' own behavior. This includes a number of important policy outcomes such as voters' employment situation, their mortgage payments, their children's test scores, and the quality of their health insurance. When it comes to this type of policy outcomes, concerns about self-image should motivate voters to shift responsibility for undesirable outcomes away from themselves and towards governing politicians, and motivate voters to shift responsibility for desirable outcomes away from politicians and towards themselves. For instance, we would expect that voters are more likely to attribute responsibility to the government for losing a job as opposed to getting a job, because individual voters can influence their own employment prospects, and therefore should want to downplay (overstate) their own responsibility for adverse (good) employment outcomes. Conversely, when it is clear that outcomes are not the result of individuals' own behavior, the self-serving bias should not play any direct role in shaping attributions of responsibility for these outcomes. For instance, voters should not be more likely to attribute responsibility to the government for increases as opposed to decreases in the national unemployment rate, because individual voters cannot affect the national unemployment rate, leaving them with no self-serving motive to attribute political responsibility asymmetrically.
+	
+	
+	In order to empirically substantiate this argument, I undertake three separate studies. The first study examines voters' propensity to support the incumbent across their beliefs about the national and their personal economic situation. Using data from the Danish National Election Studies, the American National Election Studies and the Latinobarómetro, I find that voters electorally punish incumbents when they think their personal economic situation is deteriorating, yet do not reward the government when they think their personal economic situation is improving. I find no similar asymmetry across evaluations of the national economic situation. This is consistent with the self-serving bias in attribution, because voters can influence how their personal economic situation develops, and therefore have a self-serving motive to attribute less (more) responsibility to the government when their economic situation is improving (deteriorating). They have no similar motive when it comes to the national economic situation. 
+	
+	In the second study, I move a step closer to the proposed mechanism, investigating whether voters adjust their beliefs about the extent to which government is implicated in producing economic outcomes in a self-serving way. To that end, I use a population based survey of Danish voters, asking  respondents about whether they believe the government can affect their personal economic situation, and look at how these beliefs correlate with voters' evaluation of their personal and the national economic situation. In line with what I would expect if there is a self-serving bias in political attribution, I find that voters who believe their own economic situation is doing better are less likely to believe that the government can affect their own economic situation. 
+	
+	In the third study, I address issues related to causal inference. Issues which are hard to get at with the observational data used in studies 1 and 2. To do this, I conduct a survey experiment on a population based sample of Danish voters, as well as a survey experiment on a convenience sample. In the experiments, I ask respondents to evaluate the extent to which the government would be responsible for a set of hypothetical outcomes, randomly assigning outcomes to respondents. Across different types of outcomes, I find that when it comes to policy outcomes voters' might have had a hand in shaping, they hold the government more responsible for undesirable outcomes than for desirable outcomes.
+	
+	%split
+	The article extends the literature on how voters assign political responsibility for policy outcomes, as it tells us that not only partisanship but also self-servingness can bias voters' attributions. Further, the article uses both observational and experimental data from outside the US and the UK in a literature which has been primarily experimental and based on these two countries \citep{rudolph2006triangulating,malhotra2007effect,healy2014partisaen,marsh2010attribution,tilley2011government}. The findings may also help explain why previous literature has generally found small and inconsistent effects of personal economic conditions \citep{kinder1979economic,kinder1981sociotropic,singer2013context,lewis2013vp,stubager2014scope}. As such, if the self-serving bias drives down the effect of personal economic conditions when these conditions are improving, then the estimated effect of these conditions will be sensitive to the distribution personal economic conditions in the electorate (i.e., be smaller when more people's personal economic situation is improving). 
+	
+	To the extent that the way voters interpret and act on policy outcomes shape the actions of reelection-minded politicians \citep{ferejohn1986incumbent,besley2007principled,alt2011disentangling,tilley2017pound}, the self-serving bias also has interesting implications for democratic accountability. In particular, politicians might shy away from otherwise efficient policies, if these policies leave room for interpretation as to whether their outcomes are due to the policy or due to the actions of the individual voter, because voters will seize upon this ambiguity, and assign responsibility for any gains to themselves and responsibility for any losses to the politicians.
+	
+	
+	
+	\section{The Political Relevance of the Self-serving Bias}
+	Social psychological research has long identified a self-serving bias in attribution \citep[272]{heider2013psychology,greenwald1980totalitarian,stephan1976egotism,fiske2013social}. This bias is reflected in a ``tendency for people to take personal responsibility for their desirable outcomes yet externalize responsibility for their undesirable outcomes.'' \cite[895]{shepperd2008exploring}. If someone, for instance, gets a good grade on an exam, they will infer that this must be based on their own effort and skill, however, if they get a bad grade, they infer that it was due to the teacher's tough grading or the loud neighbors who made studying impossible \citep{mcallister1996self}.
+	
+	The self-serving bias is a type of ``directional'' motivated reasoning \citep{kunda1990case}, meaning that the bias leads people to reach conclusions based on some other motive than accuracy. In particular, the self-serving bias has been shown to be driven by a number of different cognitive heuristics  and psychological needs \citep{shepperd2008exploring,snyder1976egotism}. The most prominent driver of the bias, however, is the need to sustain a positive self-image (i.e., self-enhancement or self-protection) \citep{miller1976ego,sedikides2003pancultural}.
+	
+	
+	While previous studies have found that the self-serving bias shapes people's attributions in a number of different areas \citep[e.g.,][]{campbell2000among}, it has not been shown to affect how voters attribute responsibility for policy outcomes. This might be because the self-serving bias has no obvious universal relevance for this type of outcomes. To see this, imagine that a voter thinks the national economy is doing worse than 12 months ago. It is not obvious how the self-serving bias should influence the attribution of responsibility for this economic development. However, even if the the self-serving bias does not have an impact on how voters attribute responsibility for all types of policy outcomes, it might still have an impact in some cases. In particular, the self-serving bias might play a role when the policy outcome voters attribute responsibility for satisfy the following \textit{plausibility criteria}.
+	
+	Voters need to believe that they can \emph{plausibly} influence the outcome themselves. Since the self-serving bias is premised on voters wanting to adjust how personally responsible they are for an outcome based on how desirable this outcome is, the bias is obviously not relevant if voters know, on the face of it, that they had no personal responsibility for said outcome. Imagine, for instance, that a voter want to assign responsibility for rising inflation. Since the voter knows that she had nothing to do with increasing prices, adjusting the extent to which she is responsible \textit{vis-a-vis} the government does not make sense. Imagine instead that a voter's mortgage payments go up. The voter knows that he is partly responsible for the size of his mortgage payments, as he could (plausibly) have negotiated a better deal with the bank or increased his savings earlier in life. Accordingly, the voter can meaningfully adjust the extent to which he is responsible \textit{vis-a-vis} the government, making the self-serving bias relevant. The first criteria is therefore that voters need to be plausibly personally responsible for the outcome.
+	
+	In addition to this, voters need to believe that political control over the outcome is ambiguous. As such, if voters believe the economic outcome is either completely under political control or completely out of political control, voters will not be able to rationalize adjusting the extent to which the government is responsible. The second criteria is therefore that it is plausible for voters to adjust how responsible the government is for the outcome.
+	
+	These plausibility criteria matter because even when people are attributing selectively they ``do not seem to be at liberty to conclude whatever they want [...] [t]hey draw the desired conclusion only if they can muster of the evidence nessecary to support it.'' \cite[482-283]{kunda1990case}. Put differently, if voters are to shift responsibility for an outcome self-servingly between themselves and the government, they need to able to to think up a set of reasons why they themselves (criteria one) and the government (criteria two) had some part to play in producing this outcome. If the plausibility criteria are not met, this is impossible.
+	
+	If both plausibility criteria are met, however, the self-serving bias should shape voters' attribution of political responsibility. In an attempt to minimize their own involvement,  voters should over-emphasize the role played by the government in producing desirable outcomes, and, in an attempt to maximize their own involvement, voters should under-emphasize the role played by the government in producing undesirable outcomes. That is, if the plausibility criteria are met, there will be a valence asymmetry in the extent to which voters attribute responsibility to the government. This is the article's central hypothesis:
+	
+	\begin{quote}
+		\textbf{The Self-serving Bias Hypothesis:} If voters can reasonably assign responsibility to themselves and to governing politicians for a given outcome, then voters will hold governing politicians more responsible for this outcome if it is undesirable as opposed to desirable.
+	\end{quote}
+	
+	
+	
+	\subsection{The Hypothesis and the Existing Literature}
+	
+	The hypothesis is most closely related to a small and recent set of studies which explain policy attitudes in terms of the self-serving bias \citep[e.g.,][]{deffains2016political,cassar2017matter,joslyn2017gun}. However, unlike these studies, this hypothesis is not concerned with voters' preference for particular policies, but in how voters attribute political responsibility to the government for policy outcomes. 
+	
+	As mentioned in the introduction, the hypothesis is also related to the large literature on partisan bias in political attributions \cite[e.g.,]{malhotra2008attributing,healy2014partisaen,bisgaard2015bias}. In fact, the partisan bias in attribution is often conceptualized as the ``group-serving'' counterpart to the self-serving bias \cite[][701]{rudolph2003s}, and might be driven by similar psychological impulses \cite{lodge2013rationalizing,tilley2011government}. Even so, the self-serving bias hypothesis stands apart from the partisan attribution bias hypothesis in that it is interested in whether voters exculpate themselves, rather than their preferred party, when assigning blame for undesirable outcomes.
+	
+	
+	As the self-seving bias hypothesis predicts a valence asymmetry in attribution of responsibility for policy outcomes, it is also related to studies which identify a negativity bias (or grievance asymmetry) in retrospective voting \cite[cf.][]{bloom1975voter,soroka2006good}. However, the self-serving bias hypothesis suggests that the valence asymmetry is conditional upon the type of outcome (e.g., conditional on whether voters can influence the outcome themselves), contrary to the negativity bias literature where the asymmetry is typically thought to be unconditional \citep[cf.][]{nannestad1997grievance}. Even so, the hypothesis is not necessarily at odds with the notion of a more unconditional negativity bias, as the present hypothesis focuses exclusively on attribution and not on how voters form beliefs about the quality of policy outcomes. Accordingly, a conditional attributional valence asymmetry could be compatible with an unconditional perceptual valence asymmetry. In particular, the self-serving bias hypothesis is consistent with a world in which voters are always more (less) likely to notice, remember and retrieve negative (positive) information, when assessing the quality of policy outcomes. The self-serving bias hypothesis simply suggests that once the voter has assessed the quality of a given policy outcome, then the valence of this assessment will only affect the extent to which the voter attributes responsibility to the government, if this outcome meets the two plausibility criteria laid out above.
+	
+	The self-serving bias hypothesis is also indirectly linked to the literature on the relative importance of personal contra national economic conditions \citep{kinder1979economic,kinder1981sociotropic,singer2013context,stubager2014scope,tilley2017pound}. This becomes clear if one thinks systematically about the kinds of outcomes which voters can, and the kind of outcomes voters cannot, hold themselves responsible for. As such, voters can attribute responsibility to themselves for the quality of their personal economic situation,  but they cannot attribute responsibility to themselves for national economic conditions. When it comes to testing the hypothesis below I use this fact repeatedly. Even so, these empirical explorations will differ from previous research in this area, because the focus will not be on the absolute or relative weight that voters put on national and personal economic conditions. Instead, the goal will be to get at whether there is a valence asymmetry in attribution of political responsibility, and whether this valence asymmetry is only present for personal economic conditions.
+	
+	%something about partisanship?
+	
+	
+	
+	\subsection{Testing the Hypothesis}
+	
+	As mentioned in the introduction, the article employs a series of surveys and experiments to test the self-serving bias hypothesis. I have organized these different empirical explorations into three separate studies. All three studies, directly or indirectly, look at how voters attribute responsibility for outcomes which meet and outcomes which do not meet the plausibility criteria. The three studies have different inferential strengths (i.e., some have stronger external and some have stronger internal validity), and thus serve as a type of methedological triangulation.  Table \ref{overviewselfserv} presents an overview of the different studies.
+	
+	
+	\begin{table}[htbp] \centering
+		\caption{Overview of the studies} \label{overviewselfserv} \footnotesize
+		\begin{tabular}{p{1mm}p{60mm}p{60mm}P{10mm}}  
+			\hline 
+			&Motivation&  Data sources& N \\ \hline  &&&\\ 
+			1.& Identify signs of a self-serving bias in voter behavior.&  Danish National Election Survey \newline (1990-2015)& 13,292 \\  &&&\\
+			&&  American National Election Survey \newline (1984-2012)& 13,306 \\  &&&\\
+			&&  Latinobarómetro \newline (1995-2010)& 141,191 \\  &&&\\
+			2.&Explore whether differences in behavior reflect differences in attributions.&  Survey of Danish voters \newline (2014)& 933 \\  &&&\\
+			3.&Explore whether differences in attributions are caused by the valence of policy outcomes. & Survey experiment with Danish voters \newline (2015)& 1,002 \\  &&&\\
+			&& Survey experiment with convenience sample \newline (2017) & 263 \\  &&&\\
+			\hline \hline
+		\end{tabular}
+	\end{table}
+	
+	
+	
+	\section{Study 1: Election surveys}
+	
+	Following the self-serving bias hypothesis developed above, voters should hold governing politicians more electorally responsible for worsening economic conditions than for improving economic conditions when it comes to their own economy. I expect there to be such a valence asymmetry, because voters will be motivated to hold themselves less responsible when their economic conditions are deteriorating, leaving the door open for blaming the government instead. However, there should be no such valence asymmetry when it comes to national economic outcomes, as a bad (good) national economic situation does not reflect poorly (well) on the individual voter. The article begins to test the self-serving bias hypothesis by looking at whether voters attribute responsibility in this way in a large set of election surveys.
+	
+	
+	
+	
+	Election surveys generally do not include explicit questions about attribution. To measure how responsible voters hold their government for economic outcomes in these election surveys, I therefore assume that attribution of responsibility can be inferred from the correlation between voters perception of the economy and support for the incumbent government. A relatively standard assumption in retrospective voting research \citep[e.g.,][]{carlin2015executive,lewis2013vp,duch2008economic}.
+	
+	I use three different sets of election surveys: the American National Election Studies (ANES), the Latinobarómetro and the Danish National Election Studies (DNES). The ANES was chosen because much groundbreaking research on retrospective voting has used this dataset \citep[e.g.][]{fiorina1981retrospective}. The Latinobarómetro was chosen based on two considerations; (1) it covers a diverse set of countries that are quite different from the US, enhancing external validity; (2) it includes a large number of respondents ($n>140.000$), increasing statistical power. Finally, studies 2 and 3 are based on surveys of Danish voters, so to increase consistency and continuity across the different studies the DNES is included as well.
+	
+	
+	
+	
+	\subsection*{Data and Empirical Strategy}
+	From the ANES I use the time series cumulative data file, analyzing data from the presidential election years 1984 to 2012. From the Latinobarométro I use 141 annual surveys from 18 countries covering the years from 1995 till 2010 \cite[our starting point is the  dataset used in][]{carlin2015executive}. The DNES data is from the Danish Data Archive, and covers all parliamentary elections from 1990 till  2015 (except 1998 due to a missing question concerning personal economic conditions). For an overview of which surveys were included in study 1, see section S2 of the supplementary materials.
+	
+	The dependent variable is support for the incumbent executive. In the ANES this is operationalized as a dummy variable indicating whether the respondent reported to have voted for the incumbent presidential party at the presidential election. Denmark has  parliamentary system, and accordingly the dependent variable in the DNES is a dummy variable indicating whether the respondent voted for one of the parliamentary parties which were in government at the time of the election and zero otherwise. Since the Latinobarómetro data does not follow election cycles, I cannot use reported voting behavior at elections as the dependent variable. Instead, I use a dummy variable indicating whether the respondent approved of the incumbent president's performance.\footnote{This is the standard dependent variable used when estimating retrospective voting models on the Latinobarómetro data \citep{carlin2015executive}.} 
+	
+	The independent variables are voters evaluation of their own and the national economy. Specifically, I use two questions which were included in all the election surveys, which asks respondents how (1) your own and your family's economy and (2) the national economy has developed over a period of time. The time period differs across the different election surveys covering anything from the last 12 months to the last three years. Responses given to these questions were sorted into three categories; responses indicating the economy had stayed the same, responses indicating the economy had gotten worse, and responses indicating the economy had gotten better.\footnote{For some of the election surveys the respondent had more than three options available when characterizing the economic situation, however, to make comparisons across all surveys possible, these were collapsed into these three categories. Section S3 of the supplementary materials discusses whether this might affect the results.}
+	
+	I also use a small set of control variables in some parts of the analysis. These are gender, age in years, education, ideology and strength of party identification. Education is measured using a dummy indicating whether the respondent reported having attended college/university.   Ideology is measured on an eleven-point scale going from left to right in the Latinobarómetro and the DNES. In the ANES ideology is measured on a seven-point scale going from ``extremely liberal'' to ``extremely conservative''. Strength of party identification is measured on a three point scale in the DNES (none, weak, strong) and on a four point scale in the ANES (independent, leaning, weak and strong). The Latinobarómetro only asks for party identification in a small number of surveys. Instead, I use a dummy indicating whether the respondent had strong feelings about (not) trusting the president.
+	
+	To analyze the data I model the probability of supporting the incumbent as a linear function  of voters' evaluations of the national and their personal economic conditions. I also include survey fixed-effects to control for any election-specific or country-level confounders.  For both national and personal economic evaluations, I include the variables as dummy variables, using those who thought their own/the country's economy had stayed the same as the reference category. I estimate the parameters of this linear probability model (LPM) using an OLS regression with robust standard errors, and estimate seperate models for each of the three sets of election studies.
+	
+	\subsection*{Results}
+	Three of the four graphs in figure \ref{electionstudy} present the key estimates from the OLS regressions run on the DNES, the ANES and the Latinobarometro data.\footnote{Section S4 of the supplementary materials present the tables underlying these and subsequent figures in the article. See section S6 for descriptive statics on all variables used in the analysis.} In particular, it presents the estimated effect of evaluating the economy as doing \textit{better} rather than having stayed the same, the estimated effect of evaluating the economy as doing \textit{worse} rather than having stayed the same, and the estimated asymmetry in these effects; the valence asymmetry.\footnote{See section S1 of the supplementary materials for details on how the valence asymmetry was estimated.} The valence asymmetry represents the extent to which voters react more strongly when the economic situation changes for the worse rather than for the better. A positive valence asymmetry thus means that voters are more sensitive to things getting worse. I present estimates of the valence asymmetry for both the national economic situation and for voters' personal economic situation.
+	
+	The key take-away from figure \ref{electionstudy} is that in both the DNES, the ANES and in the Latinobarómetro there is a statistically significant valence asymmetry for personal economic conditions ($p<0.05$), yet no discernible valence asymmetry for national economic conditions. Further, if one compares the estimated valence asymmetry for personal and national economic conditions, one finds that the former is significantly larger than the latter in each of the three sets of election surveys ($p<0.05$). This is in line with the self-serving bias hypothesis, which predicted a valence asymmetry in attribution of responsibility for personal economic conditions, where voters can plausibly adjust how responsible they view the government \textit{vis-a-vis} themselves, but no asymmetry for national economic conditions, where it makes no sense for voters to make any such adjustments.
+	
+	
+	\begin{figure}[htbp]
+		\includegraphics[width=0.49\textwidth]{../figures/elecstudy1.eps} 	\centering	\includegraphics[width=0.49\textwidth]{../figures/elecstudy2.eps} 
+		
+		\includegraphics[width=0.49\textwidth]{../figures/elecstudy3.eps}
+		\includegraphics[width=0.49\textwidth]{../figures/controls.eps}
+		\centering
+		
+		
+		\caption{Estimated effects of believing your own or the national economy has gotten "Worse" or "Better" rather than "Stayed the same" on voting for/supporting the incumbent government. Estimated using OLS-regression of incumbent support for the DNES ($n=13,293$), the ANES ($n= 13,306$) and the Latinobarometro ($n= 143,191$). The valence asymmetry was calculated as the difference between the absolute values of the ``Worse'' and ``Better'' effects. Horizontal lines are 95 pct. (thin) and 90 pct. (thick) confidence intervals. Diamond shaped dots are from models which include controls (i.e., gender, age, education, ideology and strength of partisanship).}
+		\label{electionstudy}
+	\end{figure}
+	
+	Figure \ref{electionstudy}  also shows, unsurprisingly, that across all three election surveys, the state of the national economy seems to be more closely related to government support than the state of the respondent's own economy \cite[cf.][]{kinder1981sociotropic}. There are also some differences across the election surveys.  As such, for both the Latinobarómetro and the ANES there is a statistically significant estimated effect of perceiving one's own economy as improving rather than staying the same. There is no such effect in the DNES. Even so, the valence asymmetry in the effect size is present in all three sets of election studies.
+	
+	How does this pattern hold up to statistical control? To test this I re-estimate the models used to produce figure 1, including age, gender, education, ideology and strength of partisanship as controls. These variables are not meant to be exhaustive, as they do not control for all possible confounders. Nor are they necessarily great controls as some of them, like ideology, might be post-treatment \citep{king2010hard}. However, in re-estimating the models using these controls, I can conduct a simple test of whether the patterns found above can be explained away by using a ``standard set of controls''.
+	
+	In the graph presented in the bottom right corner of figure \ref{electionstudy}, I plot the valence asymmetry estimated from the LPMs with controls. For comparison I also include similar estimates from the models without controls. The main difference is that the valence asymmetry for the respondent's own economy in the DNES becomes roughly 2 percentage points smaller and also statistically insignificant ($p=0.26$). However, in the ANES and the Latinobarómetro the valence asymmetry for the respondent's own economy is still significantly different from zero ($p<0.05$) and significantly different from the valence asymmetry for the national economy ($p<0.05$). 
+	
+	Just as important as the statistical significance, however, is that once controls are introduced, the approximate size of the valence asymmetry is remarkably similar across all three election studies (ca. 2-4 percentage points). This resonates with the idea that the self-serving bias in attribution is a relatively universal psychological mechanism.
+	
+	In sum, voters in the ANES, the DNES and the Latinobarómetro behave in a way that is consistent with a self-serving bias in political attribution. Across the US, Latin America and in Denmark, voters are unlikely to hold incumbents responsible for their personal economy if it is improving, yet likely to hold incumbents responsible for their personal economy if it is getting worse. An asymmetry which is not present for the state of the national economy. These findings are especially noteworthy, because of the diverse set of contexts which have been analyzed. As such, signs of a self-serving bias in political attribution does not seem confined to one particular type of election or country. 
+	
+	While the consistency of the results does speak in favor of the self-serving bias hypothesis, there are still some important inferential issues, which this data cannot deal with effectively. First, I assume that differences in the effect of economic conditions on incumbent support corresponds to differences in attribution of responsibility. As mentioned above, this is a standard assumption in much research on retrospective voting, however, this does not necessarily make it a valid assumption. Second, I assume that the correlation between voters beliefs about the economy and incumbent support reflects a causal effect of the former on the latter. This is not necessarily the case, as the factors which determine voters' beliefs about their own and the national economy might have an independent effect on incumbent support (i.e., there might be omitted variable bias). In study 2 and 3 I device new tests of the self-serving bias hypothesis, which try to address these shortcomings. In particular, study 2 utilizes a survey of voters beliefs about the role government plays in producing economic outcomes. This should alleviate concerns related to the measurement of attribution of responsibility. Study 3 randomly assigns hypothetical outcomes to voters in the context of a survey experiment, which should help alleviate concerns related to causal inference.
+	
+	\section{Study 2: A Survey of Voters' Attributional Beliefs}
+	In study 2, I test the self-serving bias hypothesis by once again examining the relationship between voters' beliefs about the economic situation and the extent to which they attribute responsibility for this situation to the government. However, instead of gauging attribution of responsibility indirectly, I measure it directly by asking voters to what extent they believe the government can affect different aspects of the economy.
+	
+	
+	The expectations are similar to those in study 1. As such, I expect that voters who believe their own economic situation is improving will be less likely than those who think their own economic situation is deteriorating to think that the government can affect their personal economy.  Conversely, I do not expect voters' evaluation of the national economy to have any bearing on voters beliefs about the government's role in shaping national economic conditions.
+	
+	
+	
+	\subsection*{Data and Empirical Strategy}
+	The survey I use in study 2 was part of the ``DK-OPT'' project.\footnote{Data obtained from PI in the ``DK-OPT'' project, Derek Beach,  Professor, Aarhus University, Denmark.} The survey was collected by the polling company Epinion using a population based sample frame. The survey ran from May 28 till June 28 2014, included a 1,028 respondents and was conducted over the phone. The sample was diverse though not completely representative of the Danish voting population.\footnote{The sample was more educated and slightly older than the Danish voting age population, cf. section S6 of the supplementary materials.}
+	
+	The survey focused mainly on EU attitudes, but also included some items related to the national government's ability to affect the state of the economy. In particular, the survey included the following two items:
+	
+	\begin{itemize}
+		\item ``To what extent can the Danish government affect your personal economic situation?"
+		\item ``To what extent can the Danish government affect the national economic situation?"
+	\end{itemize}  
+	
+	Answers were recorded on five point scales going from ``Not at all'' to ``A lot''. These items are used as the dependent variable in the analyses. The independent variables are the same as in study 1; voters' evaluation of how their own economic situation and the national economy has developed over the last 12 months. For simplicity, responses are once again sorted into three categories; better, worse and the same. 
+	
+	I also use a small set of controls in this study, however, since strength of partisanship was not included in the survey, I only use ideology, education, age in years and gender. Once again education is coded as a dummy indicating whether the respondent reported having attended university. Ideology is measured as agreement with the statement ``People with high incomes should be more severely taxed'', measured on a five point scale from ``Disagree Completely'' to ``Agree Completely''.
+	
+	To analyze the data, I estimate two linear regressions with the two items on the government's role in shaping economic outcomes as the dependent variables. I include the independent economic variables as a set of dummy variables, using those who thought the economy had stayed the same as the reference category. I estimate both models with the small battery of controls and with robust standard errors.
+	
+	\subsection*{Results}
+	
+	Figure	\ref{attribution} presents predicted values from these linear regressions. In the top panel, I look at how personal economic conditions are related to attributional beliefs. Here I find that voters are less likely to think the government can affect their personal economic situation if their own economic situation is improving. In particular, there is a statistically significant difference between those who think their economy is doing better than a year ago and those who think their economy is doing worse ($p<0.05$). This is in line with a self-serving bias in attribution of political responsibility, since those who are doing better should be motivated to credit themselves rather than the government. Conversely, there is no similar relationship, between voters' personal economic conditions and their tendency to believe the government is responsible for national economic conditions. This is important, because it tells us that the types of people who are doing well are not less likely to hold the government responsible for all types of economic outcomes. They are only less likely to hold the government responsible for their \textit{own} good fortune, not the fortune of the nation as a whole.
+	
+	\begin{figure}[htbp]
+		\includegraphics[width=0.8\textwidth]{../figures/attribpers.eps} \centering
+		\includegraphics[width=0.8\textwidth]{../figures/attribnat.eps} \centering
+		\caption{Top: Beliefs about the extent to which the government can affect your personal (left) and the national (right) personal economy across beliefs about personal economic conditions. Bottom: Beliefs about the extent to which the government can affect your personal (left) and the national (right) personal economy across beliefs about national economic conditions. Dots calculated by adding average marginal effects of economic variables, derived from the OLS-regressions ($n=933$ for all models), to the sample mean. All models include both evaluations of your own and the national economy as well as controls for ideology, education, gender and age.  Vertical lines are 95 pct. (thin) and 90 pct. (thick) confidence intervals.} 
+		\label{attribution}
+	\end{figure}
+	
+	In the bottom panel of figure \ref{attribution} I look at how national economic conditions are related to attributional beliefs. In general, I find no systematic relationship between how voters believe the national economy is doing and their beliefs about the extent to which the government can affect their personal or national economic conditions. If I compare those who believe the country is doing better than a year ago with those who think the economy is doing worse, I find no differences in their attributional beliefs ($p>0.2$ for both dependent variables).\footnote{Interestingly, those who think the national economy has remained the same are significantly more likely to think that the government cannot influence their personal and the national economy.}
+	
+	
+	In sum, I find a relationship between the valence of personal economic conditions and the extent to which voters think the government can affect their personal economy, but no relationship between the valence of national economic conditions and the extent to which voters think the government can affect the national economy. This is exactly what the self-serving bias hypothesis would predict.
+	
+	\section{Study 3: Survey Experiments}
+	In study 3, I test the self-serving bias hypothesis using a set of  survey-experiments. In particular, I randomly assign voters to descriptions of different hypothetical outcomes, ask them the extent to which they believe the government would be responsible for these outcomes, and then examine whether their answers follow the same self-serving pattern identified in studies 1 and 2.
+	
+	By randomly assigning economic outcomes to voters, I address a key problem with the analyses I have engaged in so far, namely, that observed economic outcomes are endogenous to assignment of responsibility. So far I have estimated the effect of economic outcomes on assignment of political responsibility by comparing voters who believe an outcome is getting better with voters who believe the same outcome is getting worse. This is potentially problematic as voters with specific propensities to attribute responsibility the government may, inadvertently or intentionally, select into specific types of beliefs.\footnote{For instance, conservative voters may be more skeptical of the government's ability to affect the economy, refraining from attributing political responsibility for economic conditions, and at the same time, they may be more likely to observe good economic conditions, because conservatives tend to be more well off \citep{rudolph2003s,rudolph2006triangulating}.} By assigning outcomes at random, we can be sure that voters' propensity to hold the government responsible is balanced, in expectation, across those assigned to desirable and undesirable outcomes.
+	
+	
+	In the first experiment, I vary two characteristics of the hypothetical outcomes that voters are assigned to. One is the valence of the outcome (i.e., whether it is positive, negative or neutral). The other is whether voters can reasonably assign responsibility to themselves (i.e., the first plausibility criteria). Following the observational studies, I manipulate this by presenting voters with outcomes at a personal or at a national level.
+	
+	\subsection*{Data and Empirical Strategy}
+	The survey experiment was conducted by the polling company Norstat using a population based internet panel to recruit respondents. The survey ran from June 2 till June 4 2015. It sampled 1,002 respondents. The sample was diverse, though not completely representative of the Danish voting age population.\footnote{In particular, the sample was slightly older and had a higher proportion of men, cf. section S6 of the supplementary materials.}
+	
+	The survey presented voters with two experimentally manipulated outcomes. One outcome was related to housing and one outcome was related to employment. For each of the two outcomes respondents' were given one of three valence conditions (negative, neutral, positive) and one of two relevance conditions (personal/national). Respondents were then asked: ``To what extent would the government be responsible for this outcome?'' Answers were given on a eleven point point scale from "Not at All" to "A great deal". The variable was rescaled to go from zero to one. 
+	
+	The first outcome voters were presented with concerned housing prices. Specifically, respondents were presented with one of the following six  hypothetical outcomes:
+	
+	\begin{itemize} 
+		\item [1,2,3] Imagine that the price of your or your family's house [increased/ decreased/ increased or decreased].
+		\item [4,5,6] Imagine that the price of houses in the country as a whole [increased/ decreased/ increased or decreased].
+	\end{itemize}
+	
+	The positive economic outcome in this case is increasing house prices, which will enable voters to sell their house, or draw up a larger mortgage, at a possible gain to themselves \citep{ansell2014political}. Conversely, decreasing house prices is the negative outcome. Note that the neutral condition simply asks voters to evaluate how responsible the government would be for house prices either increasing or decreasing. 
+	
+	The second outcome concerned employment. Respondents were presented with one of the following six versions of the outcome:
+	
+	\begin{itemize}
+		\item [1,2,3] Imagine that you or someone in your family [lost their job/got a better job/lost their job or got a better job].
+		\item [4,5,6] Imagine that unemployment in the country as a whole [increased/ decreased/ increased or decreased].
+	\end{itemize}
+	
+	For the first three versions, the  positive outcome is getting a better job and the negative outcome is losing a job. For the last three versions, the negative outcome is increasing unemployment and the positive outcome is decreasing unemployment. The neutral outcomes are, once again, either the negative or the positive outcome. 
+	
+	The housing and employment outcomes have different inferential strengths and weaknesses. The balance across negative and positive outcomes is strong for house prices but weaker for employment status. As such, there might be different causal processes involved in losing a job contra getting a better job, whereas the causal processes involved in increasing contra decreasing house prices are more similar. At the same time, it might be hard for voters to figure out what implications increasing or decreasing house prices will have for their personal economic situation. That is, whether the housing outcome they get is in fact desirable or undesirable. Conversely, almost all voters should understand that getting a better job is a desirable outcome, and that losing a job is an undesirable outcome. All in all, the housing outcomes thus provide a harder test of the self-serving bias hypothesis and the employment outcomes an easier test. As such, by including both outcomes the experiment should provide a fair overall test of the hypothesis.
+	
+	I analyze the survey experiment by setting up two linear models, which use voters attribution of responsibility for the housing and unemployment outcomes as the dependent variables. The independent variables are the different experimental treatments. The models are estimated using an OLS regression with robust standard errors.
+	
+	\subsection*{Results}
+	Figure \ref{experiment} presents the results from the main survey experiment. In the top panel, I examine the effects of the personal housing and employment outcomes. Across both types of outcomes a similar pattern emerges. Voters who were assigned to a positive outcome were \emph{less} likely to think that the government was responsible for securing this outcome than those assigned to a neutral or negative outcome. At the same time there was no statistically discernible difference between receiving a negative economic outcome as opposed to a neutral outcome. This conforms fairly well to the predictions made by the self-serving bias hypothesis. That is, when voters had a personal stake in the attributional process, they adjusted the extent to which they implicated the government in a self-serving way, downplaying the role of the government when faced with a desirable outcome.
+	
+	
+	In the bottom panel of the figure \ref{experiment}, I examine the effects of the national housing and employment outcomes. For the national housing outcomes there were practically no difference in the extent to which voters assigned responsibility to the government for positive, negative or neutral outcomes. For the national employment outcomes there were no difference in how voters assigned responsibility for positive or negative outcomes. Voters who were assigned a neutral national employment outcome, however, were less likely to assign responsibility to the government than those who were assigned to a positive or a negative outcome. The absence of systematic differences in attributions across negative and positive national level outcomes is also in line with the self-serving bias hypothesis, because there is no self-serving motive when it comes to assigning responsibility for national level outcomes which voters had no hand in shaping.
+	
+	
+	
+	\begin{figure}
+		\includegraphics[width=0.8\textwidth]{../figures/expdataemploy.eps} \centering
+		\includegraphics[width=0.8\textwidth]{../figures/expdatahouse.eps} \centering
+		
+		\caption{Mean level of beliefs about government responsibility for economic outcomes across valence ("Negative", "Neutral" and "Positive") and  (personal and national). Mean levels reported separately for housing and employment outcomes. Estimated using  an OLS regression with robust standard errors ($n=1,002$ for housing, $n=1,002$ for employment). Vertical lines are 95 pct. (thin) and 90 pct. (thick) confidence intervals.} %Add question
+		\label{experiment}
+	\end{figure}
+	
+	One finding from the experiment does not line up that nicely with the self-serving bias hypothesis: there is no difference in the extent to which voters hold the government responsible for neutral and negative personal economic outcomes. One explanation for this might be that the ``neutral'' condition, which asks voters to assign responsibility for either a positive outcome or a negative outcome, is actually more negative than neutral. The literature on the negativity bias thus suggests that negative information crowds out positive information \citep{rozin2001negativity,olsen2015citizen}. If this is true,  then it might make sense that the respondents assigned to the ``neutral'' condition respond in the same way as those assigned to the ``negative'' condition.
+	
+	
+	
+	
+	\subsection*{Validating the results using an additional survey experiment}
+	
+	The results in the experiment above was, by and large, consistent with the self-serving bias hypothesis, however, do the findings actually reflect that voters are self-serving when it comes to assigning political responsibility? One might have two concerns in this regard. First, the differences in the way voters attribute responsibility for national vis-á-vis personal outcomes may reflect that voters have to operate on a different `levels of analysis'. That is, the attributional differences might be borne out of voters dealing with aggregates (i.e., national house prices and national unemployment rate) rather than individual instances (the price of one house and the employment situation of one person). Second, voters might simply hold the government more responsible for negative outcomes that affect them personally than for positive outcomes that affect them personally even if these outcomes are completely outside the scope of the  government's  control. That is, voters might be lashing out blindly when something happens to them personally.
+	
+	To address these concerns, I ran an additional online survey experiment with 263 undergraduate political science students from a Danish university\footnote{The survey was conducted in February 2017 on the platform. \emph{psytoolkit}. The sample consisted of 55 pct. female students with an average age of 22.4 years.}. The survey included two experiments (presented sequentially), each meant to address one of the two concerns. 
+	
+	%make this description more accurate
+	First, respondents were randomly split into two groups. The first two groups were randomly assigned to either the positive or the negative personal housing and employment outcome (cf. above). The other two groups received the same positive or negative outcomes, but with a small tweak. Instead of it being their own house or their own job it was now ``someones'' job or ``someones'' house.\footnote{The exact treatments were ``Imagine that someone in Denmark [lost their job/got a better job]'' and ``Imagine that the price of a Danish family's house [increased/ decreased]''.} This is a more subtle difference than the national/personal split made in the main survey experiment, however, it should still regulate whether the first plausibility criteria is satisfied. As such, if voters are asked to evaluate who is responsible for someone else's economic situation, then the self-serving motive should not influence voters' attributions, and there should be no valence asymmetry in attributions.
+	
+	Second, respondents were presented with either a positive or a negative hypothetical personal outcome related to their own academic performance. In particular, they were presented with one of the following outcomes: ``Imagine that you get a [bad/good] grade on an exam''. This outcome is arguably completely outside of the government's control, and therefore we should not expect the self-serving bias to be relevant. \footnote{In effect, the second plausibility criteria is not satisfied for this outcome.}
+	
+	After being presented with each of these different hypothetical outcomes respondents were asked to evaluate the extent to which the government would be responsible for this outcome. I used the same question wording and scale as in the main experiment.  
+	
+	
+	
+	\begin{figure}
+		\centering 
+		\includegraphics[width=0.9\textwidth]{../figures/studexp.eps}
+		\caption{Effect of being presented with a negative rather than a positive outcome. Effects estimated using  an OLS regression with robust standard errors. From left to right, the sample sizes used to estimate the effects are $141$, $132$, $143$, $130$, $263$. Vertical lines are 95 pct. confidence intervals.} \label{studexperiment}
+	\end{figure}
+	
+	Figure \ref{studexperiment} presents the effect of being presented with a negative outcome on how responsible the respondents' thought the government was across the different outcomes. Three things stand out. First, the results from the main survey experiment replicate. Those who got a negative as opposed to a positive personal outcome were more likely to think the government was responsible across housing and employment outcomes. Second, there is no statistically significant differences for the housing and employment outcomes when voters were simply asked to imagine the outcomes happening to ``someone'' instead of themselves. Accordingly, it is not as though there is something special about small scale outcomes. It is only when the small scale is the voters' themselves, and self-serving motives thus become relevant, that there is a valence asymmetry in political attributions. Third, there is no difference between those assigned to the negative and the positive academic ``Grades'' outcome. This suggests that when outcomes are completely outside of the government's control, there is no valence asymmetry in political attributions, consistent with the self-serving bias hypothesis.
+	
+	All in all, the additional experiment increases our confidence in the self-serving bias hypothesis, as the results suggest that the conditional valence asymmetry in attributions identified in the main experiment is driven by voters making self-serving judgments.
+	
+	\section{Conclusion}
+	A lot of research in social psychology have shown that people tend to exculpate themselves for undesirable outcomes yet implicate themselves in desirable outcomes. In this article, I have argued that this self-serving bias in attribution has important consequences for how voters attribute responsibility for policy outcomes. In particular, I have found that when responsibility for a policy outcome is shared between individual voters and their government, voters tend to shift blame towards the government when the outcome is undesirable and away from the government when the outcome is desirable. A valence asymmetry in attribution which is not present in settings where voters have no personal stake in the outcome. 
+	
+	I found evidence of such a self-serving bias in political attribution in a number of different places. For one, I showed that voters in Denmark, the US and Latin America are more prone to punish their government if their personal economic conditions worsen, than they are prone to reward their government if their personal economic conditions improve. A valence asymmetry which is not present when it comes to national economic conditions. I have also shown that there is a correlation between voters' evaluation of their own personal economic situation and the extent to which they believe the government can influence their personal economic situation, but no correlation between voters evaluation of the national economic situation and their beliefs about whether the government can influence the national economic situation. Finally, I have shown that if we ask voters to evaluate how responsible the government is for randomly assigned hypothetical outcomes, then, to the extent that voters have a personal stake in the outcomes, voters are less likely to hold the government responsible for desirable outcomes as opposed to undesirable outcomes.
+	
+	%relato to intro about partisanship
+	These findings have important implications for existing work. The focus in the literature on how voters attribute political responsibility have gravitated towards attribution for events which are national in scope, like the national economy \citep{duch2008economic,alcaniz2011se} national emergencies \citep{malhotra2008attributing,healy2014partisaen} or how the government handles public service provision (\citealp{tilley2011government}; although see \citealp{tilley2017pound}). Yet this study underscores the importance of also focusing on how voters attribute blame for outcomes which are more personal in nature \citep{kinder1979economic,feldman1982economic,giuliano2009growing,ansell2014political}. In particular, it seems that voters can potentially attach political significance to personal economic outcomes, although as this study has shown, whether voters do so depend on the nature of these outcomes. A conditionality that might help explain why previous studies have struggled to pin down the exact importance of personal economic grievances \citep{lewis2013vp,nannestad1994vp,kinder1981sociotropic,stubager2014scope}.
+	
+	Some caution is in order, however, before drawing broad implications from the results of this article. While the analysis covered a number of different countries and studied the self-serving bias using both observational and experimental data, the types of outcomes voters were asked to assign responsibility for were quite abstract. As such, it is unclear whether the self-serving bias would still be present if voters were faced by a concrete event, like actually becoming unemployed, where the amount of information about the causal process that led to this event is more dense. Furthermore, while the different empirical studies this article has undertaken do complement each other, they deal with potential methodological problems in sequential order rather than in tandem. As such, none of the studies provide a perfect test of the self-serving bias with strong internal \textit{and} external validity. However, until such a test is conducted, we can tentatively conclude that there is a self-serving bias in attribution of political responsibility, which shapes how voters assign political responsibility in settings where it is unclear whether outcomes are a result of government intervention or individuals' own behavior.
+	
+	
+	What implications does the self-serving bias in political attributions have for the incentives faced by reelection minded politicians? On the face of it, the self-serving bias should dissuade governments from pursuing policies which redistribute economic resources among voters. If voters who gain from economic redistribution do not credit the government for this gain, while voters who lose out blames government, then redistribution is a lose-lose situation for governing politicians. This implication is similar to the one usually drawn from the literature on the negativity bias \citep[e.g.,][]{hood2011blame,nielsen2017politicians,weaver1986politics}. However, the fact that the self-serving bias is conditional on the plausibility criteria laid out above complicates thing a little. As such, the self-serving bias should only discourage politicians from pursuing re-distributive policies, when these policies leave room for interpretation as to whether the government or the individual citizen is responsible for the outcomes this policy might make more or less likely. If there is any such ambiguity as to who is responsible, the findings from this article suggests that voters will seize upon it and attribute responsibility in a self-serving way. Accordingly, the self-serving bias might not dissuade politicians from spending money on direct cash transfers, where there is little ambiguity as to whether low-income beneficiaries are better off as a result of the policy, but it might dissuade politicians from investing in public services like education, where the low-income beneficiaries might rationalize that they would have been able to do just as well even in the absence of the public service. Accordingly, the self-serving bias in attribution of responsibility might have detrimental effect on the provision of efficient redistributive public policies.
+	
+	
+	
+	\begin{singlespace}
+		\begin{small}
+			\bibliographystyle{apsr}
+			\bibliography{lit,lit2}
+		\end{small}
+	\end{singlespace}
+	\newpage
+	\beginsupplement
+	
+	\section{Supplementary materials}
+	
+	\subsection*{S1: Estimating the valence asymmetry}
+	
+	The basic model used to look at how voters respond to economic conditions in study 1 is a linear probability model in line with this one:
+	
+	\begin{equation}
+		Pr(y_{it}=1)=\beta_0 + \beta_1 natwor_{it} + \beta_2 natbet_{it} + \beta_3 perwor_{it} + \beta_4 perbet_{it} + \epsilon_{it} \label{equationpry}
+	\end{equation}
+	
+	Here $y$ is the dependent variable, support for the incumbent, $natwor$ and $natbet$ are dummies indicating whether the respondent believes the national economy is doing better or worse,  $perwor$ and $perbet$ are dummies indicating whether the respondent believes their own economy is doing better or worse, and $\epsilon_{it}$ is the error term.
+	
+	When we want to estimate the valence asymmetry we are really interested in the sum of the effects of the ``better'' and ``worse'' dummies. That is, we want to know how much negative effect there is left once we take the positive effect into account. Based on equation one, the valence asymmetries can be described as $\beta_1+\beta_2=\theta_n$ and $\beta_3+\beta_4=\theta_p$. However $\theta_n$, the valence asymmetry for the national economy, and $\theta_p$, the valence asymmetry for the personal economy, are not estimated directly in model \ref{equationpry}. 
+	
+	
+	Instead, I estimate a slightly modified version of model \ref{equationpry}. In particular, I incorporate $\theta_p$ and $\theta_n$ into the models by decomposing the ``worse'' effect into the valence asymmetry ($\theta_{p/n}$) and the ``better'' effect ($\beta_{4/2}$). 
+	
+	\begin{equation}
+		Pr(y_{it}=1)=\beta_0 + (\theta_n - \beta_2) natwor_{it} + \beta_2 natbet_{it} + (\theta_p - \beta_4) perwor_{it} + \beta_4 perbet_{it} + \epsilon_{it}
+	\end{equation}
+	
+	This can be rearranged in the following way.
+	
+	\begin{equation}
+		Pr(y_{it}=1)=\beta_0 + \theta_n natwor_{it} + \beta_2 (natbet_{it}-natwor_{it}) + \theta_p perwor_{it} + \beta_4 (perbet_{it} - perwor_{it}) + \epsilon_{it}
+	\end{equation}
+	
+	This linear probability model includes $\theta_p$ and $\theta_n$ directly, and it can be estimated by creating new variables for national and personal economic perceptions which subtracts the ``worse'' dummies from the ``better'' dummies. This is how I estimate the valence asymmetries which are plotted in figure \ref{electionstudy}.
+	
+	
+	
+	\subsection*{S2: Surveys included in Study 1}
+	
+	Election surveys from Denmark: 1990, 1994, 2001, 2005, 2007, 2011 and 2015. For details see  
+	\url{http://www.valgprojektet.dk/default.asp?l=eng}.
+	
+	Election surveys the US: 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008 and 2012. For details see: \url{http://www.electionstudies.org/studypages/anes_timeseries_cdf/anes_timeseries_cdf.htm}
+	
+	Election surveys Latinobarómetro: The countries included in the Latinobarómetro, and the number of years these countries have been part of the study, can be seen in table \ref{latin}. For details see: \url{http://www.latinobarometro.org/latContents.jsp}
+	
+	
+	\begin{table}[htbp]\centering \footnotesize
+		\caption{List of included surveys from the Latinobarómetro}\begin{tabular} {p{40mm}P{40mm}P{40mm}} \hline \hline
+			\textbf{     Country } & \textbf{       First year} & \textbf{       Last year} \\
+			\hline 
+			Argentina  &       1995 &       2010 \\ 
+			Bolivia  &       1996 &       2010 \\ 
+			Brazil  &       1995 &       2010 \\ 
+			Chile  &       1995 &       2010 \\ 
+			Colombia  &       1996 &       2010 \\ 
+			Costa Rica  &       1996 &       2010 \\
+			Dominican Republic  &       2004 &       2010 \\ 
+			Ecuador  &       1996 &       2010 \\ 
+			El Salvador  &       1996 &       2010 \\ 
+			Guatemala  &       1996 &       2010 \\ 
+			Honduras  &       1996 &       2010 \\ 
+			Mexico  &       1995 &       2010 \\ 
+			Nicaragua  &       1996 &       2010 \\ 
+			Panama  &       1996 &       2010 \\ 
+			Paraguay  &       1995 &       2010 \\ 
+			Peru  &       1995 &       2010 \\
+			Spain  &       1996 &       2010 \\
+			Uruguay  &       1995 &       2010 \\
+			Venezuela  &       1995 &       2010 \\ \hline \hline
+		\end{tabular}
+		\label{latin}
+	\end{table}
+	
+	
+	\newpage
+	
+	
+	
+	
+	\subsection*{S3: Asymmetry in economic experiences }
+	
+	In study 1, I find that there is a larger difference in support for the incumbent between those who think the economy is doing worse as opposed to the same than there is between those who think the economy is doing better as opposed to the same. This is consistent with a self-serving bias in attribution of political responsibility. However, an alternative explanation is that the experience of those who are doing worse deviate more from the experience of those who are doing the same, than the experience of those who are doing better deviate from those who are doing the same. That is, the distribution of economic fortunes might be skewed, so that a lot of people experience something very bad and only few people experience something very good. Could this explain the findings presented in study 1?
+	
+	To find out, I revisit the Latinobarometro data. I examine the surveys from after 2000, because these include a more detailed version of the question concerning voters' experience of the economy. In particular, voters could report their personal and the national economy as doing "a little" or "much" better or worse. 
+	
+	If there is a negative skew in economic experiences we would expect the proportion answering "much worse" to be larger than the proportion answering "much better". I calculate these proportions for the question concerning voters own and the national economy in table \ref{compositon}.
+	
+	\input{../table/apdxcompo.tex} 
+	
+	As can be seen from table 2, there is some evidence of a negative skew in economic experiences.  14 pct. of respondents who thought their economy was doing better said it was doing much better, whereas 26 pct. of respondents who said their economy was doing worse said it was doing much worse. Even so, it seems unlikely that this can explain the valence astabymmetry identified in study 1. As such, I found that the effect of the national economy was perfectly symmetrical, however, voters experience of the national economy was more asymmetrical than their experience of their personal economy. 12 pct. of respondents who said the national economy was doing better said it was doing much better, whereas 37 pct. of respondents thought national economy was doing worse thought it was doing much worse.
+	
+	In summary, there is some evidence that those experiencing a deteriorating economy are more likely to believe it is rapidly deteriorating, whereas those who experience an improving economy are more likely to believe that it is only improving a little. However, this asymmetry  cannot explain the findings in study 1, because this experiential asymmetry applies to both national and personal economic conditions, whereas the attributional valence asymmetry identified in study 1 only applies to personal economic conditions.
+	
+	\newpage
+	
+	\subsection{S4: Tables underlying the different figures}
+	Tables \ref{table:anes}, \ref{table:dnes}, \ref{table:latin} present the OLS regression models used to produce figure \ref{electionstudy}.
+	
+	Tables \ref{table:dkopt}, \ref{table:exp} and \ref{table:exp2} present the OLS regression models used to produce figures \ref{attribution}, \ref{experiment} and \ref{studexperiment}.
+	
+	\input{../table/apdxfullanes.tex}
+	\input{../table/apdxfulldnes.tex}
+	\input{../table/apdxfulllatin.tex}
+	\input{../table/apdxfullopt.tex}
+	\input{../table/apdxfullexp.tex}
+	\input{../table/apdxfullexp2.tex}
+	
+	
+	\newpage
+	
+	\subsection*{S5: Variable descriptions for economic variables}
+	
+	\ul{The ANES} use the following question with answers falling in one of three categories ``better', ``worse'', and  ``the same'':
+	\begin{itemize}
+		\item Own: ``We are interested in how people are getting along financially these days. Would you say that you and your family living here are better off or worse off financially than you were a year ago.''
+		\item Would you say that over the past year the nation's economy has gotten  better, stayed about the same or gotten worse?
+	\end{itemize}  
+	
+	
+	\noindent \ul{The Latinobarometro} used two set of questions  for the economic perceptions questions. From 1995-2000, the following questions were used:
+	
+	\begin{itemize}
+		\item Country: “Do you consider the current economic situation of the country to be better, about the same, or worse than 12 months ago?”
+		
+		\item  Own: “Do you consider your economic situation and that of your family to be better, about the same, or worse than 12 months ago?”	
+	\end{itemize}  
+	
+	From 2001 and on the following questions were used:
+	
+	\begin{itemize}
+		\item Country: “Do you consider the current economic situation of the country to be much better, a little better, about the same, a little worse, or much worse than 12 months ago?”
+		\item Own: “Do you consider your economic situation and that of your family to be much better, a little better, about the same, a little worse, or much worse than 12 months ago?”
+		
+	\end{itemize}  
+	
+	
+	\noindent \ul{The DNES} has used the following questions, with answers falling in one of five categories ``better', ``a lot better'', ``worse'', ``a lot worse'' and ``the same'':
+	
+	\begin{itemize}	
+		\item Country: ``How is the economic situation in Denmark today compared to one year ago?'' 
+		\item Own: ``How is your and your family's economic situation today compared to one year ago?''
+	\end{itemize}   
+	
+	\noindent \ul{The DK-OPT survey} used the following questions, with answers falling in one of five categories ``better', ``a lot better'', ``worse'', ``a lot worse'' and ``the same'':
+	
+	\begin{itemize}
+		
+		\item Country: ``How is the economic situation in Denmark today compared to one year ago?'' 
+		\item Own: ``How is your and your family's economic situation today compared to one year ago?''
+	\end{itemize}  
+	
+	\newpage
+	
+	
+	\subsection*{S6: Descriptive statistics}
+	\input{../table/desdnes.txt}
+	\input{../table/deslatino.txt}
+	\input{../table/desanes.txt}
+	\input{../table/desattrib.txt}
+	\input{../table/desexp1.txt}
+	\input{../table/desexp2.txt}
+	
+	
+\end{document}
