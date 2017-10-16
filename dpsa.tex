@@ -73,7 +73,7 @@
 
 
 %title
-\title{\bigskip \bigskip \sffamily \LARGE The Extent and Antecedents of Dynamic Responsiveness in Municipal Government}
+\title{\bigskip \bigskip \sffamily \LARGE Responsiveness in Municipal Government}
 
 %author
 \author{\bigskip Benjamin Carl Egerod\footnote{Graduate Student, e-mail: \texttt{benjamin.carl.egerod@ifs.ku.dk@ifs.ku.dk}.} \qquad Martin Vinæs Larsen\footnote{Research Assistant, e-mail: \texttt{vinaes@gmail.com}.} \\ \textit{Department of Political Science, University of Copenhagen}} %e-mail
@@ -81,13 +81,13 @@
 
 
 \begin{document}
+
+
 	
 	
 	
 	
-	
-	
-	\begin{footnotesize} \noindent \today \end{footnotesize} %date
+	\begin{footnotesize} \noindent October 27 2017, Vejle. \end{footnotesize} %date
 	
 	\vspace{0.7in}
 	
@@ -97,7 +97,7 @@
 	
 	\begin{quotation} %abstract
 
-		\small \noindent \emph{Abstract:} Local governments supposedly empower citizens, giving them the ability to shape their local community according to their beliefs. In this article, we explore whether this democratic promise is met in the Danish municipalities. In particular, we look at whether the policy implemented by local politicians actually respond to changes in the public mood and whether this type of responsiveness is more common in some municipalities. To do this, we develop a measure of municipal fiscal policy conservatism. Based on 16 policy indicators, the measure covers all primary Danish municipalities from 1978 to 2006. We link this data to a measure of ideological sentiment in the Danish municipalities (i.e., support for left-wing parties). using a generalized difference-in-difference setup, we find strong evidence for dynamic responsiveness: if public opinion in a municipality changes then public policy responds. Finally, we identify an effect of single party control of the city council on the level of responsiveness. We identify this effect using a close elections regression discontinuity design, comparing the responsiveness of city councils where the largest party narrowly won a majority of the seats with city councils where the largest party narrowly lost.
+		\small \noindent \emph{Abstract:} Municipal governments supposedly empower citizens, giving them the ability to shape their local community based on their political beliefs. In spite of this, we know little about whether municipal government is actually responsive to the wishes of their electorate. In this study, we look at whether the policy implemented by local politicians actually respond to changes in the public mood. To do this, we compile a unique and comprehensive dataset of local fiscal policy, which we use to construct municipal-level estimates of fiscal policy conservatism. This detailed policy data is then linked to several measures of local ideological sentiment. We find strong evidence for dynamic responsiveness: if public opinion in a municipality changes, then public policy responds. We also look at whether single party control of the city council affects the level of responsiveness. We identify this effect using a close elections regression discontinuity design, comparing the responsiveness of city councils where the largest party narrowly won a majority of the seats with city councils where the largest party narrowly lost.
 	\end{quotation}
 
 \bigskip
@@ -107,22 +107,101 @@
 \bigskip
 	
 	
-	\noindent \footnotesize{Prepared for the 49th Annual Meeting of the Danish Political Science Association, October 26-27, Vejle.}
+	\noindent Prepared for the 49th Annual Meeting of the Danish Political Science Association \newline 
 	
 	\thispagestyle{empty} %removing page number from page one
 	
 	
-\section{Introduction} %first section goes here
+	\bigskip
+	
+		\noindent \textit{Very early draft.}
+	
+	\bigskip
+	
+	\bigskip
+	
+	
+	
+\section{Introduction}
+
+In most developed countries municipal governments are an essential cog in the machinery of representative government. While they work within the framework of a national constitution and are generally subordinate to national institutions, municipalities are, on average, responsible for a third of all public spending and, in most countries, they are able to levy taxes with little oversight from the central government \cite{oecd2016subnational}. In this way, they play a central part in the quentissential political act of deciding who gets what, when and how.  Yet until recently, we knew little about the extent to which municipal governments are responsive to their citizens preferences. 
+
+In their path breaking study of responsiveness  2014 xx were thus able to say `` ''. Since then, however, a number of studies have looked at responsiveness in municipal government.     
+
+The las few years have seen a proliferation of studies. However, they are limited in different ways
+
+(1) Policy variables are typically only spending and taxation. We can go beyond this in measuring municipal fiscal policy
+
+(2) Save Sances and Kogan, few have looked beyond dynamic responsiveness. This
+
+(3) Focuses on larger cities of above 20.000, whereas most local governments are much smaller. Sances focuses on counties, however, these do not nessecarily map onto those deciding
+
+(4) Focus exclusively on the US. However, their context is very much unlike the one in many countries. For one, the special purpose jurisdictions. For another, the strong two party system. 
+
+In this study, we address these limitations related to context and data by studying responsiveness in Danish Municipalities. brief description of how. 
+
 
 \section{Empirical Context: Danish Municipalities}	
 
+Number and organization. We look between two Reforms. Many of the features have changed since then.
+
+Organized in small City councils (9-29) who set policy. Administration headed by a mayor elected by city counci. 
+
+Economically they have opportunities to levy taxes, set spending and organize public service delivery. Limits on each of these set in joint agreements with the national government, however, there are few opportunities for the government to impose 
+
+Elections every four years. PR with possibily of going into electoral coaltiions. 
+
+Should we expect responsiveness
+On the one hand: Not severely limited?
+On the other: A long way from vote to policy. Lack of Clarity of Responsibility.
+
+
+
 \section{An Annual Measure of Municipal Fiscal Policy Conservatism}
+
+
+To measure fiscal policy conservatism in Danish municipalities we rely on 14 different indicators relating to tax policy (3 indicators), spending policy (2), organization of public service delivery (3), co-payment for public services (4) and the extent of public services (2). While  spending and tax variables are commonly used in the literature, the remaining type indicators have not 
+
+Our selection criterion was two-fold: (1) the given fiscal policy should be directly or indirectly set by the city council, it had to be a policy (i.e., set only by politicians and administrators) Thus, policies could not be partly decided by the national government. Statistics Denmark keeps a registry of municipal fiscal policy, which provides a good picture of the population of relevant policies. This mean that we did not have to rely on approximations to random sampling. The policies included in the measure are presented in Table \ref{tab:policies}.
+
+\input{table/measurement.tex}
+
+All variables are rescaled to have mean zero and variance one. Furthermore, all variables, where higher values imply a more left-wing fiscal policy, are reversed. This implies that when estimating policy conservatism, higher values of all variables indicate a more conservative policy. In our Bayesian framewwork (see below), neither of this is strictly speaking necessary, but it makes interpretation of model parameters simpler.
+
+It should be noted that for most of our variables, data is only available after 1993. The Bayesian latent variable techniques, we make use of (more on this below), makes this possible, by imputing missing values as part of the simulation based estimation. This implies, however, that variables with missing values supply less information to the estimation in periods, where we have no data on them. Thus, estimates for the period 1974-1992 are based mostly on our measures of income and property tax as well as spending pr. capita. 
+
+To make sure that our results are not driven by the inclusion of different variables at various points in time, we have run all models using only those three variables, which does not change any results substantively. 
+
+\textbf{Maybe for later or the appendix coupled with analysis of beta-parameters etc.:} Furthermore, estimates of fiscal conservatism, when including all items and only the three with full coverage are highly correlated. It seems that the main difference between the two measures is that the posterior distribution of the measure including all items exhibits lower variance. Additionally, the three items with full coverage have the most discriminating power, as shown by their higher $\beta$'s. This indicates that we are able to capture important aspects of fiscal conservatism with those three items alone. The addition of the remaining 11 variables serves to improve the estimation mainly by decreasing posterior variance.
+
+\section*{Estimating Fiscal Policy Conservatism}
+
+We conceptualize fiscal conservatism as a latent trait driving municipal expenditures, and rely on Bayesian latent variable modeling to estimate it. We parameterize fiscal conservatism through the following measurement model, which allows us to estimate it across time and space:
+
+\begin{gather*}
+F_{itk} \sim N(F^*_{itk}, \phi)\\
+F^*_{itk} = \beta_k C_{it} - \alpha_{tk}
+\end{gather*}
+
+\noindent Where $F$ is the level of the observed fiscal policy variable $k$ in municipality $i$ at time $t$. the distribution of each of these observed variables is drawn from a normally distributed latent variable $F^*$, which has variance $\phi$. $C$ is the quantity of most interest -- the latent fiscal conservatism in that municipality. $\beta$ is the discrimination parameter, which captures how strongly each observed policy variable loads onto the latent dimension. Finally, $\alpha$ represents each item's difficulty parameter, which measures how fiscally conservative a municipality is, if it were to score 0 on the policy variable $k$. Note that in future iterations, we will allow $\alpha$ to vary across time capturing that what was a highly conservative fiscal policy stance in 1978 is not necessarily as conservative in 2005.
+
+This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques to make inferences about the latent trait is that it is simulation based, which allows us to directly estimate uncertainty around all model parameters. Additionally, the simulations will impute missing data during the estimation, which will allow us to include variables with different numbers of observations in the model -- the variables with missing observations will simply supply less information to the estimation. Furthermore, we can use the Bayesian priors to introduce dynamics into the model, thus allowing quantities to not only vary across time, but also directly model temporal autocorrelation. Finally, constraining prior distributions offers a flexible way of identifying the policy space.
+
+To identify the direction of the policy space, we constrain the $\beta$'s to be negative, so that municipalities scoring higher on our observed policy variables will be estimated to be more conservative. Location and scale is identified by placing standard normal priors on the distributions of all model parameters.
+
+In our simulations, we run 7,500 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. This gave posterior distributions with good properties.
+
+
 
 \subsection{Some Descriptive Statistics}
 
 \section{Dynamic Responsiveness}
 
-\subsection{Measuring Municipal Liberalism}
+\subsection{Measuring Local Policy Preferences}
+
+\subsection{Results}
+
+
 
 \section{The Effect of Governing Alone}
 
@@ -130,5 +209,18 @@
 
 \subsection{Results}
 	
+\section{Conclusion}
+
+
+\bibliographystyle{apa}
+\bibliography{bibtex/library}
+
+
+\beginsupplement
+
+\section{Supplementary materials}
+
+\subsection{S1. Descriptive Statistics}
+
 	
 \end{document}
