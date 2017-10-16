@@ -18,6 +18,7 @@
 \usepackage{amssymb}
 \usepackage{fancyhdr}
 \usepackage{array}
+\usepackage{lscape} % for landscape formatting of pages
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 %fonts
 \usepackage{tgpagella}
@@ -25,6 +26,12 @@
 %chanfing font of table headers
 \captionsetup[figure]{labelfont=bf}
 \captionsetup[table]{labelfont=bf}
+
+%path to where figures are located
+\graphicspath{ {images/} }
+
+%for notes in table captions 
+\newcommand\fnote[1]{\captionsetup{font=small}\caption*{#1}}
 
 %changing header
 \pagestyle{fancy}
@@ -195,6 +202,31 @@ In our simulations, we run 7,500 iterations of the model, where the first 2,500 
 
 \subsection{Some Descriptive Statistics}
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale = .85]{times_lines_inflation_adjusted.eps}
+	\caption{\textbf{.}} \fnote{\emph{Note: .}}
+	\label{fig:PermTest}
+\end{figure}
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale = .85]{JoyPlotFiscal_inflation_adjusted.eps}
+	\caption{\textbf{.}} \fnote{\emph{Note: .}}
+	\label{fig:PermTest}
+\end{figure}
+
+\begin{landscape}
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[scale = .85]{Map_of_FiscCon.eps}
+		\caption{\textbf{.}} \fnote{\emph{Note: .}}
+		\label{fig:PermTest}
+	\end{figure}
+\end{landscape}
+
+
 \section{Dynamic Responsiveness}
 
 \subsection{Measuring Local Policy Preferences}
@@ -203,11 +235,37 @@ In our simulations, we run 7,500 iterations of the model, where the first 2,500 
 
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 1.1]{ggplot_coef_inflation_adjusted.eps}
+	\caption{\textbf{Effect of Electoral Support for Right-wing Parties with a 4-year Lead.}} \fnote{\emph{Note: Point are unstandardized OLS coefficients. Lines are 90 pct. (thick) and 95 pct. (thin) confidence intervals computed using Arellano-White robust standard errors clustered at the municipality level, when no lags of the dependent variable are included. Beck-Katz panel-corrected standard errors used for dynamic models. Two and one lags of the dependent variable included, respectively, in the fixed effects and first-difference models.}}
+	\label{fig:FourYearLead}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = .8]{coef_on_varying_leads.eps}
+	\caption{\textbf{Dynamic Effects of Public Mood.}} \fnote{\emph{Note: Black points represent the effect of electoral support for right-wing parties with different leads. Black lines are 95 pct. confidence intervals based on Arellano-White robust standard errors with municipal clustering. Grey points represent the additional long-run effect of electoral support for right-wing parties due to strong temporal autocorrelation in Fiscal Conservatism. Grey lines are 95 pct. confidence intervals computed from the relevant percentiles of a bootstrapped coefficient distribution based on 1,000 replications and resampling at the municipal level.}}
+	\label{fig:LongRun}
+\end{figure}
+
+
+
 \section{The Effect of Governing Alone}
 
 \subsection{A Regression Discontinuity in Policy Control}
 
 \subsection{Results}
+
+\begin{landscape}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale = 1]{rddCongruence.eps}
+		\caption{\textbf{.}} \fnote{\emph{Note: .}}
+		\label{fig:PermTest}
+	\end{figure}
+\end{landscape}
 	
 \section{Conclusion}
 
