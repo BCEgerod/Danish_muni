@@ -1,0 +1,92 @@
+
+\documentclass[12pt,a4]{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=25mm,
+ right=25mm,
+ top=25mm,
+ bottom=25mm,
+ }
+\usepackage{setspace}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{epstopdf}
+\DeclareGraphicsExtensions{.pdf,.eps}
+\setlength\parindent{0pt}
+\pdfimageresolution=300
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{amsmath} % Til generel matematik
+\usepackage[utf8]{inputenc} % Til ÆæØøÅå
+\usepackage{float}
+\usepackage{standalone}
+\usepackage{caption}
+\captionsetup{labelfont = bf}
+\newcommand\fnote[1]{\captionsetup{font=small}\caption*{#1}}
+\setlength\parindent{24pt}
+\linespread{1.3}
+\usepackage[style=authoryear-comp,sorting=nty, backend=bibtex, maxcitenames=2]{biblatex}
+\usepackage{pdfpages}
+
+\addbibresource{C:/Users/ex-bce/Desktop/Revolving_Door/Determinants_of_Career_Choice/LaTeX/refs_for_career_choice.bib}
+
+\begin{document}
+	
+\section*{Fiscal Policy Data}
+
+To measure fiscal policy conservatism, we make use of 14 different variables. Our selection criterion was that the given fiscal policy should be the sole jurisdiction of the municipal government. Thus, policies could not be partly decided by the national government. Statistics Denmark keeps a registry of municipal fiscal policy, which provides a good picture of the population of relevant policies. This mean that we did not have to rely on approximations to random sampling. The policies included in the measure are presented in Table \ref{tab:policies}.
+
+\begin{table}[h]
+	\centering
+	\caption{Fiscal Policy Variables}
+	\label{tab:policies}
+	\begin{tabular}{lll}
+		\textbf{Policy}                          & \textbf{Availability} & \textbf{Direction} \\
+		\hline
+		Income tax (pct.)                        & 1974 -     &    Higher = socialist        \\
+		Property tax (pct.)                      & 1974 -     &    Higher = socialist        \\
+		Spending pr. capita (DKK)                & 1974 -     &    Higher = socialist        \\
+		Price of day care (DKK)                  & 1993 -     &    Higher = conservative     \\
+		Price of food delivery for elderly (DKK) & 1993 -     &    Higher = conservative     \\
+		Price of nursing home (DKK)              & 1993 -     &    Higher = conservative     \\
+		Pct. of priv. operated municipal service & 1993 -     &    Higher = conservative     \\
+		Privat leverandør??                      & 1993 -     &    Higher = conservative     \\
+		Almen??                                  & 1993 -     &    Higher = ??               \\
+		Spending pr. pupil in school (DKK)       & 1993 -     &    Higher = socialist        \\
+		Number of pupils in class room           & 1993 -     &    Higher = socialist        \\
+		dækprom??                                & 1993 -     &    Higher = ??               \\
+		Price of relief care (DKK)				 & 1993 -	  &	   Higher = conservative	 \\
+		Public Employees (pr. 1,000 citizens)	 & 1993 -  	  &	   Higher = socialist	     \\
+		\hline
+		\multicolumn{3}{p{14 cm}}{\emph{Note: The table outlines the variables used to capture fiscal policy conservatism in Danish municipalities and their period of availability. All variables are rescaled to have mean zero and variance one, and -- when appropriate -- reversed to have the same direction.}}
+	\end{tabular}
+\end{table} 
+
+All variables are rescaled to have mean zero and variance one. Furthermore, all variables, where higher values imply a more left-wing fiscal policy, are reversed. This implies that when estimating policy conservatism, higher values of all variables indicate a more conservative policy. In our Bayesian framewwork (see below), neither of this is strictly speaking necessary, but it makes interpretation of model parameters simpler.
+
+It should be noted that for most of our variables, data is only available after 1993. The Bayesian latent variable techniques, we make use of (more on this below), makes this possible, by imputing missing values as part of the simulation based estimation. This implies, however, that variables with missing values supply less information to the estimation in periods, where we have no data on them. Thus, estimates for the period 1974-1992 are based mostly on our measures of income and property tax as well as spending pr. capita. 
+
+To make sure that our results are not driven by the inclusion of different variables at various points in time, we have run all models using only those three variables, which does not change any results substantively. 
+
+\textbf{Maybe for later or the appendix coupled with analysis of beta-parameters etc.:} Furthermore, estimates of fiscal conservatism, when including all items and only the three with full coverage are highly correlated. It seems that the main difference between the two measures is that the posterior distribution of the measure including all items exhibits lower variance. Additionally, the three items with full coverage have the most discriminating power, as shown by their higher $\beta$'s. This indicates that we are able to capture important aspects of fiscal conservatism with those three items alone. The addition of the remaining 11 variables serves to improve the estimation mainly by decreasing posterior variance.
+
+\section*{Estimating Fiscal Policy Conservatism}
+
+We conceptualize fiscal conservatism as a latent trait driving municipal expenditures, and rely on Bayesian latent variable modeling to estimate it. We parameterize fiscal conservatism through the following measurement model, which allows us to estimate it across time and space:
+
+\begin{gather*}
+F_{itk} \sim N(F^*_{itk}, \phi)\\
+F^*_{itk} = \beta_k C_{it} - \alpha_{tk}
+\end{gather*}
+
+\noindent Where $F$ is the level of the observed fiscal policy variable $k$ in municipality $i$ at time $t$. the distribution of each of these observed variables is drawn from a normally distributed latent variable $F^*$, which has variance $\phi$. $C$ is the quantity of most interest -- the latent fiscal conservatism in that municipality. $\beta$ is the discrimination parameter, which captures how strongly each observed policy variable loads onto the latent dimension. Finally, $\alpha$ represents each item's difficulty parameter, which measures how fiscally conservative a municipality is, if it were to score 0 on the policy variable $k$. Note that in future iterations, we will allow $\alpha$ to vary across time capturing that what was a highly conservative fiscal policy stance in 1978 is not necessarily as conservative in 2005.
+
+This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques to make inferences about the latent trait is that it is simulation based, which allows us to directly estimate uncertainty around all model parameters. Additionally, the simulations will impute missing data during the estimation, which will allow us to include variables with different numbers of observations in the model -- the variables with missing observations will simply supply less information to the estimation. Furthermore, we can use the Bayesian priors to introduce dynamics into the model, thus allowing quantities to not only vary across time, but also directly model temporal autocorrelation. Finally, constraining prior distributions offers a flexible way of identifying the policy space.
+
+To identify the direction of the policy space, we constrain the $\beta$'s to be negative, so that municipalities scoring higher on our observed policy variables will be estimated to be more conservative. Location and scale is identified by placing standard normal priors on the distributions of all model parameters.
+
+In our simulations, we run 7,500 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. This gave posterior distributions with good properties.
+
+\end{document}
