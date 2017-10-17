@@ -2,5 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: dpsa.aux
 The style file: apa.bst
 Database file #1: bibtex/library.bib
 Warning--entry type for "oecd2016subnational" isn't style-file defined
---line 7 of file bibtex/library.bib
-(There was 1 warning)
+--line 3 of file bibtex/library.bib
+Warning--entry type for "sances2017voters" isn't style-file defined
+--line 37 of file bibtex/library.bib
+(There were 2 warnings)

@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 
 %calling packages
@@ -21,7 +21,7 @@
 \usepackage{lscape} % for landscape formatting of pages
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 %fonts
-\usepackage{tgpagella}
+\usepackage{times}
 \setcounter{secnumdepth}{0}
 %chanfing font of table headers
 \captionsetup[figure]{labelfont=bf}
@@ -131,36 +131,41 @@
 	
 \section{Introduction}
 
-In most developed countries municipal governments are an essential cog in the machinery of representative government. While they work within the framework of a national constitution and are generally subordinate to national institutions, municipalities are, on average, responsible for a third of all public spending and, in most countries, they are able to levy taxes with little oversight from the central government \cite{oecd2016subnational}. In this way, they play a central part in the quentissential political act of deciding who gets what, when and how.  Yet until recently, we knew little about the extent to which municipal governments are responsive to their citizens preferences. 
+In most developed countries municipal governments are an essential cog in the machinery of representative government. While they work within the framework of a national constitution and are generally subordinate to the central government, municipalities are, on average, responsible for a third of all public spending and, in most countries, they are able to levy taxes with little or no oversight \cite{oecd2016subnational}. In this way, they play a central part in the quintessential political act of deciding who gets what, when and how.  Yet until recently, we knew little about the extent to which municipal governments are actually responsive to their citizens preferences.
 
-In their path breaking study of responsiveness  2014 xx were thus able to say `` ''. Since then, however, a number of studies have looked at responsiveness in municipal government.     
 
-The las few years have seen a proliferation of studies. However, they are limited in different ways
+This changed with \cite{tausanovitch2014representation} recent study, which  was the first ``comprehensive study about whether city policies are actually responsive to the views of their citizens'' (p. 605). In this study, \citeauthor{tausanovitch2014representation} used Multilevel Regression with Poststratification (MRP) to estimate the policy preferences of citizens in a cross section of all US cities with a population size of above 20,000, finding that there is a strong correlation between these preferences and city policy. Since the publication of this study, two others studies have directly examined municipal responsiveness. The first of these are \cite{einstein2016pushing} who also identifies a strong correlation between citizen preferences, measured using support for the Democratic party,  and city policy in 2,000 midsize US cities. Other than replicating the findings from \cite{tausanovitch2014representation}, \citeauthor{einstein2016pushing} are also able to identify the use of intergovernmental grants as a key mechanism underlying responsiveness. They also offer a stronger identification strategy by identifying dynamic responsiveness \citep[][cf.]{stimson1995dynamic} in a panel of cities from two US states using a lagged dependent variable approach. In an unpublished study by \cite{sances2017voters} expands on these findings using a panel of 3,000 US counties which spans the last 50 years. Linking changes in democratic vote share to county-level policy, \citeauthor{sances2017voters} finds that as counties grow more democratic they tend to spend more and collect more revenues. This is even true within states, suggesting that the link between voter preferences and public policy are driven by local governments.
 
-(1) Policy variables are typically only spending and taxation. We can go beyond this in measuring municipal fiscal policy
+Importantly, a number of other studies present indirect evidence that city policy might be responsive. For one, a number of recent studies have shown that voters tend to (re-)elect local politicians based on their actions in office \citep{arnold2012holding,burnett2017politics} and that voters tend to vote for conservative (liberal)  mayors if they themselves identify as conservative (liberal)   \citep{sances2017ideology,boudreau2015lost,hopkins2017retrospective}. Similarly, a studies have found that it matters for city policy whether a conservative or liberal party controls the mayoralty and/or the city council \citep{fiva2016power,folke2014shades,blom2006parties,de2016mayoral}. While these factors are necessary for the presence of municipal responsiveness, they are not sufficient. Even if voters tend to select politicians who share their ideological disposition, and even if these politicians tend to enact policies which reflect this disposition, these mechanisms need to operate in tandem, and be quite strong, in order to create responsiveness. If, for instance, politicians only have modest control over city policy, voters would need to send very strong policy signals through their vote in order for city policy to respond. 
 
-(2) Save Sances and Kogan, few have looked beyond dynamic responsiveness. This
+All in all, research in the area of municipal reponsiveness has made impressive progress in the past five years, giving us evidence which strongly suggests that municipal governments are responsive to the concerns of their citizens, however, existing work is also limited in several ways. 
 
-(3) Focuses on larger cities of above 20.000, whereas most local governments are much smaller. Sances focuses on counties, however, these do not nessecarily map onto those deciding
+For one, most of the existing studies, and \textit{all} the studies which study responsiveness directly,  focus exclusively on a US context. This puts into question whether municipal responsiveness is a result of the particular set of political institutions and culture which exists in America, or whether voters are able to hold politicians electorally accountable for the policy they implement in other contexts as well. In relation to this, the existing studies all look at relatively large municipalities (\citealp{einstein2016pushing} has the smallest average city size of 40,000 inhabitants), making it unclear whether smaller municipalities are also equally responsive.
 
-(4) Focus exclusively on the US. However, their context is very much unlike the one in many countries. For one, the special purpose jurisdictions. For another, the strong two party system. 
+In addition to this, there seems to be a trade-off in the existing work between good data on policy outcomes and voter preferences \citep[cf.]{tausanovitch2014representation} and having a stronger identification strategy \citep[cf.]{sances2017voters}. This is potentially problematic, as strong inferences about the extent of municipal responsiveness requires both good measures and a good design.
 
-In this study, we address these limitations related to context and data by studying responsiveness in Danish Municipalities. brief description of how. 
+Finally, existing work has primarily focused on identifying whether and when municipal responsiveness exists. As such, there is almost nothing on whether certain municipal-level institutions can help promote (or depress) responsiveness. 
 
+In this study, we address these limitations related to context and data by studying responsiveness in Danish Municipalities. Danish municipalities are radically different from US counties and cities. They are small (average size 16,000), organized by general rather than special purpose governments \cite{berry2009imperfect}, lead by city councils which typically feature three or more parties, who are elected in a PR electoral system where turnout is relatively high. As such, if we can identify responsiveness here as well as in the US, we can be pretty sure that municipal responsiveness is a (relatively) general phenomenon.
+
+In order to identify responsiveness in this context, we develop a comprehensive annual measure of municipal policy conservatives based on 14 fiscal policy indicators (1978-2016). To measure the ideological sentiment in this time period, we use net support for conservative (right-wing) parties at municipal elections which are held every four years. (In a future iteration we will also use MRP estimates of citizen conservatism based on the Danish National Election Studies.) These uniquely comprehensive data sources set makes it possible to  go beyond the trade-off between good measurement and a strong design which has characterized existing work. 
+
+We then estimate the level of responsiveness by linking these measures in a difference-in-difference model, showing that when support for right-wing parties increase in a municipality local fiscal policy becomes more conservative.  
 
 \section{Empirical Context: Danish Municipalities}	
 
-Number and organization. We look between two Reforms. Many of the features have changed since then.
+Denmark is a decentralized welfare state where municipalities can affect their local revenue and set a yearly budget.  Municipal tasks and services include the core welfare services of the Danish welfare state and municipal spending amounts to 35 percent of GDP, which is more than half of all public spending.\footnote{The tasks include primary education, child care and care for elderly people, libraries, local sports facilities and other cultural activities, granting and payment of cash assistance, anticipatory pension and certain other social benefits, job activation and employment projects for unemployed persons (unemployment services), public utilities, environmental measures and emergency services.}
 
-Organized in small City councils (9-29) who set policy. Administration headed by a mayor elected by city counci. 
+Danish municipalities are governed by small local councils (between 9 and 29 members) which are elected at proportional elections and with a multi-party system which, to a large extent, mirrors the party system at the national level \citep{blom2013et}. Elections are fixed to take place every four years and do not usually coincide with elections at the national or EU level. Turnout is high with an average of around 70 percent since 1970. 
 
-Economically they have opportunities to levy taxes, set spending and organize public service delivery. Limits on each of these set in joint agreements with the national government, however, there are few opportunities for the government to impose 
+The work in the local council is structured by a a number of committees. The number and size of the committees is determined by the council. Committee membership is allocated proportionality between the political parties which means that there is broad political representation in all committees. The committees can decide on matters in their area and the administrative responsibility across areas is essentially divided. 
 
-Elections every four years. PR with possibily of going into electoral coaltiions. 
+Following each municipal election, a majority in city council elects a mayor, and the chairmen of the various committees \citep{serritzlew2008explaining}. Mayors are the only full time professional politicians in the city councils and have a number of formal obligations \citep{kjaer2015urban}. Mayors are also responsible for the day-to-day business of the administration and chairs the important economic committee which sets taxes and the budget.
 
-Should we expect responsiveness
-On the one hand: Not severely limited?
-On the other: A long way from vote to policy. Lack of Clarity of Responsibility.
+
+There have been two large municipal reforms in the last 50 years. The first was conducted in 1970 as the Danish welfare state started to expand. Here the number of municipalities were reduced from more than 1000 to 275.\footnote{In this study, we exclude the municipality of Copenhagen and Frederiksberg, as these were governed in a different way.} (Although it was 277 the first two years.) so that the municipalities were able to efficiently provide a more complex portfolio of public services \citep{ingvartsen1991kommunalreformen}. The second reform was conducted in 2007 and further reduced the number of municipalities from 275 to 98. Once again, the increasing complexity of public service provision was a key argument for the reform \citep{christiansen2008utaenkelige}. These two reforms bookend our data collection.
+
+
 
 
 
