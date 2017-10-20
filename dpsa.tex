@@ -259,7 +259,6 @@ There is a dynamic aspect to the model in that we do not expect the electorate p
 
 \subsection{Results}
 
-Tor
 
 
 \begin{figure}[h]
@@ -298,7 +297,7 @@ We identify close elections in a two-step process. In the first step, we single 
 
 Creating the forcing variable, however, is complicated by the fact that there is no joint electoral cut-off at which the largest party is always assigned a majority of the seats in the city council (e.g., 50 pct.). This is not to say that there is no exact cut-off at which majority is assigned in each election; the cut-off simply moves around from election to election. Sometimes it might be 42 pct. and sometimes it might be 45 or 48 pct. 
 
-The varying cut-off is a product of two features of the electoral system in the Danish municipalities. The first feature is that assignment of seats is based on a proportional divisor method. As a consequence, the number seats assigned to the largest party depends on the exact configuration of votes cast for the other parties up for election \citep{fiva2013power,folke2014shades,freier2015parties}. The second feature is that parties can form electoral coalitions \citep{cox1997making}. If parties decide to form an electoral coalition, which they often do, then seats are first assigned to this coalition, and then to the individual parties. As a result, the number of seats assigned to each party depends on the configuration of electoral coalitions, the votes cast for the different electoral coalitions, and the votes cast for the different parties within each coalition.
+The varying cut-off is a product of two features of the electoral system in the Danish municipalities. The first feature is that assignment of seats is based on a proportional divisor method. As a consequence, the number seats assigned to the largest party depends on the exact configuration of votes cast for the other parties up for election \citep{fiva2016power,folke2014shades,freier2015parties}. The second feature is that parties can form electoral coalitions \citep{cox1997making}. If parties decide to form an electoral coalition, which they often do, then seats are first assigned to this coalition, and then to the individual parties. As a result, the number of seats assigned to each party depends on the configuration of electoral coalitions, the votes cast for the different electoral coalitions, and the votes cast for the different parties within each coalition.
 
 To develop a forcing variable which takes these particularities of the electoral system into account, we first specified the exact distribution of votes across parties and electoral coalitions for each of the 839 close elections using election reports from Statistics Denmark. Next, we wrote a program that ran simulated elections to determine the number of votes (+/- 10) the largest party would have needed to either win/lose one seat (and thereby secure/lose their majority in the city council).\footnote{In particular, the program added or subtracted 10 votes from the actual vote total of the largest party, while holding the electoral support for the other parties constant, and then calculated the number of seats the largest party would have gotten given the electoral coalitions and the votes cast for other parties. It performed this calculation until the number of seats assigned to the largest party changed, and then reported how many times it had to add or subtract 10 votes before this change had happened. To write this program we used the \texttt{electools} package in Stata \citep{electools}.} Based on this, we measured the number of votes and the proportion of votes that the largest party in the city council would have needed to either win a majority or lose their majority. Figure \ref{figure:forcing} shows how the forcing variable is distributed, that is, exactly how close the 839 close elections were. As can be seen from this figure, there are a large number of elections close to the cut-off (0) in our dataset. In the analyses below, we use the proportional measure as our forcing variable. 
 
@@ -318,16 +317,16 @@ To develop a forcing variable which takes these particularities of the electoral
 
 \subsection{Results}
 
-Figure xx displays our results
+Figure 	\ref{fig:PermTest} displays the results of the RDD. Single party majority status seems to have a modest positive effect on the level of congruence. 
 
-\begin{landscape}
+
 	\begin{figure}[h]
 		\centering
-		\includegraphics[scale = 1]{rddCongruence.eps}
+		\includegraphics[width=1\textwidth]{rddCongruence.eps}
 		\caption{\textbf{.}} \fnote{\emph{Note: .}}
 		\label{fig:PermTest}
 	\end{figure}
-\end{landscape}
+
 	
 \section{Conclusion}
 This the beginning of a project we hope to extend in various ways. In particular, we currently pondering some of the following questions.

@@ -49,6 +49,12 @@ Christiansen, P.~M. and Klitgaard, M.~B. (2008).
   2002-2005}.
 \newblock Syddansk Universitetsforlag.
 
+\bibitem[\protect\astroncite{Cox}{1997}]{cox1997making}
+Cox, G.~W. (1997).
+\newblock {\em Making votes count: strategic coordination in the world's
+  electoral systems}.
+\newblock Cambridge University Press.
+
 \bibitem[\protect\astroncite{de~Benedictis-Kessner and
   Warshaw}{2016}]{de2016mayoral}
 de~Benedictis-Kessner, J. and Warshaw, C. (2016).
@@ -77,6 +83,12 @@ Folke, O. (2014).
   systems.
 \newblock {\em Journal of the European Economic Association}, 12(5):1361--1395.
 
+\bibitem[\protect\astroncite{Freier and Odendahl}{2015}]{freier2015parties}
+Freier, R. and Odendahl, C. (2015).
+\newblock Do parties matter? estimating the effect of political power in
+  multi-party systems.
+\newblock {\em European Economic Review}, 80:310--328.
+
 \bibitem[\protect\astroncite{Hansen}{2017}]{hansen2017social}
 Hansen, J.~H. (2017).
 \newblock {\em Social Influence, Voter Turnout and Mobilization}.
@@ -95,11 +107,24 @@ Ingvartsen, O. (1991).
   planl{\ae}gning og styring efter 1970}.
 \newblock Forl. Kommuneinformation.
 
+\bibitem[\protect\astroncite{Jaime-Castillo}{2008}]{electools}
+Jaime-Castillo, A.~M. (2008).
+\newblock {ELECTOOL: Stata module containing toolkit to analyze electoral
+  data}.
+\newblock Statistical Software Components, Boston College Department of
+  Economics.
+
 \bibitem[\protect\astroncite{Kjaer}{2015}]{kjaer2015urban}
 Kjaer, U. (2015).
 \newblock Urban political leadership and political representation: the
   multifaceted representational role of danish mayors.
 \newblock {\em Urban Affairs Review}, 51(4):563--577.
+
+\bibitem[\protect\astroncite{Lee}{2008}]{lee2008randomized}
+Lee, D.~S. (2008).
+\newblock Randomized experiments from non-random selection in us house
+  elections.
+\newblock {\em Journal of Econometrics}, 142(2):675--697.
 
 \bibitem[\protect\astroncite{Lewis}{2011}]{lewis2011size}
 Lewis, P.~G. (2011).
@@ -127,6 +152,14 @@ Serritzlew, S., Skj{\ae}veland, A., and Blom-Hansen, J. (2008).
 \newblock Explaining oversized coalitions: empirical evidence from local
   governments.
 \newblock {\em The Journal of Legislative Studies}, 14(4):421--450.
+
+\bibitem[\protect\astroncite{Skovron and Titiunik}{2015}]{skovron2015practical}
+Skovron, C. and Titiunik, R. (2015).
+\newblock A practical guide to regression discontinuity designs in political
+  science.
+\newblock {\em Working Paper},
+  https://sites.lsa.umich.edu/tsebelis/wp-content/uploads/sites/233/2015/10/SkovronTitiunik-v5.pdf
+  Accessed: 2017-08-27.
 
 \bibitem[\protect\astroncite{Snyder~Jr and
   Str{\"o}mberg}{2010}]{snyder2010press}

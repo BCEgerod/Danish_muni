@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 OCT 2017 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 OCT 2017 15:49
 entering extended mode
 **./dpsa.tex
 (dpsa.tex
@@ -1115,14 +1115,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12]
 
-Package natbib Warning: Citation `lee2008randomized' on page 13 undefined on in
-put line 286.
-
-
-Package natbib Warning: Citation `skovron2015practical' on page 13 undefined on
- input line 286.
-
-
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 288.
 
@@ -1138,31 +1130,15 @@ ted-to.pdf images/closeelec.eps>
 (epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/closeelec-eps-converted-to.pdf, id=294, 433.62pt x 289.08pt>
+<images/closeelec-eps-converted-to.pdf, id=300, 433.62pt x 289.08pt>
 File: images/closeelec-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/closeelec-eps-converted-to.pdf>
 Package pdftex.def Info: images/closeelec-eps-converted-to.pdf used on input li
 ne 294.
 (pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
- [14 <./images/coef_on_varying_leads-eps-converted-to.pdf>]
-
-Package natbib Warning: Citation `fiva2013power' on page 15 undefined on input 
-line 301.
-
-
-Package natbib Warning: Citation `freier2015parties' on page 15 undefined on in
-put line 301.
-
-
-Package natbib Warning: Citation `cox1997making' on page 15 undefined on input 
-line 301.
-
-
-Package natbib Warning: Citation `electools' on page 15 undefined on input line
- 303.
-
-[15 <./images/closeelec-eps-converted-to.pdf>]
+ [14 <./images/coef_on_varying_leads-eps-converted-to.pdf>] [15 <./images/close
+elec-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/distpct.eps>
 (epstopdf)                    date: 2017-08-25 10:16:43
 (epstopdf)                    size: 37529 bytes
@@ -1174,14 +1150,13 @@ d-to.pdf images/distpct.eps>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/distpct-eps-converted-to.pdf, id=319, 433.62pt x 289.08pt>
+<images/distpct-eps-converted-to.pdf, id=336, 433.62pt x 289.08pt>
 File: images/distpct-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/distpct-eps-converted-to.pdf>
 Package pdftex.def Info: images/distpct-eps-converted-to.pdf used on input line
  310.
 (pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
- [16 <./images/distpct-eps-converted-to.pdf>] [17]
 Package epstopdf Info: Source file: <images/rddCongruence.eps>
 (epstopdf)                    date: 2017-10-17 09:45:35
 (epstopdf)                    size: 1129940 bytes
@@ -1194,26 +1169,24 @@ nverted-to.pdf images/rddCongruence.eps>
 (epstopdf)             \includegraphics on input line 326.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/rddCongruence-eps-converted-to.pdf, id=333, 655.44875pt x 303.1325pt>
+<images/rddCongruence-eps-converted-to.pdf, id=338, 655.44875pt x 303.1325pt>
 File: images/rddCongruence-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/rddCongruence-eps-converted-to.pdf>
 Package pdftex.def Info: images/rddCongruence-eps-converted-to.pdf used on inpu
 t line 326.
-(pdftex.def)             Requested size: 655.44714pt x 303.13176pt.
+(pdftex.def)             Requested size: 452.9679pt x 209.49005pt.
+ [16 <./images/distpct-eps-converted-to.pdf>] [17 <./images/rddCongruence-eps-c
+onverted-to.pdf>] (dpsa.bbl
+[18] [19]
+Underfull \hbox (badness 2343) in paragraph at lines 157--163
+[]\OT1/ptm/m/n/12 Skovron, C. and Titiu-nik, R. (2015).  A prac-ti-cal guide to
+ re-gres-sion dis-con-ti-nu-
+ []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <./images/rddCongruence-eps-converted-to.pdf>] (dpsa.bbl [19
-
-
-] [20])
-
-Package natbib Warning: There were undefined citations.
-
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
-[21]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
  (dpsa.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
@@ -1223,10 +1196,10 @@ Package rerunfilecheck Info: File `dpsa.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 9862 strings out of 493334
- 144528 string characters out of 3139257
- 255734 words of memory out of 3000000
- 13090 multiletter control sequences out of 15000+200000
+ 9875 strings out of 493334
+ 144869 string characters out of 3139257
+ 255893 words of memory out of 3000000
+ 13099 multiletter control sequences out of 15000+200000
  54319 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,43p,1909b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1242,9 +1215,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
 s/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dpsa.pdf (21 pages, 5185145 bytes).
+Output written on dpsa.pdf (20 pages, 5188925 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
