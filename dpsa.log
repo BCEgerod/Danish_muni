@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  19 OCT 2017 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  20 OCT 2017 15:37
 entering extended mode
 **./dpsa.tex
 (dpsa.tex
@@ -944,11 +944,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-) [6]
-Overfull \vbox (2.19968pt too high) has occurred while \output is active []
 
 
-[7]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [6] [7]
 Package epstopdf Info: Source file: <images/times_lines_inflation_adjusted.eps>
 
 (epstopdf)                    date: 2017-10-17 09:45:35
@@ -959,20 +959,20 @@ converted-to.pdf>
 (epstopdf)                    size: 62857 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/times_lines_inflatio
 n_adjusted-eps-converted-to.pdf images/times_lines_inflation_adjusted.eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/times_lines_inflation_adjusted-eps-converted-to.pdf, id=175, 322.20375p
+<images/times_lines_inflation_adjusted-eps-converted-to.pdf, id=180, 322.20375p
 t x 225.84375pt>
 File: images/times_lines_inflation_adjusted-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use images/times_lines_inflation_adjusted-eps-converted-to.pdf>
 Package pdftex.def Info: images/times_lines_inflation_adjusted-eps-converted-to
-.pdf used on input line 201.
+.pdf used on input line 202.
 (pdftex.def)             Requested size: 266.19603pt x 186.59218pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 202.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 203.
 Package epstopdf Info: Source file: <images/JoyPlotFiscal_inflation_adjusted.ep
 s>
 (epstopdf)                    date: 2017-10-17 09:45:33
@@ -983,17 +983,17 @@ s-converted-to.pdf>
 (epstopdf)                    size: 116154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/JoyPlotFiscal_inflat
 ion_adjusted-eps-converted-to.pdf images/JoyPlotFiscal_inflation_adjusted.eps>
-(epstopdf)             \includegraphics on input line 206.
+(epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/JoyPlotFiscal_inflation_adjusted-eps-converted-to.pdf, id=176, 322.2037
+<images/JoyPlotFiscal_inflation_adjusted-eps-converted-to.pdf, id=181, 322.2037
 5pt x 225.84375pt>
 File: images/JoyPlotFiscal_inflation_adjusted-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use images/JoyPlotFiscal_inflation_adjusted-eps-converted-to.pdf>
 Package pdftex.def Info: images/JoyPlotFiscal_inflation_adjusted-eps-converted-
-to.pdf used on input line 206.
+to.pdf used on input line 207.
 (pdftex.def)             Requested size: 266.19603pt x 186.59218pt.
 Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 (epstopdf)                    date: 2017-10-17 09:45:34
@@ -1004,15 +1004,15 @@ Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 (epstopdf)                    size: 4220156 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/Map_of_FiscCon-eps-c
 onverted-to.pdf images/Map_of_FiscCon.eps>
-(epstopdf)             \includegraphics on input line 211.
+(epstopdf)             \includegraphics on input line 212.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Map_of_FiscCon-eps-converted-to.pdf, id=177, 635.37375pt x 305.14pt>
+<images/Map_of_FiscCon-eps-converted-to.pdf, id=182, 635.37375pt x 305.14pt>
 File: images/Map_of_FiscCon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Map_of_FiscCon-eps-converted-to.pdf>
 Package pdftex.def Info: images/Map_of_FiscCon-eps-converted-to.pdf used on inp
-ut line 211.
+ut line 212.
 (pdftex.def)             Requested size: 630.45189pt x 302.8019pt.
 
 Overfull \vbox (6.09467pt too high) has occurred while \output is active []
@@ -1029,15 +1029,15 @@ Package epstopdf Info: Source file: <images/validation.eps>
 (epstopdf)                    size: 20314 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation-eps-conve
 rted-to.pdf images/validation.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/validation-eps-converted-to.pdf, id=240, 433.62pt x 289.08pt>
+<images/validation-eps-converted-to.pdf, id=246, 433.62pt x 289.08pt>
 File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/validation-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation-eps-converted-to.pdf used on input l
-ine 229.
+ine 230.
 (pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2017-10-19 14:18:18
@@ -1047,18 +1047,22 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    size: 33875 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation2-eps-conv
 erted-to.pdf images/validation2.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/validation2-eps-converted-to.pdf, id=241, 433.62pt x 289.08pt>
+<images/validation2-eps-converted-to.pdf, id=247, 433.62pt x 289.08pt>
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf used on input 
-line 233.
+line 234.
 (pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
- [10] [11 <./images/validation-eps-converted-to.pdf> <./images/validation2-eps-
-converted-to.pdf>]
+
+Overfull \vbox (5.67966pt too high) has occurred while \output is active []
+
+
+[10] [11 <./images/validation-eps-converted-to.pdf> <./images/validation2-eps-c
+onverted-to.pdf>]
 Package epstopdf Info: Source file: <images/ggplot_coef_inflation_adjusted.eps>
 
 (epstopdf)                    date: 2017-10-17 09:45:35
@@ -1069,17 +1073,17 @@ converted-to.pdf>
 (epstopdf)                    size: 18347 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/ggplot_coef_inflatio
 n_adjusted-eps-converted-to.pdf images/ggplot_coef_inflation_adjusted.eps>
-(epstopdf)             \includegraphics on input line 269.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/ggplot_coef_inflation_adjusted-eps-converted-to.pdf, id=267, 322.20375p
+<images/ggplot_coef_inflation_adjusted-eps-converted-to.pdf, id=274, 322.20375p
 t x 225.84375pt>
 File: images/ggplot_coef_inflation_adjusted-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use images/ggplot_coef_inflation_adjusted-eps-converted-to.pdf>
 Package pdftex.def Info: images/ggplot_coef_inflation_adjusted-eps-converted-to
-.pdf used on input line 269.
+.pdf used on input line 267.
 (pdftex.def)             Requested size: 354.42522pt x 248.42888pt.
 
 
@@ -1094,33 +1098,33 @@ Package epstopdf Info: Source file: <images/coef_on_varying_leads.eps>
 (epstopdf)                    size: 21730 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/coef_on_varying_lead
 s-eps-converted-to.pdf images/coef_on_varying_leads.eps>
-(epstopdf)             \includegraphics on input line 277.
+(epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/coef_on_varying_leads-eps-converted-to.pdf, id=268, 551.05875pt x 293.0
+<images/coef_on_varying_leads-eps-converted-to.pdf, id=275, 551.05875pt x 293.0
 95pt>
 File: images/coef_on_varying_leads-eps-converted-to.pdf Graphic file (type pdf)
 
  <use images/coef_on_varying_leads-eps-converted-to.pdf>
 Package pdftex.def Info: images/coef_on_varying_leads-eps-converted-to.pdf used
- on input line 277.
+ on input line 275.
 (pdftex.def)             Requested size: 440.84758pt x 234.4763pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package natbib Warning: Citation `lee2008randomized' on page 12 undefined on in
-put line 288.
-
-
-Package natbib Warning: Citation `skovron2015practical' on page 12 undefined on
- input line 288.
-
 [12]
 
+Package natbib Warning: Citation `lee2008randomized' on page 13 undefined on in
+put line 286.
+
+
+Package natbib Warning: Citation `skovron2015practical' on page 13 undefined on
+ input line 286.
+
+
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 290.
+(hyperref)                be the same. Added a new anchor on input line 288.
 
 [13 <./images/ggplot_coef_inflation_adjusted-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/closeelec.eps>
@@ -1131,41 +1135,32 @@ Package epstopdf Info: Source file: <images/closeelec.eps>
 (epstopdf)                    size: 9061 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/closeelec-eps-conver
 ted-to.pdf images/closeelec.eps>
-(epstopdf)             \includegraphics on input line 296.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/closeelec-eps-converted-to.pdf, id=287, 433.62pt x 289.08pt>
+<images/closeelec-eps-converted-to.pdf, id=294, 433.62pt x 289.08pt>
 File: images/closeelec-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/closeelec-eps-converted-to.pdf>
 Package pdftex.def Info: images/closeelec-eps-converted-to.pdf used on input li
-ne 296.
+ne 294.
 (pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
+ [14 <./images/coef_on_varying_leads-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `fiva2013power' on page 15 undefined on input 
+line 301.
 
 
-Package natbib Warning: Citation `fiva2013power' on page 14 undefined on input 
-line 303.
+Package natbib Warning: Citation `freier2015parties' on page 15 undefined on in
+put line 301.
 
 
-Package natbib Warning: Citation `freier2015parties' on page 14 undefined on in
-put line 303.
+Package natbib Warning: Citation `cox1997making' on page 15 undefined on input 
+line 301.
 
-
-Package natbib Warning: Citation `cox1997making' on page 14 undefined on input 
-line 303.
-
-
-Overfull \vbox (0.29625pt too high) has occurred while \output is active []
-
-
-[14 <./images/coef_on_varying_leads-eps-converted-to.pdf>]
 
 Package natbib Warning: Citation `electools' on page 15 undefined on input line
- 305.
-
-
-Overfull \vbox (2.71461pt too high) has occurred while \output is active []
-
+ 303.
 
 [15 <./images/closeelec-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/distpct.eps>
@@ -1176,17 +1171,17 @@ Package epstopdf Info: Source file: <images/distpct.eps>
 (epstopdf)                    size: 10876 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/distpct-eps-converte
 d-to.pdf images/distpct.eps>
-(epstopdf)             \includegraphics on input line 312.
+(epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/distpct-eps-converted-to.pdf, id=313, 433.62pt x 289.08pt>
+<images/distpct-eps-converted-to.pdf, id=319, 433.62pt x 289.08pt>
 File: images/distpct-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/distpct-eps-converted-to.pdf>
 Package pdftex.def Info: images/distpct-eps-converted-to.pdf used on input line
- 312.
+ 310.
 (pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
- [16 <./images/distpct-eps-converted-to.pdf>]
+ [16 <./images/distpct-eps-converted-to.pdf>] [17]
 Package epstopdf Info: Source file: <images/rddCongruence.eps>
 (epstopdf)                    date: 2017-10-17 09:45:35
 (epstopdf)                    size: 1129940 bytes
@@ -1199,7 +1194,7 @@ nverted-to.pdf images/rddCongruence.eps>
 (epstopdf)             \includegraphics on input line 326.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/rddCongruence-eps-converted-to.pdf, id=322, 655.44875pt x 303.1325pt>
+<images/rddCongruence-eps-converted-to.pdf, id=333, 655.44875pt x 303.1325pt>
 File: images/rddCongruence-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/rddCongruence-eps-converted-to.pdf>
@@ -1210,15 +1205,15 @@ t line 326.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./images/rddCongruence-eps-converted-to.pdf>] (dpsa.bbl [18
+[18 <./images/rddCongruence-eps-converted-to.pdf>] (dpsa.bbl [19
 
 
-] [19])
+] [20])
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
-[20]
+[21]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
  (dpsa.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
@@ -1228,13 +1223,13 @@ Package rerunfilecheck Info: File `dpsa.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 9852 strings out of 493334
- 144339 string characters out of 3139257
- 253663 words of memory out of 3000000
- 13084 multiletter control sequences out of 15000+200000
+ 9862 strings out of 493334
+ 144528 string characters out of 3139257
+ 255734 words of memory out of 3000000
+ 13090 multiletter control sequences out of 15000+200000
  54319 words of font info for 81 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,1980b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,43p,1909b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname
@@ -1247,9 +1242,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
 s/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dpsa.pdf (20 pages, 5181878 bytes).
+Output written on dpsa.pdf (21 pages, 5185145 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 587 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
