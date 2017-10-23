@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.7)  23 OCT 2017 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.7)  23 OCT 2017 15:09
 entering extended mode
 **dpsa.tex
 (dpsa.tex
@@ -1104,16 +1104,12 @@ Package epstopdf Info: Source file: <images/New_robustness_rd3.eps>
 (epstopdf)                    size: 61582 bytes
 (epstopdf)             Output file: <images/New_robustness_rd3-eps-converted-to
 .pdf>
+(epstopdf)                    date: 2017-10-23 14:55:26
+(epstopdf)                    size: 22900 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/New_robustness_rd3-e
 ps-converted-to.pdf images/New_robustness_rd3.eps>
 (epstopdf)             \includegraphics on input line 372.
-runsystem(epstopdf --outfile=images/New_robustness_rd3-eps-converted-to.pdf ima
-ges/New_robustness_rd3.eps)...executed (allowed).
-
-Package epstopdf Info: Result file: <images/New_robustness_rd3-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2017-10-23 14:55:26
-(epstopdf)                    size: 22900 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <images/New_robustness_rd3-eps-converted-to.pdf, id=433, 276.03125pt x 337.26pt
 >
