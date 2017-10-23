@@ -38,5 +38,19 @@ merge 1:1 komnr using `elec'
 reg ideology netblue [w=count], r
 
 twoway lfitci ideology netblue [w=count] || scatter ideology netblue [w=count], msym(Oh) ///
-scheme(plotplain) legend(off) xtitle(" " "Net Support for Conservative Parties") ///
-ytitle("Mean Ideology Score (2013)") text(0.45 0.4 "Pearsons R=0.4")
+scheme(plotplain) legend(off) xtitle(" " "Net Support for Conservative Parties (2013)") ///
+ytitle("Mean Ideology Score (2013)") text(0.45 0.4 "Pearsons R=0.45")
+
+cd "C:\Users\mvl\Documents\GitHub\Danish_muni\images"
+
+graph export validation1.eps, replace
+
+use "C:\Users\mvl\Documents\GitHub\Danish_muni\data\elec05data.dta"
+
+pwcorr *
+
+twoway lfitci  netfv netkv || scatter  netfv netkv , msym(Oh) msize(large) ///
+scheme(plotplain) legend(off) xtitle(" " "Net Support for Conservative Parties (Municipal)") ///
+ytitle("Net Support for Conservative Parties (National)") text(-0.15 0.5 "Pearsons R=0.56")
+
+graph export validation2.eps, replace
