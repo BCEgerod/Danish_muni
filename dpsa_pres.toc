@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Motivation}{8}{0}{1}
+\beamer@sectionintoc {2}{An Annual Measure of Municipal Fiscal Policy Conservatism}{13}{0}{2}
+\beamer@sectionintoc {3}{Local Policy Preferences}{20}{0}{3}
+\beamer@sectionintoc {4}{Are the Municipalities Responsive?}{24}{0}{4}
+\beamer@sectionintoc {5}{A Discontinuity in Policy Control}{28}{0}{5}
+\beamer@sectionintoc {6}{Where do we go from here?}{36}{0}{6}
