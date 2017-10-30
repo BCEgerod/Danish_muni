@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  24 OCT 2017 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  30 OCT 2017 09:01
 entering extended mode
 **./dpsa_pres.tex
 (dpsa_pres.tex
@@ -1784,53 +1784,12 @@ Overfull \vbox (4.44226pt too high) detected at line 142
 
 [17
 
- <./images/newJoyPlotFiscal-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
-(epstopdf)                    date: 2017-10-23 09:13:29
-(epstopdf)                    size: 21226381 bytes
-(epstopdf)             Output file: <images/Map_of_FiscCon-eps-converted-to.pdf
->
-(epstopdf)                    date: 2017-10-23 10:46:58
-(epstopdf)                    size: 4222985 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/Map_of_FiscCon-eps-c
-onverted-to.pdf images/Map_of_FiscCon.eps>
-(epstopdf)             \includegraphics on input line 146.
-Package epstopdf Info: Output file is already uptodate.
+ <./images/newJoyPlotFiscal-eps-converted-to.pdf>] [18
 
-<images/Map_of_FiscCon-eps-converted-to.pdf, id=351, 635.37375pt x 305.14pt>
-File: images/Map_of_FiscCon-eps-converted-to.pdf Graphic file (type pdf)
+] (dpsa_pres.toc)
+[19
 
-<use images/Map_of_FiscCon-eps-converted-to.pdf>
-Package pdftex.def Info: images/Map_of_FiscCon-eps-converted-to.pdf used on inp
-ut line 146.
-(pdftex.def)             Requested size: 398.3386pt x 191.30798pt.
- [18
-
- <./images/Map_of_FiscCon-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <images/socialdemocratism.eps>
-(epstopdf)                    date: 2017-10-23 13:22:11
-(epstopdf)                    size: 91117 bytes
-(epstopdf)             Output file: <images/socialdemocratism-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2017-10-23 13:33:26
-(epstopdf)                    size: 30086 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/socialdemocratism-ep
-s-converted-to.pdf images/socialdemocratism.eps>
-(epstopdf)             \includegraphics on input line 150.
-Package epstopdf Info: Output file is already uptodate.
-
-<images/socialdemocratism-eps-converted-to.pdf, id=370, 722.7pt x 413.545pt>
-File: images/socialdemocratism-eps-converted-to.pdf Graphic file (type pdf)
-
-<use images/socialdemocratism-eps-converted-to.pdf>
-Package pdftex.def Info: images/socialdemocratism-eps-converted-to.pdf used on 
-input line 150.
-(pdftex.def)             Requested size: 358.50229pt x 205.14395pt.
- [19
-
- <./images/socialdemocratism-eps-converted-to.pdf>] (dpsa_pres.toc) [20
-
-] [21
+] [20
 
 ]
 Package epstopdf Info: Source file: <images/validation.eps>
@@ -1841,15 +1800,15 @@ Package epstopdf Info: Source file: <images/validation.eps>
 (epstopdf)                    size: 20314 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation-eps-conve
 rted-to.pdf images/validation.eps>
-(epstopdf)             \includegraphics on input line 175.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/validation-eps-converted-to.pdf, id=422, 433.62pt x 289.08pt>
+<images/validation-eps-converted-to.pdf, id=396, 433.62pt x 289.08pt>
 File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/validation-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation-eps-converted-to.pdf used on input l
-ine 175.
+ine 181.
 (pdftex.def)             Requested size: 179.25114pt x 119.50279pt.
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2017-10-23 09:13:29
@@ -1859,17 +1818,17 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    size: 33875 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation2-eps-conv
 erted-to.pdf images/validation2.eps>
-(epstopdf)             \includegraphics on input line 175.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/validation2-eps-converted-to.pdf, id=423, 433.62pt x 289.08pt>
+<images/validation2-eps-converted-to.pdf, id=397, 433.62pt x 289.08pt>
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf used on input 
-line 175.
+line 181.
 (pdftex.def)             Requested size: 179.25114pt x 119.50279pt.
- [22
+ [21
 
  <./images/validation-eps-converted-to.pdf> <./images/validation2-eps-converted
 -to.pdf>]
@@ -1882,27 +1841,27 @@ ted-to.pdf>
 (epstopdf)                    size: 532898 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/correlations_across_
 time-eps-converted-to.pdf images/correlations_across_time.eps>
-(epstopdf)             \includegraphics on input line 180.
+(epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/correlations_across_time-eps-converted-to.pdf, id=450, 460.72125pt x 36
+<images/correlations_across_time-eps-converted-to.pdf, id=424, 460.72125pt x 36
 5.365pt>
 File: images/correlations_across_time-eps-converted-to.pdf Graphic file (type p
 df)
  <use images/correlations_across_time-eps-converted-to.pdf>
 Package pdftex.def Info: images/correlations_across_time-eps-converted-to.pdf u
-sed on input line 180.
+sed on input line 186.
 (pdftex.def)             Requested size: 278.83578pt x 221.12177pt.
 
-Overfull \vbox (4.04639pt too high) detected at line 180
+Overfull \vbox (4.04639pt too high) detected at line 186
  []
 
-[23
+[22
 
  <./images/correlations_across_time-eps-converted-to.pdf>] (dpsa_pres.toc)
-[24
+[23
 
-] [25
+] [24
 
 ]
 Package epstopdf Info: Source file: <images/Newest_ggplot_coef.eps>
@@ -1914,19 +1873,39 @@ Package epstopdf Info: Source file: <images/Newest_ggplot_coef.eps>
 (epstopdf)                    size: 24272 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/Newest_ggplot_coef-e
 ps-converted-to.pdf images/Newest_ggplot_coef.eps>
-(epstopdf)             \includegraphics on input line 211.
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Newest_ggplot_coef-eps-converted-to.pdf, id=564, 444.66125pt x 340.2712
+<images/Newest_ggplot_coef-eps-converted-to.pdf, id=537, 444.66125pt x 340.2712
 6pt>
 File: images/Newest_ggplot_coef-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Newest_ggplot_coef-eps-converted-to.pdf>
 Package pdftex.def Info: images/Newest_ggplot_coef-eps-converted-to.pdf used on
- input line 211.
+ input line 224.
+(pdftex.def)             Requested size: 199.1693pt x 152.40932pt.
+ [25
+
+ <./images/Newest_ggplot_coef-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Newest_ggplot_coef.eps>
+(epstopdf)                    date: 2017-10-23 13:22:11
+(epstopdf)                    size: 57052 bytes
+(epstopdf)             Output file: <images/Newest_ggplot_coef-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-10-23 13:25:23
+(epstopdf)                    size: 24272 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/Newest_ggplot_coef-e
+ps-converted-to.pdf images/Newest_ggplot_coef.eps>
+(epstopdf)             \includegraphics on input line 224.
+Package epstopdf Info: Output file is already uptodate.
+File: images/Newest_ggplot_coef-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/Newest_ggplot_coef-eps-converted-to.pdf>
+Package pdftex.def Info: images/Newest_ggplot_coef-eps-converted-to.pdf used on
+ input line 224.
 (pdftex.def)             Requested size: 199.1693pt x 152.40932pt.
  [26
 
- <./images/Newest_ggplot_coef-eps-converted-to.pdf>]
+]
 Package epstopdf Info: Source file: <images/NoLag_varying_leads.eps>
 (epstopdf)                    date: 2017-10-23 13:22:11
 (epstopdf)                    size: 52495 bytes
@@ -1936,15 +1915,15 @@ o.pdf>
 (epstopdf)                    size: 19586 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/NoLag_varying_leads-
 eps-converted-to.pdf images/NoLag_varying_leads.eps>
-(epstopdf)             \includegraphics on input line 215.
+(epstopdf)             \includegraphics on input line 228.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/NoLag_varying_leads-eps-converted-to.pdf, id=585, 681.54625pt x 340.271
+<images/NoLag_varying_leads-eps-converted-to.pdf, id=572, 681.54625pt x 340.271
 26pt>
 File: images/NoLag_varying_leads-eps-converted-to.pdf Graphic file (type pdf)
  <use images/NoLag_varying_leads-eps-converted-to.pdf>
 Package pdftex.def Info: images/NoLag_varying_leads-eps-converted-to.pdf used o
-n input line 215.
+n input line 228.
 (pdftex.def)             Requested size: 398.3386pt x 198.87875pt.
  [27
 
@@ -1965,15 +1944,15 @@ Package epstopdf Info: Source file: <images/closeelec.eps>
 (epstopdf)                    size: 9061 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/closeelec-eps-conver
 ted-to.pdf images/closeelec.eps>
-(epstopdf)             \includegraphics on input line 238.
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/closeelec-eps-converted-to.pdf, id=664, 433.62pt x 289.08pt>
+<images/closeelec-eps-converted-to.pdf, id=651, 433.62pt x 289.08pt>
 File: images/closeelec-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/closeelec-eps-converted-to.pdf>
 Package pdftex.def Info: images/closeelec-eps-converted-to.pdf used on input li
-ne 238.
+ne 251.
 (pdftex.def)             Requested size: 318.67209pt x 212.4602pt.
  [32
 
@@ -1986,14 +1965,14 @@ Package epstopdf Info: Source file: <images/distpct.eps>
 (epstopdf)                    size: 10876 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/distpct-eps-converte
 d-to.pdf images/distpct.eps>
-(epstopdf)             \includegraphics on input line 243.
+(epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
- <images/distpct-eps-converted-to.pdf, id=682, 433.62pt x 289.08pt>
+ <images/distpct-eps-converted-to.pdf, id=669, 433.62pt x 289.08pt>
 File: images/distpct-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/distpct-eps-converted-to.pdf>
 Package pdftex.def Info: images/distpct-eps-converted-to.pdf used on input line
- 243.
+ 256.
 (pdftex.def)             Requested size: 318.67209pt x 212.4602pt.
  [33
 
@@ -2007,15 +1986,15 @@ Package epstopdf Info: Source file: <images/rddCongruence.eps>
 (epstopdf)                    size: 521039 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/rddCongruence-eps-co
 nverted-to.pdf images/rddCongruence.eps>
-(epstopdf)             \includegraphics on input line 248.
+(epstopdf)             \includegraphics on input line 261.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/rddCongruence-eps-converted-to.pdf, id=700, 681.54625pt x 340.27126pt>
+<images/rddCongruence-eps-converted-to.pdf, id=687, 681.54625pt x 340.27126pt>
 File: images/rddCongruence-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/rddCongruence-eps-converted-to.pdf>
 Package pdftex.def Info: images/rddCongruence-eps-converted-to.pdf used on inpu
-t line 248.
+t line 261.
 (pdftex.def)             Requested size: 398.3386pt x 198.87875pt.
  [34
 
@@ -2025,22 +2004,22 @@ Package epstopdf Info: Source file: <images/New_robustness_rd3.eps>
 (epstopdf)                    size: 62659 bytes
 (epstopdf)             Output file: <images/New_robustness_rd3-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2017-10-24 15:05:46
+(epstopdf)                    date: 2017-10-24 15:31:44
 (epstopdf)                    size: 22881 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/New_robustness_rd3-e
 ps-converted-to.pdf images/New_robustness_rd3.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/New_robustness_rd3-eps-converted-to.pdf, id=904, 276.03125pt x 337.26pt
+<images/New_robustness_rd3-eps-converted-to.pdf, id=891, 276.03125pt x 337.26pt
 >
 File: images/New_robustness_rd3-eps-converted-to.pdf Graphic file (type pdf)
  <use images/New_robustness_rd3-eps-converted-to.pdf>
 Package pdftex.def Info: images/New_robustness_rd3-eps-converted-to.pdf used on
- input line 253.
+ input line 266.
 (pdftex.def)             Requested size: 199.1693pt x 243.35706pt.
 
-Overfull \vbox (26.28168pt too high) detected at line 253
+Overfull \vbox (26.28168pt too high) detected at line 266
  []
 
 [35
@@ -2062,20 +2041,20 @@ Overfull \vbox (26.28168pt too high) detected at line 253
 \tf@snm=\write8
 \openout8 = `dpsa_pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (dpsa_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `dpsa_pres.out' has not changed.
 (rerunfilecheck)             Checksum: CD0FAC1DAE68F8D40E8A9C399B2A85E8;399.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 24760 strings out of 493334
- 484180 string characters out of 3139257
- 561994 words of memory out of 3000000
- 27504 multiletter control sequences out of 15000+200000
+ 24748 strings out of 493334
+ 483739 string characters out of 3139257
+ 561962 words of memory out of 3000000
+ 27494 multiletter control sequences out of 15000+200000
  63872 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,15n,100p,413b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2091,9 +2070,9 @@ MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmsso8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on dpsa_pres.pdf (38 pages, 6000384 bytes).
+Output written on dpsa_pres.pdf (38 pages, 1752181 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
+ 1023 PDF objects out of 1200 (max. 8388607)
  89 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
