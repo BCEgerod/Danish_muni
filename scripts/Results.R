@@ -171,24 +171,27 @@ pan.dat$SocDem12 <- plm::lag(pan.dat$full.SocDem, -12)
 pan.dat$SocDem16 <- plm::lag(pan.dat$full.SocDem, -16)
 pan.dat$SocDem20 <- plm::lag(pan.dat$full.SocDem, -20)
 
+test <- plm(plm::lag(redvote,-4) ~ full.SocDem,data=pan.dat,
+            model="within", effects="twoway")
+summary(test)
 
-mod1 <- plm(plac ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(mod1, vcovNW(mod1,type="HC1"))
+mod1 <- plm(plac ~ redvote + log_pop, data = pan.dat , model = "within", effects = "twoway")
+coeftest(mod1, vcovHC(mod1,type="HC1", cluster = "group"))
 
 mod2 <- plm(full.SocDem ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(mod2, vcovNW(mod2,type="HC1"))
+coeftest(mod2, vcovHC(mod2,type="HC1", cluster = "group"))
 
-mod3 <- plm(SocDem1 ~ redvote+ log_pop, data = pan.dat, model = "within", effects = "twoway")
-coeftest(mod3, vcovNW(mod3,type="HC1"))
+# mod3 <- plm(SocDem1 ~ redvote+ log_pop, data = pan.dat, model = "within", effects = "twoway")
+# coeftest(mod3, vcovHC(mod3,type="HC1", cluster = "group"))
 
 mod4 <- plm(SocDem4 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(mod4, vcovNW(mod4,type="HC1"))
+coeftest(mod4, vcovHC(mod4,type="HC1", cluster = "group"))
 
 mod5 <- plm(SocDem8 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(mod5, vcovNW(mod5,type="HC1"))
+coeftest(mod5, vcovHC(mod5,type="HC1", cluster = "group"))
 
 mod6 <- plm(SocDem12 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(mod6, vcovNW(mod6,type="HC1"))
+coeftest(mod6, vcovHC(mod6,type="HC1", cluster = "group"))
 
 mod7 <- plm(SocDem16 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod7, vcovNW(mod7,type="HC1"))
