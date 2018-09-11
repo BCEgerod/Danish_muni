@@ -3,7 +3,7 @@
 
 # load packages
 library(plm); library(AER); library(lfe); library(readr); library(ggplot2)
-library(cowplot)
+library(cowplot); library(haven); library(gridExtra)
 
 #devtools::install_github("mattblackwell/DirectEffects", ref = "develop")
 library(DirectEffects)
@@ -22,14 +22,14 @@ pan.dat$cons <- pan.dat$full.SocDem*-1
 pan.dat$cons_red <- pan.dat$spend.SocDem*-1
 
 pan.dat$lag_SocDem1 <- plm::lag(pan.dat$full.SocDem,-4) # full measure
-pan.dat$lead_SocDem_reduced <- plm::lag(pan.dat$cons_red,-4) #reduced measure
-pan.dat$fd_SocDem <- pan.dat$lag_SocDem1 - pan.dat$cons #FD full measure
-pan.dat$fd_SocDem_reduced <- pan.dat$lead_SocDem_reduced - pan.dat$cons_red #FD reduced measure
+pan.dat$lead_SocDem_reduced <- plm::lag(pan.dat$spend.SocDem,-4) #reduced measure
+pan.dat$fd_SocDem <- pan.dat$lag_SocDem1 - pan.dat$full.SocDem #FD full measure
+pan.dat$fd_SocDem_reduced <- pan.dat$lead_SocDem_reduced - pan.dat$spend.SocDem #FD reduced measure
 
 # first-difference of red votes
-pan.dat$blue_vote <- pan.dat$redvote*-1
-pan.dat$lag_redvote <- plm::lag(pan.dat$blue_vote, 4)
-pan.dat$fd_redvote <- pan.dat$blue_vote - pan.dat$lag_redvote
+#pan.dat$blue_vote <- pan.dat$redvote*-1
+pan.dat$lag_redvote <- plm::lag(pan.dat$redvote, 4)
+pan.dat$fd_redvote <- pan.dat$redvote - pan.dat$lag_redvote
 
 # first-difference of logged population size
 pan.dat$log_pop <- log(pan.dat$estpop) # log transform
@@ -97,7 +97,7 @@ coeftest(pool.mod.red, vcovNW(pool.mod.red, type = "HC1", cluster = "group"))
 
 #full measure
 fe.mod <- plm(lag_SocDem1 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
-coeftest(fe.mod, vcovNW(fe.mod, type = "HC1", cluster = "group"))
+coeftest(fe.mod, vcovHC(fe.mod, type = "HC1", cluster = "group"))
 
 #reduced measure
 
@@ -121,37 +121,172 @@ fd.mod.red <- plm(fd_SocDem_reduced ~ fd_redvote + fd_pop,
               effects = "time")
 coeftest(fd.mod.red, vcovNW(fd.mod.red, type = "HC1", cluster = "group"))
 
+#################################################################
+#
+# Add some controls
+#
+#################################################################
+
+setwd("C:/Users/ex-bce/Dropbox/effects on effects/responsiveness")
+
+df <- read_dta("collectv2.dta")
+df <- dplyr::select(df, muni, year, educ, immig, need, unemployment)
+df <- subset(df, year > 1973)
+
+df$year <- as.factor(df$year)
+
+pan.dat2 <- dplyr::left_join(pan.dat, df, by = c("muni", "year"))
+pan.dat2 <- pdata.frame(pan.dat2, index = c("muni", "year"))
+
+# four year differences
+pan.dat2$lag_educ <- plm::lag(pan.dat2$educ, 4)
+pan.dat2$fd_educ <- pan.dat2$educ - pan.dat2$lag_educ
+
+pan.dat2$lag_immig <- plm::lag(pan.dat2$immig, 4)
+pan.dat2$fd_immig <- pan.dat2$immig - pan.dat2$lag_immig
+
+pan.dat2$lag_unemployment <- plm::lag(pan.dat2$unemployment, 4)
+pan.dat2$fd_unemp <- pan.dat2$unemployment - pan.dat2$lag_unemployment
+
+pan.dat2$lag_need <- plm::lag(pan.dat2$need, 4)
+pan.dat2$fd_need <- pan.dat2$need - pan.dat2$lag_need
+
+#models
+
+#pooling
+pool.cont <- plm(lag_SocDem1 ~ redvote+ educ + immig +  unemployment, 
+                 data = pan.dat2, model = "pooling")
+coeftest(pool.cont, vcovHC(pool.cont, group = "cluster", type = "HC1"))
+
+pool.cont.red <- plm(lead_SocDem_reduced ~ redvote+ educ + immig +  unemployment, 
+                     data = pan.dat2, model = "pooling")
+coeftest(pool.cont.red, vcovHC(pool.cont.red, group = "cluster", type = "HC1"))
+
+#2way FE
+
+fe.cont <- plm(lag_SocDem1 ~ redvote+ educ + immig + unemployment, 
+               data = pan.dat2, model = "within", effects = "twoway")
+coeftest(fe.cont, vcovHC(fe.cont, type = "HC1", cluster = "group"))
+
+fe.cont.red <- plm(lead_SocDem_reduced ~ redvote+ educ + immig + unemployment, 
+                   data = pan.dat2, model = "within", effects = "twoway")
+coeftest(fe.cont.red, vcovHC(fe.cont.red, type = "HC1", cluster = "group"))
+
+# four year differences
+
+fd.cont <- plm(fd_SocDem ~ fd_redvote + fd_pop + fd_unemp + fd_immig + fd_educ,
+               data = pan.dat2, model = "pooling", effect = "time")
+
+coeftest(fd.cont, vcovHC(fd.cont, cluster = "group", type = "HC1"))
+
+fd.cont.red <- plm(fd_SocDem_reduced ~ fd_redvote + fd_pop + fd_unemp + fd_immig + fd_educ,
+                   data = pan.dat2, model = "pooling", effect = "time")
+
+coeftest(fd.cont.red, vcovHC(fd.cont.red, cluster = "group", type = "HC1"))
 ########
 # PRESENT RESULTS
 
 # extract
 res <- data.frame(rbind(coef(pool.mod)[2], coef(fe.mod)[1], coef(fd.mod)[2],
-                  coef(pool.mod.red)[2], coef(fe.mod.red)[1], coef(fd.mod.red)[2]),
-                  rbind(sqrt(diag(vcovNW(pool.mod, type = "HC1")))[2],
-                        sqrt(diag(vcovNW(fe.mod, type = "HC1")))[1],
-                        sqrt(diag(vcovNW(fd.mod, type = "HC1")))[2],
-                        sqrt(diag(vcovNW(pool.mod.red, type = "HC1")))[2],
-                        sqrt(diag(vcovNW(fe.mod.red, type = "HC1")))[1],
-                        sqrt(diag(vcovNW(fd.mod.red, type = "HC1")))[2]),
-                  spec=c("Pooled", "Twoway Fixed Effects", "First-Difference"),
+                  coef(pool.mod.red)[2], coef(fe.mod.red)[1], coef(fd.mod.red)[2],
+                  coef(pool.cont)[2], coef(fe.cont)[1], coef(fd.cont)[2],
+                  coef(pool.cont.red)[2], coef(fe.cont.red)[1], coef(fd.cont.red)[2]),
+                  rbind(sqrt(diag(vcovHC(pool.mod, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(fe.mod, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(fd.mod, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(pool.mod.red, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(fe.mod.red, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(fd.mod.red, type = "HC1")))[2],##
+                        sqrt(diag(vcovHC(pool.cont, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(fe.cont, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(fd.cont, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(pool.cont.red, type = "HC1")))[2],
+                        sqrt(diag(vcovHC(fe.cont.red, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(fd.cont.red, type = "HC1")))[2]),
+                  spec=c("Pooled", "Twoway\nFixed Effects", "First-Difference"),
+                  cont=c(rep("Simple Model",6), rep("+ Controls", 6)),
                   measure=c(rep("Full Measure",3), rep("Reduced Measure", 3)))
 names(res)[1:2] <- c("PE", "SE")
 
 res$spec <- factor(res$spec, levels = c("First-Difference", 
-                                        "Twoway Fixed Effects",
+                                        "Twoway\nFixed Effects",
                                         "Pooled"))
+cols = c("+ Controls" = "grey", "Simple Model" = "black")
 
-c_plot<-ggplot(res, aes(y = PE, x = spec)) +
-  geom_point() +
+res$cont <- factor(res$cont, levels = c("Simple Model", "+ Controls"))
+
+
+df1 <- subset(res, measure == "Full Measure")
+df2 <- subset(res, measure == "Reduced Measure")
+
+
+p1 <- ggplot(df1, aes(y = PE, x = spec, colour = cont)) +
+  geom_point(position = position_dodge(1/2)) +
   geom_errorbar(aes(ymin=PE-(1.96*SE),
-                     ymax=PE+(1.96*SE)), width = 0) +
-  facet_wrap(~measure, scales = "free_x") +
-  theme_classic() +
+                    ymax=PE+(1.96*SE)), width = 0, 
+                position = position_dodge(1/2)) +
+  theme_classic() + 
+  scale_y_continuous(limits = c(-.1,0.4))+
   coord_flip() +
-  labs(x=NULL,y="Coefficient on Electoral Support for Right-Wing Parties")
+  labs(x=NULL,y=NULL) +
+  scale_colour_manual(name = " ", values = cols) +
+  theme(legend.position="bottom") +
+  geom_hline(yintercept = 0, lty = 2) +
+  ggtitle("A: Full Measure")
+
+p1
+
+
+
+p2 <-ggplot(df2, aes(y = PE, x = spec, colour = cont)) +
+  geom_point(position = position_dodge(1/2)) +
+  geom_errorbar(aes(ymin=PE-(1.96*SE),
+                    ymax=PE+(1.96*SE)), width = 0, 
+                position = position_dodge(1/2)) +
+  theme_classic() + 
+  scale_y_continuous(limits = c(-.1,2.5))+
+  scale_x_discrete(labels = NULL) +
+  coord_flip() +
+  labs(x=NULL,y=NULL) +
+  scale_colour_manual(name = " ", values = cols) +
+  theme(legend.position="bottom") +
+  geom_hline(yintercept = 0, lty = 2) +
+  ggtitle("B: Reduced Measure")
+
+p2
+
+g_legend<-function(a.gplot){
+  tmp <- ggplot_gtable(ggplot_build(a.gplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)}
+
+
+mylegend<-g_legend(p1)
+
+p3 <- grid.arrange(arrangeGrob(p1 + theme(legend.position="none"),
+                               p2 + theme(legend.position="none"),
+                               nrow=1),
+                   mylegend, nrow=2,heights=c(10, 1), 
+                   bottom = "Coefficient on Electoral Support for Right-Wing Parties")
+
+# c_plot<-ggplot(res, aes(y = PE, x = spec, colour = cont)) +
+#   geom_point(position = position_dodge(1/2)) +
+#   geom_errorbar(aes(ymin=PE-(1.96*SE),
+#                      ymax=PE+(1.96*SE)), width = 0, 
+#                 position = position_dodge(1/2)) +
+#   facet_wrap(~measure, scales = "free_x") +
+#   theme_classic() + 
+#   scale_y_continuous(limits = c(-.1,2.5))+
+#   coord_flip() +
+#   labs(x=NULL,y="Coefficient on Electoral Support for Right-Wing Parties") +
+#   scale_colour_manual(name = "Specification", values = cols) +
+#   theme(legend.position="bottom") +
+#   geom_blank(data=dummy_df, inherit.aes = F)
+# c_plot
 
 setwd("~/GitHub/Danish_muni/images")
-ggsave(c_plot, filename = "coef_31082018.eps",
+ggsave(c_plot, filename = "coef_11092018.eps",
        device = cairo_ps, 
        width = 7.34,
        heigh = 4.56)
@@ -198,6 +333,83 @@ coeftest(mod7, vcovNW(mod7,type="HC1"))
 
 mod8 <- plm(SocDem20 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod8, vcovNW(mod8,type="HC1"))
+
+
+
+####################################################################
+#
+# Granger test for reverse causality
+#
+######################################################################
+
+pan.dat$lag_SocDem <- plm::lag(pan.dat$full.SocDem, 1)
+pan.dat$lag_SocDem2 <- plm::lag(pan.dat$full.SocDem, 2)
+pan.dat$lag_SocDem3 <- plm::lag(pan.dat$full.SocDem, 3)
+pan.dat$lag_SocDem4 <- plm::lag(pan.dat$full.SocDem, 4)
+
+
+grang <- plm(redvote ~ lag_SocDem + log_pop, model = "within", effects = "twoway",
+             data = pan.dat)
+
+coeftest(grang, vcovHC(grang, cluster = "group", type = "HC1"))
+
+
+grang2 <- plm(redvote ~ lag_SocDem2 + log_pop, model = "within", effects = "twoway",
+             data = pan.dat)
+coeftest(grang2, vcovHC(grang2, cluster = "group", type = "HC1"))
+
+grang3 <- plm(redvote ~ lag_SocDem3+ log_pop, model = "within", effects = "twoway",
+              data = pan.dat)
+coeftest(grang3, vcovHC(grang3, cluster = "group", type = "HC1"))
+
+grang4 <- plm(redvote ~ lag_SocDem4+ log_pop, model = "within", effects = "twoway",
+              data = pan.dat)
+coeftest(grang4, vcovHC(grang4, cluster = "group", type = "HC1"))
+
+# combine results and plot
+
+grang_res <- data.frame(rbind(coef(grang)[1], coef(grang2)[1], coef(grang3)[1],
+                        coef(grang4)[1]),
+                  rbind(sqrt(diag(vcovHC(grang, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(grang2, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(grang3, type = "HC1")))[1],
+                        sqrt(diag(vcovHC(grang4, type = "HC1")))[1]),
+                  spec=c("One-Year Lag", "Two-Year Lag", "Three-Year Lag", "Four-Year Lag"))
+names(grang_res)[1:2] <- c("PE", "SE")
+
+grang_res$spec <- factor(grang_res$spec, levels = c("Four-Year Lag",
+                                                    "Three-Year Lag",
+                                                    "Two-Year Lag",
+                                                    "One-Year Lag"))
+
+g_plot<-ggplot(grang_res, aes(y = PE, x = spec)) +
+  geom_hline(yintercept = 0, lty = 3) +
+  geom_hline(yintercept = .16, lty = 2) +
+  scale_x_discrete() +
+  annotate(geom = "text",
+            x = 4,
+            y = .157,
+            label = "Baseline Effect\n(Standardized)",
+           angle = 90,
+           size = 3) +
+  geom_point() +
+  geom_errorbar(aes(ymin=PE-(1.96*SE),
+                    ymax=PE+(1.96*SE)), width = 0) +
+  theme_classic() +
+  scale_y_continuous(limits = c(-.20, .25)) +
+  coord_flip() +
+  labs(x=NULL, y="Coefficient on Fiscal Conservatism") 
+
+  
+  
+g_plot
+
+setwd("~/GitHub/Danish_muni/images")
+ggsave(g_plot, filename = "granger_11092018.eps",
+       device = cairo_ps, 
+       width = 4.55,
+       height = 4.55)
+
 ##################################################################
 #
 # The mechanism: responsiveness or selection?
@@ -282,15 +494,113 @@ medi_plot<-ggplot(medi_res, aes(y=spec, x = PE)) +
 ggsave(medi_plot, filename = "PostTreatControl.eps",
        device = cairo_ps)
 
-#Acharya, Blackwell, Sen mediation
-# this doesn't work ...
-first <- lm(lag_SocDem1 ~ redvote + mayor_bin + log_pop, data = pan.dat)
+######################################################################
+#
+# Item-by-item regressions
+#
+######################################################################
 
-form_main <- as.formula(lag_SocDem1  ~ redvote + mayor_bin + log_pop | mayor_bin)
+item_df <- pan.dat2[, c(3:4, 13, 25:33, 35)]
+#item_df <- pdata.frame(item_df, index =c("muni", "year"))
 
-direct <- sequential_g(formula = form_main,
-                       first_mod = first,
-                       data = df)
+item_res <- list()
+
+for(i in 4:13){
+  item_df[,i] <- plm::lag(item_df[,i], -4)
+  
+  mod <- plm(item_df[,i] ~ redvote, data = item_df, 
+             model = "within", effects = "twoway")
+  
+  item_res[[i]] <- data.frame(PE = coef(mod)[1],
+                              SE = sqrt(diag(vcovHC(mod, cluster = "group", 
+                                                    type = "HC1")))[1],
+                              varname = names(item_df)[i])
+  
+  
+}
+
+item_res <- do.call("rbind", item_res)
+item_res$real_name <- c("Income Tax",
+                      "Property Tax",
+                      "Public Employees",
+                      "Day Care",
+                      "Food Delivery",
+                      "Nursing Home",
+                      "Relief Stay",
+                      "Competition",
+                      "Privately Operated\nServices",
+                      "Spending/capita")
+
+item_p<-ggplot(item_res, aes(y=reorder(real_name, PE), x = PE)) +
+  geom_point() +
+  geom_errorbarh(aes(xmin=PE-(1.96*SE),
+                     xmax=PE+(1.96*SE)),
+                 height=0) +
+  theme_classic() +
+  geom_vline(xintercept = 0, lty = 2) +
+  labs(x="Estimated Coefficient\n(Outcomes are centered and standardized)", y = NULL) +
+  scale_x_continuous(breaks = c(-10, seq(-5, 5)))
+
+
+setwd("~/GitHub/Danish_muni/images")
+ggsave(item_p, filename = "ItemByItem_11092018.eps")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
