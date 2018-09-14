@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  11 SEP 2018 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  14 SEP 2018 08:02
 entering extended mode
 **./appendix.tex
 (appendix.tex
@@ -579,50 +579,7 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 Package xr Info: IMPORTING LABELS FROM "citypolicy".aux on input line 94.
 
-(appendix.aux
-
-LaTeX Warning: Label `tab:policies' multiply defined.
-
-
-LaTeX Warning: Label `RF1' multiply defined.
-
-
-LaTeX Warning: Label `fig:timeline' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:timeline' multiply defined.
-
-
-LaTeX Warning: Label `fig:lines' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:lines' multiply defined.
-
-
-LaTeX Warning: Label `fig:map' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:map' multiply defined.
-
-
-LaTeX Warning: Label `fig:descriptive' multiply defined.
-
-
-LaTeX Warning: Label `mostleast' multiply defined.
-
-
-LaTeX Warning: Label `validation1' multiply defined.
-
-
-LaTeX Warning: Label `sub@validation1' multiply defined.
-
-
-LaTeX Warning: Label `validation2' multiply defined.
-
-
-LaTeX Warning: Label `sub@validation2' multiply defined.
-
-)
+(appendix.aux)
 \openout1 = `appendix.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -721,17 +678,7 @@ LaTeX Info: Redefining \nameref on input line 97.
 \openout3 = `appendix.out'.
 
 \Etoc@tf=\read1
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[1{C:/Users/au595748/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-]
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 110.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 109.
 
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\psnfss\ot1phv.f
@@ -741,48 +688,55 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \tf@toc=\write4
 \openout4 = `appendix.toc'.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 113.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 112.
 
  ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 113.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 112.
 
  ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 113
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 112
 .
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 113
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 112
 .
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 113.
+(Font)              <12> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 113.
+(Font)              <8> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 113.
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+(Font)              <6> on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\amsfonts\umsa.f
 d"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\amsfonts\umsb.f
 d"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/Users/au595748/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 118.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 117.
 
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\psnfss\omsptm.f
@@ -790,27 +744,27 @@ d"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 118.
+(Font)              <10> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 118.
+(Font)              <7> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 118.
+(Font)              <5> on input line 117.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
- [3
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+ [2
 
 ] (table/measurement.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-) [4
+) [3
 
-] [5
+] [4
 
-] [6]
+] [5]
 Package epstopdf Info: Source file: <images/newtimes_lines.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 713136 bytes
@@ -820,16 +774,16 @@ Package epstopdf Info: Source file: <images/newtimes_lines.eps>
 (epstopdf)                    size: 83134 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/newtimes_lines-eps-c
 onverted-to.pdf images/newtimes_lines.eps>
-(epstopdf)             \includegraphics on input line 171.
+(epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
-<images/newtimes_lines-eps-converted-to.pdf, id=103, 411.5375pt x 228.855pt>
+<images/newtimes_lines-eps-converted-to.pdf, id=99, 411.5375pt x 228.855pt>
 File: images/newtimes_lines-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newtimes_lines-eps-converted-to.pdf>
 Package pdftex.def Info: images/newtimes_lines-eps-converted-to.pdf  used on in
-put line 171.
+put line 170.
 (pdftex.def)             Requested size: 266.19603pt x 148.03113pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 171.
 Package epstopdf Info: Source file: <images/newJoyPlotFiscal.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 388862 bytes
@@ -839,13 +793,13 @@ df>
 (epstopdf)                    size: 178533 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/newJoyPlotFiscal-eps
 -converted-to.pdf images/newJoyPlotFiscal.eps>
-(epstopdf)             \includegraphics on input line 176.
+(epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
-<images/newJoyPlotFiscal-eps-converted-to.pdf, id=104, 411.5375pt x 228.855pt>
+<images/newJoyPlotFiscal-eps-converted-to.pdf, id=100, 411.5375pt x 228.855pt>
 File: images/newJoyPlotFiscal-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newJoyPlotFiscal-eps-converted-to.pdf>
 Package pdftex.def Info: images/newJoyPlotFiscal-eps-converted-to.pdf  used on 
-input line 176.
+input line 175.
 (pdftex.def)             Requested size: 266.19603pt x 148.03113pt.
 Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
@@ -856,13 +810,13 @@ Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 (epstopdf)                    size: 4222985 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/Map_of_FiscCon-eps-c
 onverted-to.pdf images/Map_of_FiscCon.eps>
-(epstopdf)             \includegraphics on input line 181.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<images/Map_of_FiscCon-eps-converted-to.pdf, id=105, 635.37375pt x 305.14pt>
+<images/Map_of_FiscCon-eps-converted-to.pdf, id=101, 635.37375pt x 305.14pt>
 File: images/Map_of_FiscCon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Map_of_FiscCon-eps-converted-to.pdf>
 Package pdftex.def Info: images/Map_of_FiscCon-eps-converted-to.pdf  used on in
-put line 181.
+put line 180.
 (pdftex.def)             Requested size: 630.45189pt x 302.8019pt.
 Package epstopdf Info: Source file: <images/socialdemocratism.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
@@ -873,35 +827,19 @@ pdf>
 (epstopdf)                    size: 30086 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/socialdemocratism-ep
 s-converted-to.pdf images/socialdemocratism.eps>
-(epstopdf)             \includegraphics on input line 193.
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
-<images/socialdemocratism-eps-converted-to.pdf, id=106, 722.7pt x 413.545pt>
+<images/socialdemocratism-eps-converted-to.pdf, id=102, 722.7pt x 413.545pt>
 File: images/socialdemocratism-eps-converted-to.pdf Graphic file (type pdf)
 <use images/socialdemocratism-eps-converted-to.pdf>
 Package pdftex.def Info: images/socialdemocratism-eps-converted-to.pdf  used on
- input line 193.
+ input line 192.
 (pdftex.def)             Requested size: 452.9679pt x 259.19696pt.
- [7
+ [6
 
-] [8 <./images/newtimes_lines-eps-converted-to.pdf> <./images/newJoyPlotFiscal-
-eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>] [9 <./ima
+] [7 <./images/newtimes_lines-eps-converted-to.pdf> <./images/newJoyPlotFiscal-
+eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>] [8 <./ima
 ges/socialdemocratism-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <images/validation.eps>
-(epstopdf)                    date: 2018-09-09 19:05:57
-(epstopdf)                    size: 47248 bytes
-(epstopdf)             Output file: <images/validation-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-09-09 19:05:57
-(epstopdf)                    size: 20314 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/validation-eps-conve
-rted-to.pdf images/validation.eps>
-(epstopdf)             \includegraphics on input line 205.
-Package epstopdf Info: Output file is already uptodate.
-<images/validation-eps-converted-to.pdf, id=154, 433.62pt x 289.08pt>
-File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
-<use images/validation-eps-converted-to.pdf>
-Package pdftex.def Info: images/validation-eps-converted-to.pdf  used on input 
-line 205.
-(pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 58668 bytes
@@ -910,49 +848,57 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    size: 33875 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation2-eps-conv
 erted-to.pdf images/validation2.eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
-<images/validation2-eps-converted-to.pdf, id=155, 433.62pt x 289.08pt>
+<images/validation2-eps-converted-to.pdf, id=147, 433.62pt x 289.08pt>
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf  used on input
- line 209.
+ line 204.
 (pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
+Package epstopdf Info: Source file: <images/validation.eps>
+(epstopdf)                    date: 2018-09-09 19:05:57
+(epstopdf)                    size: 47248 bytes
+(epstopdf)             Output file: <images/validation-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-09-09 19:05:57
+(epstopdf)                    size: 20314 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/validation-eps-conve
+rted-to.pdf images/validation.eps>
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
+<images/validation-eps-converted-to.pdf, id=148, 433.62pt x 289.08pt>
+File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
+<use images/validation-eps-converted-to.pdf>
+Package pdftex.def Info: images/validation-eps-converted-to.pdf  used on input 
+line 208.
+(pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
+ [9
 
-Overfull \vbox (0.13911pt too high) has occurred while \output is active []
+ <./images/validation2-eps-converted-to.pdf> <./images/validation-eps-converted
+-to.pdf>] [10
 
+] [11
 
-[10
-
- <./images/validation-eps-converted-to.pdf> <./images/validation2-eps-converted
--to.pdf>] [11] [12
-
-] [13
-
-] [14
+] [12
 
 ] (appendix.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
- [15
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+ [13
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (appendix.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 Package rerunfilecheck Info: File `appendix.out' has not changed.
 (rerunfilecheck)             Checksum: 389D761FAC03FF8857580D724DF2FAD3;679.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 10116 strings out of 492973
- 153999 string characters out of 3125364
- 270260 words of memory out of 3000000
- 13720 multiletter control sequences out of 15000+200000
+ 10117 strings out of 492973
+ 154023 string characters out of 3125364
+ 270458 words of memory out of 3000000
+ 13723 multiletter control sequences out of 15000+200000
  47347 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,1175b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -973,9 +919,9 @@ ic/uhvr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 urw/times/utmb8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on appendix.pdf (15 pages, 4703455 bytes).
+Output written on appendix.pdf (13 pages, 4700653 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -196,28 +196,54 @@ Figure \ref{mostleast} presents an overview of the most and the least conservati
 \clearpage
 
 
-\subsection{Validating Our Measure Of Citizens' Policy Preferences}
-How well does this electoral measure capture voters underlying preferences? To get an indication of this, we look at the 2013 Danish Municipal Election Survey \cite{elklit2017kv13}. In this survey, more than 30 respondents (avg. 46) from each municipality were asked to place themselves on an eleven point ideology scale going from left to right. We calculate the municipality-specific mean of these responses and correlate these with the municipality-specific net support for conservative parties in the 2013 municipal election.  As can be seen from figure \ref{validation1}, the two are strongly correlated, which suggests that we are in fact tapping into relevant variation in policy views, when we measure citizens preferences over parties. Further, its important to note that the correlation is biased downwards, because we have random measurement error in our sample based measure of policy views.\footnote{The reader should also note that due to the municipal reform of 2006 (cf. the section on empirical context) we can only have 98 observations corresponding to the 98 (amalgamated) municipalities.}
+\subsection{Validating Our Measure Of Citizens' Policy Preferences} \label{validation}
+In figure \ref{validation2}, we try to gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if we used election returns from national, rather than local, elections to estimate local policy preferences.
 
 \begin{figure}[htbp]
+		\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=1\textwidth]{validation2.eps}
+		\caption{How strongly correlated are the electorate's preferences at municipal and national elections? Data from the 2005 municipal and national elections.} \label{validation2}
+	\end{subfigure}
 	\begin{subfigure}{0.45\textwidth}
 		\includegraphics[width=1\textwidth]{validation.eps}
 		\caption{Does the electorates preference over parties reflect preferences over policy? Data from the 2013 municipal election.} \label{validation1}
 	\end{subfigure}  \hfill
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=1\textwidth]{validation2.eps}
-		\caption{How strongly correlated are the electorate's preferences at municipal and national elections? Data from the 2005 municipal and national elections.} \label{validation2}
-	\end{subfigure}
 	\caption{How does our measure of local policy preferences perform?}
 \end{figure}
 
-Our measure of local policy preferences do not simply reflect the overall ideological mood in the municipality, but the ideological mood expressed by the electorate at municipal elections. This is potentially significant, because unlike previous research, which relies on electoral data from national or regional elections, we do not risk misidentifying electorates who might differ in their policy views across domains (i.e., who want more liberal fiscal policies locally and more conservative policies nationally). Why might there be a divergence between the electorate's preferences at a local and at a national election? For one, the electorate at municipal elections might be differently composed than electorates in national elections, as different types of people participate in different types of elections \citep{ansolabehere2015beyond,hansen2017social} In addition to this, voters might have preferences over which levels of government should be smaller or larger.
+How well does this electoral measure capture voters underlying preferences? To get an indication of this, we look at the 2013 Danish Municipal Election Survey \cite{elklit2017kv13}. In this survey, more than 30 respondents (avg. 46) from each municipality were asked to place themselves on an eleven point ideology scale going from left to right. We calculate the municipality-specific mean of these responses and correlate these with the municipality-specific net support for conservative parties in the 2013 municipal election.  As can be seen from figure \ref{validation1}, the two are strongly correlated, which suggests that we are in fact tapping into relevant variation in policy views, when we measure citizens preferences over parties. Further, its important to note that the correlation is biased downwards, because we have random measurement error in our sample based measure of policy views.\footnote{The reader should also note that due to the municipal reform of 2006 (cf. the section on empirical context) we can only have 98 observations corresponding to the 98 (amalgamated) municipalities.}
 
-In figure \ref{validation2}, we try to gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if we used election returns from national, rather than local, elections to estimate local policy preferences.
 
 \clearpage
 
 \subsection{An Alternative Measure of City Policy Preferences}
+
+DOES CHANGES IN POLICY AFFECT LATER CHANGES IN PREFERENCES?
+
+
+\subsection*{Does It Simply Reflect Fiscal Stress?}
+Bad Control, Yet still relevant to look at variation independent of fiscal stress. 
+
+\subsection*{Is it Just The Mayoralty?}
+
+There are two important reasons why we would expect municipal policy to be responsive to voter preferences. First, when the electorate chooses to elect more right-wing candidates, we would expect them to enact more fiscally conservative policies. Second, we might observe that parties are differentially responsive to voter preferences. We investigate these mechanisms in Figure \ref{fig:mech}.
+
+In panel A, we include a categorical control for whether the mayoral party is the Liberal Party, the Social Democrats, or some third party.  In doing so, we condition the effect of electoral support for right-wing parties on, whether those parties control the most important municipal policy-making position. This gives us the effect of support for right-wing parties among the voters after taking into account, which politicians they elect. Identifying the direct effect of electoral support net of selection by including a post-treatment control in this way requires very strong assumptions that are unlikely to be met \textbf{REFERENCE}. Still, it is striking how little the coefficient on the policy preferences of the electorate changes, when controlling for the mayoral party. This result is very similar to 
+
+\begin{figure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=1\textwidth]{PostTreatControl.eps}
+		\caption{Are Results Driven by Selection? The figure shows results after including control for the mayoral party. Baseline estimates are included for comparison.} \label{mech}
+	\end{subfigure}  \hfill
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=1\textwidth]{MargFX_31082018.eps}
+		\caption{Are All Parties Equally Responsive? The figure shows the marginal effects from a model including an interaction between mayoral party and electoral support for right-wing parties.} \label{inter}
+	\end{subfigure}
+	\caption{Responsiveness or Selection? Twoway fixed effects and population size (logged) included in both models. Confidence intervals are 95 pct., computed from Newey-West robust standard errors.}
+	\label{fig:mech}
+\end{figure}
+
+In panel B, we allow the effect to vary across our three different categories of mayoral party. While there is too much noise in the estimation for the differences to be statistically significant, the point estimates for the two major parties (Social Democratis and the Liberal Party) are strikingly similar. Both estimates are large, and we can reject the null at a reasonably high level of confidence. For third-party mayors, however, we cannot reject the null that they are unresponsive to voter preferences.
 
 \clearpage
 
@@ -225,7 +251,7 @@ In figure \ref{validation2}, we try to gauge the extent to which it matters that
 
 \clearpage
 
-\subsection{Models With Controls}
+\subsection{Models With Controls} \label{controls}
 
 \clearpage
 
