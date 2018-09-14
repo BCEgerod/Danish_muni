@@ -14,6 +14,10 @@ df$spend.cap <- df$spend/df$estpop
 df$aflastningsophold <- as.numeric(as.character(df$aflastningsophold))
 
 new.df <- df[,c(7, 8, 13:20, 22)]
+
+new.df <- df[,c(1:2, 10, 11, 18, 24:34, 68]
+
+
 new.df <- as.data.frame(new.df)
 
 for(i in 1:ncol(new.df)){
