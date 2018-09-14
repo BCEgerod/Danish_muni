@@ -1,0 +1,122 @@
+\documentclass{cupjournal}
+% Use the options 'crop' to show crop marks, and
+% 'doublespaced' for double line spacing.
+% e.g. \documentclass[crop,doublespaced]{cupjournal}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+%%%%% If you want to use bibtex instead of biblatex (which is the default), then add "bibtex" to the \documentclass[] options;  COMMENT OUT the line below; and edit the final lines before \end{document} accordingly. You will likely need to click "recompile from scratch" or delete all .bbl, if you get an error the first time you re-compile your .tex file.
+%%%%%
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\markboth{nyhan }{President's Vulnerability to Media Scandal}
+
+\journalname{Draft Submission to B.J.Pol.S.}
+\journalvolume{XX}
+\journalyear{2016}
+\pagecount{X--XX}
+\doinumber{doi:10.1017/XXXX}
+
+\title{Template for Submitting Your Article to BJPolS Using Overleaf}
+
+\author{\textls{BRENDAN NYHAN \and ANOTHER AUTHOR}\thanks{\noindent I thank John Aldrich, Michael Brady, Brian Fogarty, Seth Freedman, James Hamilton, Karen Hoffman, Daniel Lee, Walter Mebane, Jacob Montgomery, Michael Munger, David Rohde, Charles Shipan, Keith Smith, Georg Vanberg, and anonymous reviewers for helpful comments. I am also grateful to Marshall Breeding of the Vanderbilt News Archive, Andrew Forcehimes, and Brian Newman for sharing data and to Stacy Kim and Gracelin Baskaran for research assistance. Finally, I thank the Robert Wood Johnson Foundation for generous support. A supplementary online appendix and replication data and code are available at http://journals.cambridge.org/action/displayJournal?jid=JPS.}}
+
+\maketitle
+
+\begin{abstract}
+Despite its importance in contemporary American politics, presidential scandal is poorly understood within political science. Scholars typically interpret scandals as resulting from the disclosure of official misbehavior, but the likelihood and intensity of media scandals is also influenced by the political and news context. In this article, I provide a theoretical argument for two independent factors that should increase the president's vulnerability to scandal: low approval among opposition party identifiers and a lack of congestion in the news agenda. Using new data and statistical approaches, I find strong support for both claims. First, I estimate duration models demonstrating that media scandals are more likely when approval is low among opposition identifiers. Using exogenous news events as an instrumental variable to overcome the endogeneity of news congestion, I then show how competing stories can crowd out scandal coverage. These results suggest that contextual factors shape the occurrence of political events and how such events are interpreted.
+\end{abstract}
+
+From Iran-Contra to Monica Lewinsky, presidential scandal has come to play an especially important role in contemporary American politics since Watergate, but it remains an elusive and poorly understood topic within political science {cameron02}. To date, most quantitative research on scandal has focused on the \emph{effects} of allegations of impropriety on trust in government and the media,\footnote{See, e.g., \cite{bechtelscheve2013,bechteletal2013framing}.} members of Congress,\footnote{See, e.g., \cite{bechtelschmid2013,calleexplainingelectoral2010}.} or the president.\footnote{See, e.g., \cite{abrajanonatural2005,cohenetal1997,Andonovaetal2009}.}
+No clear understanding has emerged about the context in which scandals involving legislators are most likely to occur, however---both {peters80} and {welch97} find no obvious time trend, partisan differences, or effect of length of incumbency on scandals involving members of the House of Representatives {peters80,welch97}---and no one has systematically analyzed why presidential scandals occur.\footnote{Previous studies have examined the relationship between divided government and Congressional investigations of the executive branch, but such investigations are an endogenous part of the process by which scandals are created rather than the outcome of interest. See \cite{Ariely1998,atheydiffndiff2005,aulisietal2007}.} In particular, even though scandals forced out or seriously threatened the tenures of three of the last eight presidents (Nixon, Reagan, and Clinton), we know little about why scandals happen to presidents at some times and not others.
+\footcite[183]{Ariely1998}
+
+%%% Either \footcite or \cite within a \footnote (e.g. \footnote{See, e.g., \cite{apostolidis04}}) can be used, according to the author's preference. Note that \footcite is not available if using the bibtex option.
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation.\footnote{See, e.g., \cite{apostolidis04}.} However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation. However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation. However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation. However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation. However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+One problem is the way that scandal has been conceptualized. Scholars have typically defined scandal as the result of the disclosure of some act of wrongdoing or norm violation. However, whether any specific case meets such a standard is often unclear or contested. Moreover, such a normative standard is less useful in understanding when scandals are \emph{perceived} to occur in public debate, particularly when there is no definitive evidence of misconduct. In such cases, context appears to influence whether a scandal is believed to have occurred. When the political and news environment is unfavorable, scandals may erupt in the press despite thin evidentiary support. By contrast, under more favorable conditions, even well-supported allegations can languish.
+
+
+\section{a new approach: defining a media scandal}
+
+In this section, I present a theory in which media scandals are a
+``co-production'' of the press and the opposition party. According to
+this view, the recognition of scandal in the press is not strictly a
+reflection of ethical transgressions by public figures but a socially
+constructed event in which the actions (or alleged actions) of a public
+figure or institution are \emph{successfully construed} as violating
+ethical norms.
+
+\begin{table}
+\centering
+\caption{This is a sample table.}
+\begin{tabular}{ll}
+\hline\hline
+Column 1 & Column 2\\
+\hline
+AAA & BBB\\
+CCC & DDD\\
+\hline\hline
+\end{tabular}
+
+\end{table}
+
+\subsection{Media Scandal as a Co-production}
+
+In contemporary American politics, the opposition party and the elite
+political media (the national print and television outlets that often
+set the agenda for the rest of the press) are the two crucial
+institutional players in creating and sustaining presidential and
+executive branch scandals.
+
+\subsubsection{Opposition approval}
+A number of recent studies have found that contemporary legislators are
+highly responsive to partisan, activist, and primary
+constituencies.
+
+\begin{figure}[!t]
+\label{bushsurge}
+\centering
+% \centerline{\fbox{\hbox to 20pc{\vbox to 6pc{\hsize20pc{\vfill\hfil\textbf{FPO}\hfil\vfill}}}}}
+\includegraphics[width=.6\linewidth]{example-image}
+
+\caption{Predicted effect of opposition approval surge: Valerie Plame}
+
+\fignote{predicted probabilities from the conditional logit model in Table 1 of the effect of a shock to lagged opposition approval with other variables held at their actual values for October 6--11, 2003. The presidential fixed effect is assumed to be zero, an assumption which is necessary to estimate out-of-sample predicted probabilities from a conditional logit model with more than one positive outcome per unit.}
+\end{figure}
+
+The models of scandal onset $O_t$ and intensity $I_t$ in week $t$ and month $m$ that test H2 are specified as
+\begin{equation}
+\label{secondstage}
+O_t = \beta_0 + \beta_1 A_{m-1} + \beta_2 N_{t} + \textbf{X}_t \beta^{\sim}  + \varepsilon_t
+\end{equation}
+where $A_{m-1}$ represents the value of opposition approval in the previous month, $N_{t}$ represents the value of news pressure during that week, and $\textbf{X}_t$ is a vector of control variables, including the polynomials accounting for duration dependence described above. For expositional clarity, I separate the constant $\beta_0$, the coefficients for opposition approval $\beta_1$ and news pressure $\beta_2$, and the coefficient vector $\beta^{\sim}$, which represents the coefficients for the control variables in the model.
+
+Finally, as noted earlier, the press and the opposition party have a symbiotic relationship; neither can generate a scandal alone. Because both groups face similar incentives, I hypothesize that the likelihood of jointly generating the positive feedback dynamics that create a scandal will vary depending on the president's standing with the opposition party:
+
+\begin{hypolist}
+\item As support for the president among opposition party identifiers increases, the likelihood of scandal should decrease.
+\item As support for the president among opposition party identifiers increases, the likelihood of scandal should decrease.
+\end{hypolist}
+
+%%%%%% If you want to use bibtex instead of biblatex (which is the default, then add "bibtex" to the \documentclass[] options; comment out the \addbibresource at the top of this file; un-comment the next two lines; comment out the final \printbibliography. You will likely need to click "recompile from scratch" or delete all .bbl, if you get an error the first time you re-compile your .tex file after switching between biblatex/bibtex.
+%%%%%%
+% \bibliographystyle{chicago}
+% \bibliography{sample}
+\printbibliography
+
+
+\end{document}

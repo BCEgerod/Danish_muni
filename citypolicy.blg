@@ -1,0 +1,17 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: citypolicy.aux
+The style file: apa.bst
+Database file #1: bibtex/library.bib
+Warning--entry type for "oecd2016subnational" isn't style-file defined
+--line 159 of file bibtex/library.bib
+Warning--entry type for "sances2017voters" isn't style-file defined
+--line 193 of file bibtex/library.bib
+Repeated entry---line 267 of file bibtex/library.bib
+ : @book{peterson1981city
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 351 of file bibtex/library.bib
+ : @article{stimson1995dynamic
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in ansolabehere2015beyond
+(There were 2 error messages)
