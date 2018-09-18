@@ -18,7 +18,7 @@ pan.dat$mayor_bin <- as.factor(ifelse(pan.dat$mayor == "a", 0,
 #pan.dat$mayor_bin <- relevel(pan.dat$mayor_bin, ref = "soc_dem")#make SocDem reference
 
 # various measures of muni fiscal SocDem
-pan.dat$cons <- pan.dat$full.SocDem*-1
+pan.dat$full.SocDem <- pan.dat$full.SocDem*-1
 pan.dat$cons_red <- pan.dat$spend.SocDem*-1
 
 pan.dat$lag_SocDem1 <- plm::lag(pan.dat$full.SocDem,-4) # full measure
@@ -28,8 +28,8 @@ pan.dat$fd_SocDem_reduced <- pan.dat$lead_SocDem_reduced - pan.dat$spend.SocDem 
 
 # first-difference of red votes
 #pan.dat$blue_vote <- pan.dat$redvote*-1
-pan.dat$lag_redvote <- plm::lag(pan.dat$redvote, 4)
-pan.dat$fd_redvote <- pan.dat$redvote - pan.dat$lag_redvote
+pan.dat$lag_bluevote <- plm::lag(pan.dat$redvote, 4)
+pan.dat$fd_bluevote <- pan.dat$redvote - pan.dat$lag_bluevote
 
 # first-difference of logged population size
 pan.dat$log_pop <- log(pan.dat$estpop) # log transform
@@ -109,14 +109,14 @@ coeftest(fe.mod.red, vcovNW(fe.mod.red, type = "HC1", cluster = "group"))
 
 # four-year lead difference in outcome
 # four-year lagged difference in covariates
-fd.mod <- plm(fd_SocDem ~ fd_redvote + fd_pop, 
+fd.mod <- plm(fd_SocDem ~ fd_bluevote + fd_pop, 
               data = pan.dat, model = "pooling", 
               effects = "time")
 
 coeftest(fd.mod, vcovNW(fd.mod, type = "HC1", cluster = "group"))
 
 #reduced measure
-fd.mod.red <- plm(fd_SocDem_reduced ~ fd_redvote + fd_pop, 
+fd.mod.red <- plm(fd_SocDem_reduced ~ fd_bluevote + fd_pop, 
               data = pan.dat, model = "pooling", 
               effects = "time")
 coeftest(fd.mod.red, vcovNW(fd.mod.red, type = "HC1", cluster = "group"))
@@ -139,23 +139,23 @@ pan.dat2 <- dplyr::left_join(pan.dat, df, by = c("muni", "year"))
 pan.dat2 <- pdata.frame(pan.dat2, index = c("muni", "year"))
 
 # four year differences
-pan.dat2$lag_educ <- plm::lag(pan.dat2$educ, 4)
-pan.dat2$fd_educ <- pan.dat2$educ - pan.dat2$lag_educ
+pan.dat$lag_educ <- plm::lag(pan.dat$educ, 4)
+pan.dat$fd_educ <- pan.dat$educ - pan.dat$lag_educ
 
-pan.dat2$lag_immig <- plm::lag(pan.dat2$immig, 4)
-pan.dat2$fd_immig <- pan.dat2$immig - pan.dat2$lag_immig
+pan.dat$lag_immig <- plm::lag(pan.dat$immig, 4)
+pan.dat$fd_immig <- pan.dat$immig - pan.dat$lag_immig
 
-pan.dat2$lag_unemployment <- plm::lag(pan.dat2$unemployment, 4)
-pan.dat2$fd_unemp <- pan.dat2$unemployment - pan.dat2$lag_unemployment
+pan.dat$lag_unemployment <- plm::lag(pan.dat$unemployment, 4)
+pan.dat$fd_unemp <- pan.dat$unemployment - pan.dat$lag_unemployment
 
-pan.dat2$lag_need <- plm::lag(pan.dat2$need, 4)
-pan.dat2$fd_need <- pan.dat2$need - pan.dat2$lag_need
+pan.dat$lag_need <- plm::lag(pan.dat$need, 4)
+pan.dat$fd_need <- pan.dat$need - pan.dat$lag_need
 
 #models
 
 #pooling
-pool.cont <- plm(lag_SocDem1 ~ redvote+ educ + immig +  unemployment, 
-                 data = pan.dat2, model = "pooling")
+pool.cont <- plm(lag_SocDem1 ~ bluevote+ educ + immig +  unemployment, 
+                 data = pan.dat, model = "pooling")
 coeftest(pool.cont, vcovHC(pool.cont, group = "cluster", type = "HC1"))
 
 pool.cont.red <- plm(lead_SocDem_reduced ~ redvote+ educ + immig +  unemployment, 
@@ -164,8 +164,8 @@ coeftest(pool.cont.red, vcovHC(pool.cont.red, group = "cluster", type = "HC1"))
 
 #2way FE
 
-fe.cont <- plm(lag_SocDem1 ~ redvote+ educ + immig + unemployment, 
-               data = pan.dat2, model = "within", effects = "twoway")
+fe.cont <- plm(lag_SocDem1 ~ bluevote + immig + educ + unemployment, 
+               data = pan.dat, model = "within", effects = "twoway")
 coeftest(fe.cont, vcovHC(fe.cont, type = "HC1", cluster = "group"))
 
 fe.cont.red <- plm(lead_SocDem_reduced ~ redvote+ educ + immig + unemployment, 
@@ -174,8 +174,8 @@ coeftest(fe.cont.red, vcovHC(fe.cont.red, type = "HC1", cluster = "group"))
 
 # four year differences
 
-fd.cont <- plm(fd_SocDem ~ fd_redvote + fd_pop + fd_unemp + fd_immig + fd_educ,
-               data = pan.dat2, model = "pooling", effect = "time")
+fd.cont <- plm(fd_SocDem ~ fd_bluevote + fd_pop + fd_unemp + fd_immig + fd_educ,
+               data = pan.dat, model = "pooling", effect = "time")
 
 coeftest(fd.cont, vcovHC(fd.cont, cluster = "group", type = "HC1"))
 
@@ -310,28 +310,28 @@ test <- plm(plm::lag(redvote,-4) ~ full.SocDem,data=pan.dat,
             model="within", effects="twoway")
 summary(test)
 
-mod1 <- plm(plac ~ redvote + log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod1 <- plm(plac ~ bluevote + log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod1, vcovHC(mod1,type="HC1", cluster = "group"))
 
-mod2 <- plm(full.SocDem ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod2 <- plm(full.SocDem ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod2, vcovHC(mod2,type="HC1", cluster = "group"))
 
-# mod3 <- plm(SocDem1 ~ redvote+ log_pop, data = pan.dat, model = "within", effects = "twoway")
+# mod3 <- plm(SocDem1 ~ bluevote+ log_pop, data = pan.dat, model = "within", effects = "twoway")
 # coeftest(mod3, vcovHC(mod3,type="HC1", cluster = "group"))
 
-mod4 <- plm(SocDem4 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod4 <- plm(SocDem4 ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod4, vcovHC(mod4,type="HC1", cluster = "group"))
 
-mod5 <- plm(SocDem8 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod5 <- plm(SocDem8 ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod5, vcovHC(mod5,type="HC1", cluster = "group"))
 
-mod6 <- plm(SocDem12 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod6 <- plm(SocDem12 ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod6, vcovHC(mod6,type="HC1", cluster = "group"))
 
-mod7 <- plm(SocDem16 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod7 <- plm(SocDem16 ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod7, vcovNW(mod7,type="HC1"))
 
-mod8 <- plm(SocDem20 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+mod8 <- plm(SocDem20 ~ bluevote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
 coeftest(mod8, vcovNW(mod8,type="HC1"))
 
 
@@ -500,16 +500,28 @@ ggsave(medi_plot, filename = "PostTreatControl.eps",
 #
 ######################################################################
 
-item_df <- pan.dat2[, c(3:4, 13, 25:33, 35)]
+df <- subset(df, year > 1973)
+df <- subset(df, is.na(muni)==F)
+
+pan.dat <- pdata.frame(df, index = c("muni", "year"))
+pan.dat$spend.cap <- pan.dat$spend/pan.dat$estpop
+
+item_df2 <- pan.dat2[, c(3:4, 13, 25:33, 35)]
 #item_df <- pdata.frame(item_df, index =c("muni", "year"))
+
+item_df <- pan.dat[, c(1,2,20,38:50)]
+
+item_df <- pan.dat[,c(1,2,20,11, 17,22:33, 37)]
+item_df <- item_df[,-c(13)]
+item_df <- item_df[,-c(15)]
 
 item_res <- list()
 
-for(i in 4:13){
+for(i in 4:16){
   item_df[,i] <- plm::lag(item_df[,i], -4)
   
-  mod <- plm(item_df[,i] ~ redvote, data = item_df, 
-             model = "within", effects = "twoway")
+  mod <- plm(item_df[,i] ~ bluevote, data = item_df, 
+             model = "within", effect = "twoway")
   
   item_res[[i]] <- data.frame(PE = coef(mod)[1],
                               SE = sqrt(diag(vcovHC(mod, cluster = "group", 
@@ -518,6 +530,11 @@ for(i in 4:13){
   
   
 }
+
+mod <- plm(plm::lead(dagtilbud, 4) ~ bluevote, data = item_df, 
+           model = "within", effects = "twoway")
+
+summary(mod)
 
 item_res <- do.call("rbind", item_res)
 item_res$real_name <- c("Income Tax",
@@ -531,7 +548,9 @@ item_res$real_name <- c("Income Tax",
                       "Privately Operated\nServices",
                       "Spending/capita")
 
-item_p<-ggplot(item_res, aes(y=reorder(real_name, PE), x = PE)) +
+sub_item <- subset(item_res, varname != plejehjem &  varname != dagtilbud)
+
+item_p<-ggplot(item_res, aes(y=reorder(varname, PE), x = PE)) +
   geom_point() +
   geom_errorbarh(aes(xmin=PE-(1.96*SE),
                      xmax=PE+(1.96*SE)),
@@ -540,7 +559,7 @@ item_p<-ggplot(item_res, aes(y=reorder(real_name, PE), x = PE)) +
   geom_vline(xintercept = 0, lty = 2) +
   labs(x="Estimated Coefficient\n(Outcomes are centered and standardized)", y = NULL) +
   scale_x_continuous(breaks = c(-10, seq(-5, 5)))
-
+item_p
 
 setwd("~/GitHub/Danish_muni/images")
 ggsave(item_p, filename = "ItemByItem_11092018.eps")
