@@ -197,20 +197,12 @@ Figure \ref{fig:FourYearLead} plots the key estimate (i.e., the effect of change
 Across models, we estimate the effect to be roughly XX. This means that if net support for right-wing parties increases with 10 percentage points, then policy becomes XX more conservative. If we only look at within municipality variation in policy conservatism, then this corresponds to XX pct. of a standard deviation.  This is a substantive association. With an effect of this magnitude, moving the voters from the socialdemocratic stronghold Albertslund to the highly conservative Gentofte would transform the fiscal policy in Gentofte to roughly that of Slagelse. This would move Gentofte down by more than 40 positions (out of 273 municipalities) in our ranking of fiscal conservatism.
 
 
-It is interesting to know whether these results simply reflect changes in the socio-demographic make-up of the municipalities. To look at this we replicate our models including a vector of controls. In particular, we control for population size, education, unemployment rate and the number of non-western immigrants in the municipality. The control for unemployment is especially noteworthy, as it is a strong indicator of whether the municipality is hit particularly hard by a temporary economic shock, which might drive both preferences and policy. However, these controls make little or no difference--if anything the results are a but stronger). See Appendix \ref{controls} for the full models. 
-
-To examine the temporal dynamics of this effect, figure \ref{fig:LongRun} reports the estimated effect of local policy preferences at time $t$ on policy preferences at different points in time. In particular, it is plotted at $t=0$, one year after $t=0$, $t=1$ (corresponding to four years after $t=0$), $t=2$ (eight years), $t=3$ (16 years) and $t=4$ (20 years). This figure reveals that, as expected, it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is  after four years. After this the effect seems to have some staying power, and while it does become smaller over time, it is remarkable that a change in voter mood can persist as far into the future as 16 years (corresponding to four elections) before disappearing.
-
-%In our preferred model (the fixed effects model), 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale = 0.8]{coef_11092018.eps}
-	\caption{Effect of Electoral Support for Right-wing Parties with a 4-year Lead. Points are unstandardized OLS coefficients. Lines are 95 pct. confidence intervals computed using Newey-West robust standard errors.}
-	\label{fig:FourYearLead}
-\end{figure}
 
 
 
+
+
+\section{Stability of the effect}
 
 A key identifying assumption in the type of generalized difference in difference models laid out above, is that trends in the dependent variable (policy) are independent of selection into the independent variable (preferences). While we cannot test this directly, we can see whether there are trends in the dependent are similar before municipalities ``select into'' different preferences. Importantly, if voters became \emph{more conservative} as a result of changes in policy \cite[cf.][]{lenz2013follow,slothuus2010can}, and this was what was driving our result, then we would expect pre-trend trends to be different.
 
@@ -224,9 +216,19 @@ Figure \ref{fig:LongRun} shows that estimated effects of local policy preference
 	\label{fig:LongRun}
 \end{figure}
 
+\section{Fiscal Stress}
+It is interesting to know whether these results simply reflect changes in the socio-demographic make-up of the municipalities. To look at this we replicate our models including a vector of controls. In particular, we control for population size, education, unemployment rate and the number of non-western immigrants in the municipality. The control for unemployment is especially noteworthy, as it is a strong indicator of whether the municipality is hit particularly hard by a temporary economic shock, which might drive both preferences and policy. However, these controls make little or no difference--if anything the results are a but stronger). See Appendix \ref{controls} for the full models. 
 
 
+To examine the temporal dynamics of this effect, figure \ref{fig:LongRun} reports the estimated effect of local policy preferences at time $t$ on policy preferences at different points in time. In particular, it is plotted at $t=0$, one year after $t=0$, $t=1$ (corresponding to four years after $t=0$), $t=2$ (eight years), $t=3$ (16 years) and $t=4$ (20 years). This figure reveals that, as expected, it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is  after four years. After this the effect seems to have some staying power, and while it does become smaller over time, it is remarkable that a change in voter mood can persist as far into the future as 16 years (corresponding to four elections) before disappearing.
 
+%In our preferred model (the fixed effects model), 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.8]{coef_11092018.eps}
+	\caption{Effect of Electoral Support for Right-wing Parties with a 4-year Lead. Points are unstandardized OLS coefficients. Lines are 95 pct. confidence intervals computed using Newey-West robust standard errors.}
+	\label{fig:FourYearLead}
+\end{figure}
 \section*{Discussion \& Conclusion}
 
 

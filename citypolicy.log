@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  14 SEP 2018 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  18 SEP 2018 09:35
 entering extended mode
 **./citypolicy.tex
 (citypolicy.tex
@@ -780,7 +780,7 @@ Package epstopdf Info: Source file: <images/fd_plot.eps>
 d-to.pdf images/fd_plot.eps>
 (epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
-<images/fd_plot-eps-converted-to.pdf, id=173, 378.41376pt x 329.23pt>
+<images/fd_plot-eps-converted-to.pdf, id=181, 378.41376pt x 329.23pt>
 File: images/fd_plot-eps-converted-to.pdf Graphic file (type pdf)
 <use images/fd_plot-eps-converted-to.pdf>
 Package pdftex.def Info: images/fd_plot-eps-converted-to.pdf  used on input lin
@@ -797,36 +797,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7] [8 <./images/fd_plot-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `controls' on page 9 undefined on input line 200.
-
-
-Overfull \hbox (7.93205pt too wide) in paragraph at lines 200--201
-[]\OT1/ptm/m/n/12 It is in-ter-est-ing to know whether these re-sults sim-ply r
-e-flect changes in the socio-demographic
- []
-
-Package epstopdf Info: Source file: <images/coef_11092018.eps>
-(epstopdf)                    date: 2018-09-11 15:42:30
-(epstopdf)                    size: 59203 bytes
-(epstopdf)             Output file: <images/coef_11092018-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-09-11 15:42:42
-(epstopdf)                    size: 21216 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/coef_11092018-eps-co
-nverted-to.pdf images/coef_11092018.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
-<images/coef_11092018-eps-converted-to.pdf, id=267, 529.98pt x 329.23pt>
-File: images/coef_11092018-eps-converted-to.pdf Graphic file (type pdf)
-<use images/coef_11092018-eps-converted-to.pdf>
-Package pdftex.def Info: images/coef_11092018-eps-converted-to.pdf  used on inp
-ut line 207.
-(pdftex.def)             Requested size: 423.98456pt x 263.38435pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9]
 Package epstopdf Info: Source file: <images/NoLag_varying_leads.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 52495 bytes
@@ -836,46 +806,71 @@ o.pdf>
 (epstopdf)                    size: 19586 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/NoLag_varying_leads-
 eps-converted-to.pdf images/NoLag_varying_leads.eps>
-(epstopdf)             \includegraphics on input line 222.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 <images/NoLag_varying_leads-eps-converted-to.pdf, id=279, 681.54625pt x 340.271
 26pt>
 File: images/NoLag_varying_leads-eps-converted-to.pdf Graphic file (type pdf)
 <use images/NoLag_varying_leads-eps-converted-to.pdf>
 Package pdftex.def Info: images/NoLag_varying_leads-eps-converted-to.pdf  used 
-on input line 222.
+on input line 214.
 (pdftex.def)             Requested size: 408.93091pt x 204.16432pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(citypolicy.bbl [10 <./images/coef_11092018-eps-converted-to.pdf>] [11 <./image
-s/NoLag_varying_leads-eps-converted-to.pdf>] [12]) [13]
+
+LaTeX Warning: Reference `controls' on page 9 undefined on input line 220.
+
+[9]
+Package epstopdf Info: Source file: <images/coef_11092018.eps>
+(epstopdf)                    date: 2018-09-11 15:42:30
+(epstopdf)                    size: 59203 bytes
+(epstopdf)             Output file: <images/coef_11092018-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2018-09-11 15:42:42
+(epstopdf)                    size: 21216 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/coef_11092018-eps-co
+nverted-to.pdf images/coef_11092018.eps>
+(epstopdf)             \includegraphics on input line 228.
+Package epstopdf Info: Output file is already uptodate.
+<images/coef_11092018-eps-converted-to.pdf, id=289, 529.98pt x 329.23pt>
+File: images/coef_11092018-eps-converted-to.pdf Graphic file (type pdf)
+<use images/coef_11092018-eps-converted-to.pdf>
+Package pdftex.def Info: images/coef_11092018-eps-converted-to.pdf  used on inp
+ut line 228.
+(pdftex.def)             Requested size: 423.98456pt x 263.38435pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(citypolicy.bbl [10 <./images/NoLag_varying_leads-eps-converted-to.pdf>]
+[11 <./images/coef_11092018-eps-converted-to.pdf>] [12]) [13]
 
 Package caption Warning: Unused \captionsetup[table] on input line 40.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
 (citypolicy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
 Package rerunfilecheck Info: File `citypolicy.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: F31F19C565DE3165B384E14FA6C4B12F;108.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 10193 strings out of 492973
- 155528 string characters out of 3125364
+ 10201 strings out of 492973
+ 155614 string characters out of 3125364
  267185 words of memory out of 3000000
- 13785 multiletter control sequences out of 15000+200000
+ 13791 multiletter control sequences out of 15000+200000
  46976 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,1738b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,1738b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.0.5} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -907,9 +902,9 @@ vr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmb8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/urw/times/utmr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on citypolicy.pdf (13 pages, 546826 bytes).
+Output written on citypolicy.pdf (13 pages, 548086 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 32 words of extra memory for PDF output out of 10000 (max. 10000000)
 
