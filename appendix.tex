@@ -140,13 +140,13 @@ F^*_{itk} = \beta_k C_{it} - \alpha_{k}
 
 Where $F$ is the level of the observed fiscal policy variable $k$ in municipality $i$ at time $t$. the distribution of each of these observed variables is drawn from a normally distributed latent variable $F^*$, which has variance $\phi$. $C$ is the quantity of most interest -- the latent fiscal conservatism in that municipality. $\beta$ is the discrimination parameter, which captures how strongly each observed policy variable loads onto the latent dimension. Finally, $\alpha$ represents each item's difficulty parameter, which measures how fiscally conservative a municipality is, if it were to score 0 on the policy variable $k$.
 
-This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques when making inferences about the latent trait is that the simulations will impute missing data during the estimation, which allows us to include items with different numbers of observations in the model -- the variables with missing observations will simply supply less information to the estimation. Furthermore, we can use the Bayesian priors to introduce dynamics into the model, thus allowing quantities to not only vary across time, but also directly model temporal autocorrelation. Additionally, the estimation is simulation based, which allows us to directly estimate uncertainty around all model parameters. Finally, constraining prior distributions offers a flexible way of identifying the policy space. More on this final point later.
+This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques when making inferences about the latent trait is that the simulations will impute missing data during the estimation, which allows us to include items with different numbers of observations in the model -- the variables with missing observations will simply supply less information to the estimation. Additionally, the estimation is simulation based, which allows us to directly estimate uncertainty around all model parameters. 
 
-We include the 14 policy variables listed in table  \ref{tab:policies} in the model. Before we do so, all variables are rescaled to have mean zero and variance one. Furthermore, all variables where higher values imply a more left-wing fiscal policy are reversed. This implies that when estimating policy conservatism, higher values on all variables indicate a more conservative policy.This is strictly speaking not necessary, but it makes interpretation of the model parameters simpler.
+We include the 14 policy variables listed in table  \ref{tab:policies} in the model. Before we do so, all variables are rescaled to have mean zero and variance one. Furthermore, all variables where higher values imply a more left-wing fiscal policy are reversed. This implies that when estimating policy conservatism, higher values on all variables indicate a more conservative policy. This is strictly speaking not necessary, but it makes interpretation of the model parameters simpler.
 
 To identify the direction of the policy space, we constrain the $\beta$'s to be positive, so that municipalities scoring higher on our observed policy variables will be estimated to be more conservative. Location and scale is identified by placing standard normal priors on the distributions of all model parameters. All precision parameters are estimated using uninformative gamma priors.
 
-Estimation is done by initiating a random walk over the parameter space defined by the model using the Gibbs sampler. We run 25,000 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. To reduce autocorrelation within the chains of sampled values and improve convergence, we set a thinning interval of five, meaning that we only retained every fifth sampled value. Together, this specification ensured  convergence of the model and provided well-behaved, normal posterior distributions.
+Estimation is done by initiating a random walk over the parameter space defined by the model using the Gibbs sampler. We run 25,000 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. To reduce autocorrelation within the chains of sampled values and improve convergence, we set a thinning interval of five, meaning that we only retain every fifth sampled value. Together, this specification ensured  convergence of the model and provided well-behaved, normal posterior distributions.
 
 \clearpage
 
@@ -198,7 +198,7 @@ Figure \ref{mostleast} presents an overview of the most and the least conservati
 
 
 \subsection{Validating Our Measure Of Citizens' Policy Preferences} \label{validation}
-In figure \ref{validation2}, we try to gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if we used election returns from national, rather than local, elections to estimate local policy preferences.
+In figure \ref{validation2}, we gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if we used election returns from national, rather than local, elections to estimate local policy preferences.
 
 \begin{figure}[htbp]
 		\begin{subfigure}{0.45\textwidth}
@@ -218,12 +218,12 @@ How well does this electoral measure capture voters underlying preferences? To g
 
 \subsection{Regression Table for Main Results}
 
-%\begin{landscape}
+In Table \ref{main_res} we report a regression table summarizing the same information as the coefficient plot in the main text numerically.
 
 \begin{table}[!htbp] \centering 
 	\caption{} 
 	\footnotesize
-	\label{} 
+	\label{main_res} 
 	\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
 		\\[-1.8ex]\hline 
 		\hline \\[-1.8ex] 

@@ -10,7 +10,7 @@ library(DirectEffects)
 
 # load data
 df <- read_csv("~/GitHub/Danish_muni/data/full_data_SameScale.csv")
-pan.dat <- pdata.frame(df, index = c("muniname", "year")) # reformat data as panel
+pan.dat <- pdata.frame(df2, index = c("muni", "year")) # reformat data as panel
 
 #recode mayor variable
 pan.dat$mayor_bin <- as.factor(ifelse(pan.dat$mayor == "a", 0,
@@ -28,13 +28,19 @@ pan.dat$fd_SocDem_reduced <- pan.dat$lead_SocDem_reduced - pan.dat$spend.SocDem 
 
 # first-difference of red votes
 #pan.dat$blue_vote <- pan.dat$redvote*-1
-pan.dat$lag_bluevote <- plm::lag(pan.dat$redvote, 4)
-pan.dat$fd_bluevote <- pan.dat$redvote - pan.dat$lag_bluevote
+pan.dat$lag_bluevote <- plm::lag(pan.dat$bluevote, 4)
+pan.dat$fd_bluevote <- pan.dat$bluevote - pan.dat$lag_bluevote
 
 # first-difference of logged population size
 pan.dat$log_pop <- log(pan.dat$estpop) # log transform
 pan.dat$lag_pop <- plm::lag(pan.dat$log_pop, 4) #four-year lag
 pan.dat$fd_pop <- pan.dat$log_pop - pan.dat$lag_pop #four-year difference
+
+
+# spending
+
+pan.dat$lag_index <- plm::lag(pan.dat$spend.index,-4) # full measure
+pan.dat$fd_index <- pan.dat$lag_index - pan.dat$spend.index #FD reduced measure
 
 
 ################################################################
@@ -43,22 +49,23 @@ pan.dat$fd_pop <- pan.dat$log_pop - pan.dat$lag_pop #four-year difference
 #
 ################################################################
 
-p1<-ggplot(pan.dat, aes(x = fd_redvote, y = fd_SocDem)) +
+p1<-ggplot(pan.dat2, aes(x = fd_bluevote, y = fd_SocDem)) +
   geom_point(alpha = .1) +
-  geom_smooth(method = "lm", se = F, colour = "black") +
+  geom_smooth(method = "loess", se = F, colour = "black") +
   theme_classic() +
   labs(x = "Difference in prop. votes for the Right-Wing Parties\n(Since last election)",
-       y = "Difference in Fiscal Conservatism\n(Between this and next election)")
+       y = "Difference in Fiscal Conservatism\n(Between this and next election)") +
+  scale_y_continuous(limits=c(-.8,.8))
 
 yhist <- axis_canvas(p1, axis = "y", coord_flip = TRUE) +
-  geom_density(data = pan.dat, aes(x = fd_SocDem, alpha = .5), fill = "grey") +
+  geom_density(data = pan.dat2, aes(x = fd_SocDem, alpha = .5), fill = "grey") +
   #scale_fill_manual(values = c("grey", "black")) +
   coord_flip()
 
 combined_plot2 <- insert_yaxis_grob(p1, yhist, position = "right")
 
 xhist <- axis_canvas(p1, axis = "x", coord_flip = F) +
-  geom_density(data = pan.dat, aes(x = fd_redvote, alpha = .5), fill = "grey") #+
+  geom_density(data = pan.dat2, aes(x = fd_bluevote, alpha = .5), fill = "grey") #+
   #scale_fill_manual(values = c("grey", "black")) +
   #coord_flip()
 
@@ -67,13 +74,18 @@ combined_plot2 <- insert_xaxis_grob(combined_plot2, xhist, position = "top")
 
 ggdraw(combined_plot2)
 
-setwd("~/GitHub/Danish_muni/images")
+setwd("C:/Users/ex-bce/Dropbox/Responsiveness/images")
+#setwd("~/GitHub/Danish_muni/images")
 ggsave(combined_plot2, filename= "fd_plot.eps",
        device = cairo_ps,
        width = 5.24,
        height = 4.56)
 
-
+ggplot(pan.dat2, aes(x = bluevote, y = lag_SocDem1)) +
+  geom_point() +
+  geom_smooth(se=F) +
+  geom_smooth(method = "lm", se=F) +
+  theme_classic()
 
 ##################################################################
 #
@@ -83,12 +95,12 @@ ggsave(combined_plot2, filename= "fd_plot.eps",
 
 ####
 # pooled results
-pool.mod <- plm(lag_SocDem1 ~ redvote+ log_pop, data = pan.dat , 
+pool.mod <- plm(lag_index ~ bluevote+ log_pop, data = pan.dat , 
                 model = "pooling")
 coeftest(pool.mod, vcovNW(pool.mod, type = "HC1", cluster = "group"))
 
 # reduced measure
-pool.mod.red <- plm(lead_SocDem_reduced ~ redvote+ log_pop, data = pan.dat, 
+pool.mod.red <- plm(lead_SocDem_reduced ~ bluevote+ log_pop, data = pan.dat, 
                 model = "pooling")
 coeftest(pool.mod.red, vcovNW(pool.mod.red, type = "HC1", cluster = "group"))
 
@@ -96,9 +108,16 @@ coeftest(pool.mod.red, vcovNW(pool.mod.red, type = "HC1", cluster = "group"))
 # fixed effects results
 
 #full measure
-fe.mod <- plm(lag_SocDem1 ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
+fe.mod <- plm(lag_index ~ bluevote+ log_pop, data = pan.dat , 
+              model = "within", effects = "twoway")
 coeftest(fe.mod, vcovHC(fe.mod, type = "HC1", cluster = "group"))
 
+
+library(lfe)
+
+lfe_mod <- felm(lag_index ~ bluevote+ log_pop | factor(muni) + factor(year)
+                , data = pan.dat)
+summary(lfe_mod)
 #reduced measure
 
 fe.mod.red <- plm(lead_SocDem_reduced ~ redvote+ log_pop, data = pan.dat , model = "within", effects = "twoway")
@@ -531,7 +550,7 @@ for(i in 4:16){
   
 }
 
-mod <- plm(plm::lead(dagtilbud, 4) ~ bluevote, data = item_df, 
+mod <- plm(plm::lead(dagtilbud, 4) ~ bluevote, data = pan.dat, 
            model = "within", effects = "twoway")
 
 summary(mod)
