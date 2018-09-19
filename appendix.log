@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  18 SEP 2018 20:50
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.7)  19 SEP 2018 08:06
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 entering extended mode
 **./appendix.tex
 (appendix.tex
@@ -770,7 +774,7 @@ LaTeX Warning: Reference `tab:policies' on page 4 undefined on input line 145.
 
 [4
 
-] [5]
+]
 Package epstopdf Info: Source file: <images/newtimes_lines.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 713136 bytes
@@ -782,7 +786,12 @@ Package epstopdf Info: Source file: <images/newtimes_lines.eps>
 onverted-to.pdf images/newtimes_lines.eps>
 (epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/newtimes_lines-eps-converted-to.pdf, id=106, 411.5375pt x 228.855pt>
+=======
+
+<images/newtimes_lines-eps-converted-to.pdf, id=76, 411.5375pt x 228.855pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/newtimes_lines-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newtimes_lines-eps-converted-to.pdf>
 Package pdftex.def Info: images/newtimes_lines-eps-converted-to.pdf  used on in
@@ -801,7 +810,12 @@ df>
 -converted-to.pdf images/newJoyPlotFiscal.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/newJoyPlotFiscal-eps-converted-to.pdf, id=107, 411.5375pt x 228.855pt>
+=======
+
+<images/newJoyPlotFiscal-eps-converted-to.pdf, id=77, 411.5375pt x 228.855pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/newJoyPlotFiscal-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newJoyPlotFiscal-eps-converted-to.pdf>
 Package pdftex.def Info: images/newJoyPlotFiscal-eps-converted-to.pdf  used on 
@@ -818,7 +832,12 @@ Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 onverted-to.pdf images/Map_of_FiscCon.eps>
 (epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/Map_of_FiscCon-eps-converted-to.pdf, id=108, 635.37375pt x 305.14pt>
+=======
+
+<images/Map_of_FiscCon-eps-converted-to.pdf, id=78, 635.37375pt x 305.14pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/Map_of_FiscCon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Map_of_FiscCon-eps-converted-to.pdf>
 Package pdftex.def Info: images/Map_of_FiscCon-eps-converted-to.pdf  used on in
@@ -835,16 +854,21 @@ pdf>
 s-converted-to.pdf images/socialdemocratism.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/socialdemocratism-eps-converted-to.pdf, id=109, 722.7pt x 413.545pt>
+=======
+
+<images/socialdemocratism-eps-converted-to.pdf, id=79, 722.7pt x 413.545pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/socialdemocratism-eps-converted-to.pdf Graphic file (type pdf)
 <use images/socialdemocratism-eps-converted-to.pdf>
 Package pdftex.def Info: images/socialdemocratism-eps-converted-to.pdf  used on
  input line 193.
 (pdftex.def)             Requested size: 452.9679pt x 259.19696pt.
- [6
+ [5
 
-] [7 <./images/newtimes_lines-eps-converted-to.pdf> <./images/newJoyPlotFiscal-
-eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>] [8 <./ima
+] [6 <./images/newtimes_lines-eps-converted-to.pdf> <./images/newJoyPlotFiscal-
+eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>] [7 <./ima
 ges/socialdemocratism-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
@@ -856,7 +880,12 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 erted-to.pdf images/validation2.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/validation2-eps-converted-to.pdf, id=154, 433.62pt x 289.08pt>
+=======
+
+<images/validation2-eps-converted-to.pdf, id=124, 433.62pt x 289.08pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf  used on input
@@ -872,23 +901,41 @@ Package epstopdf Info: Source file: <images/validation.eps>
 rted-to.pdf images/validation.eps>
 (epstopdf)             \includegraphics on input line 209.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/validation-eps-converted-to.pdf, id=155, 433.62pt x 289.08pt>
+=======
+
+<images/validation-eps-converted-to.pdf, id=125, 433.62pt x 289.08pt>
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation-eps-converted-to.pdf  used on input 
 line 209.
 (pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
+<<<<<<< HEAD
  [9
+=======
+
+
+Package natbib Warning: Citation `elklit2017kv13' on page 8 undefined on input 
+line 215.
+
+[8
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 
  <./images/validation2-eps-converted-to.pdf> <./images/validation-eps-converted
 -to.pdf>]
+
+LaTeX Warning: Reference `main_res' on page 9 undefined on input line 221.
+
+
 Overfull \hbox (42.72894pt too wide) in paragraph at lines 227--253
  [][] 
  []
 
-[10
+[9
 
-] [11
+] [10
 
 ]
 Package epstopdf Info: Source file: <images/granger_18092018.eps>
@@ -902,14 +949,19 @@ df>
 -converted-to.pdf images/granger_18092018.eps>
 (epstopdf)             \includegraphics on input line 298.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/granger_18092018-eps-converted-to.pdf, id=190, 328.22626pt x 328.22626p
+=======
+
+<images/granger_18092018-eps-converted-to.pdf, id=157, 328.22626pt x 328.22626p
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 t>
 File: images/granger_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/granger_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: images/granger_18092018-eps-converted-to.pdf  used on 
 input line 298.
 (pdftex.def)             Requested size: 328.22545pt x 328.22545pt.
- [12
+ [11
 
  <./images/granger_18092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/PostTreatControl.eps>
@@ -923,7 +975,12 @@ df>
 -converted-to.pdf images/PostTreatControl.eps>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/PostTreatControl-eps-converted-to.pdf, id=203, 371.3875pt x 294.09875pt
+=======
+
+<images/PostTreatControl-eps-converted-to.pdf, id=170, 371.3875pt x 294.09875pt
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 >
 File: images/PostTreatControl-eps-converted-to.pdf Graphic file (type pdf)
 <use images/PostTreatControl-eps-converted-to.pdf>
@@ -941,14 +998,19 @@ f>
 converted-to.pdf images/MargFX_31082018.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/MargFX_31082018-eps-converted-to.pdf, id=204, 372.39125pt x 294.09875pt
+=======
+
+<images/MargFX_31082018-eps-converted-to.pdf, id=171, 372.39125pt x 294.09875pt
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 >
 File: images/MargFX_31082018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/MargFX_31082018-eps-converted-to.pdf>
 Package pdftex.def Info: images/MargFX_31082018-eps-converted-to.pdf  used on i
 nput line 314.
 (pdftex.def)             Requested size: 203.83417pt x 160.98294pt.
- [13
+ [12
 
  <./images/PostTreatControl-eps-converted-to.pdf> <./images/MargFX_31082018-eps
 -converted-to.pdf>]
@@ -963,7 +1025,12 @@ o.pdf>
 eps-converted-to.pdf images/ItemByItem_18092018.eps>
 (epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
+<<<<<<< HEAD
 <images/ItemByItem_18092018-eps-converted-to.pdf, id=223, 483.8075pt x 357.335p
+=======
+
+<images/ItemByItem_18092018-eps-converted-to.pdf, id=189, 483.8075pt x 357.335p
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
 t>
 File: images/ItemByItem_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/ItemByItem_18092018-eps-converted-to.pdf>
@@ -975,7 +1042,7 @@ Overfull \hbox (30.83842pt too wide) in paragraph at lines 329--330
  [][] 
  []
 
-[14
+[13
 
  <./images/ItemByItem_18092018-eps-converted-to.pdf>] (appendix.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
@@ -999,6 +1066,7 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  10137 strings out of 492973
  154778 string characters out of 3125364
  269539 words of memory out of 3000000
@@ -1031,5 +1099,35 @@ Output written on appendix.pdf (15 pages, 4791772 bytes).
 PDF statistics:
  302 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
+=======
+ 9597 strings out of 493673
+ 141509 string characters out of 3141528
+ 248285 words of memory out of 3000000
+ 12692 multiletter control sequences out of 15000+200000
+ 45721 words of font info for 70 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 42i,11n,43p,1244b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
+fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/l
+msy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on appendix.pdf (13 pages, 4780445 bytes).
+PDF statistics:
+ 261 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+>>>>>>> bba38a7dfa85aa50e89a8ba565c4a859f30bea0e
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
