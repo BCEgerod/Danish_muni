@@ -218,7 +218,7 @@ How well does this electoral measure capture voters underlying preferences? To g
 
 \subsection{Regression Table for Main Results}
 
-In Table \ref{main_res} we report a regression table summarizing the same information as the coefficient plot in the main text numerically.
+In Table \ref{main_res} we report a regression table summarizing  numerically the same information as the coefficient plot in the main text does graphically. Columns one through four use as the dependent variable the full measure of fiscal conservatism, while the remaining four columns use the reduced measure, which only include spending pr. capita, as well as taxes in income and property. All models include population size (logged) as a control. Column one shows the result from the pooled model, while column two includes twoway fixed effects. In the third column, we interact the time fixed effects with dummies for region and the log of population size. Finally, column four uses the first difference of all variables in the model instead of demeaning by municipality. Columns five through eight replicates these models with the reduced measure of fiscal policy conservatism. 
 
 \begin{table}[!htbp] \centering 
 	\caption{} 
@@ -257,11 +257,11 @@ In Table \ref{main_res} we report a regression table summarizing the same inform
 
 \subsection{Does It Simply Reflect Fiscal Stress?}\label{balance}
 
-an increase of one percentage point in education is related to a decrease in support for right-wing parties of approximately 1/20 of a standard deviation.
+In Table \ref{tab:balance}, we show how the electoral support for right-wing parties relates to changes in municipal socio-demographics. None of the correlations are strong. The largest coefficient is on percentage of college educated, where we estimate that an increase of one percentage point is related to a decrease in support for right-wing parties of approximately 1/20 of a standard deviation. Unsurprisingly, with these low correlations, we cannot reject the null that the coefficients individually nor collectively are zero. Besides this, it should be noted that the model's overall explanatory power is very low, as indicated by the negative adjusted $R^2$.
 
 \begin{table}[!htbp] \centering 
 	\caption{Support for Right-Wing Parties and Socio Demographics.} 
-	\label{} 
+	\label{tab:balance} 
 	\begin{tabular}{@{\extracolsep{5pt}}lc} 
 		\\[-1.8ex]\hline 
 		\hline \\[-1.8ex] 
@@ -293,6 +293,9 @@ an increase of one percentage point in education is related to a decrease in sup
 
 \subsection{Does Fiscal Policy Affect Voter Preferences?}\label{granger}
 
+As an additional test for potential reverse causality, we use the lag of municipal policy as the explanatory variable in a series of fixed effects models predicting electoral support for right-wing parties. We use one through four year lags and report the result of each of these models in  \ref{fig:granger}. All coefficients are small, and we in none of the models can we reject the null that municipal policy does not predict voter behavior. This strengthens our claim that voter preferences explain policy and not the other way around.
+
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale = 1]{granger_18092018.eps}
@@ -323,6 +326,9 @@ In panel B, we allow the effect to vary across our three different categories of
 \clearpage
 
 \subsection{Effects on Individual Policy Indicators}
+
+
+As our measure of municipal policy is made up of many different fiscal policies, it is interesting to investigate, which factor(s) drive the effect. The results of this exercise is reported in Figure \ref{fig:item} where we regress every single policy item in the measure individually on the electoral support of right-wing parties. While some of the variables are uncorrelated with voter preferences, the results also clearly show that a majority are strongly correlated with them, but many of them in a noisy manner. This suggests that combining the items has added value over only using one of them -- in this way, we can capture different aspects of municipal policy and also reduce the noise in the estimation. 
 
 \begin{figure}[!htb]
 	\centering
