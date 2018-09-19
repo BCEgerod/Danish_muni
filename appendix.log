@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.7)  19 SEP 2018 08:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.7)  19 SEP 2018 14:25
 entering extended mode
 **appendix.tex
 (appendix.tex
@@ -679,11 +679,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 Package xr Info: IMPORTING LABELS FROM "citypolicy".aux on input line 95.
- (appendix.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+ (appendix.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
@@ -699,7 +695,8 @@ LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 98.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -1008,10 +1005,6 @@ line 215.
 
  <./images/validation2-eps-converted-to.pdf> <./images/validation-eps-converted
 -to.pdf>]
-
-LaTeX Warning: Reference `main_res' on page 9 undefined on input line 221.
-
-
 Overfull \hbox (42.72894pt too wide) in paragraph at lines 227--253
  [][] 
  []
@@ -1033,7 +1026,7 @@ df>
 (epstopdf)             \includegraphics on input line 298.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/granger_18092018-eps-converted-to.pdf, id=157, 328.22626pt x 328.22626p
+<images/granger_18092018-eps-converted-to.pdf, id=158, 328.22626pt x 328.22626p
 t>
 File: images/granger_18092018-eps-converted-to.pdf Graphic file (type pdf)
  <use images/granger_18092018-eps-converted-to.pdf>
@@ -1055,7 +1048,7 @@ df>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/PostTreatControl-eps-converted-to.pdf, id=170, 371.3875pt x 294.09875pt
+<images/PostTreatControl-eps-converted-to.pdf, id=171, 371.3875pt x 294.09875pt
 >
 File: images/PostTreatControl-eps-converted-to.pdf Graphic file (type pdf)
  <use images/PostTreatControl-eps-converted-to.pdf>
@@ -1074,7 +1067,7 @@ converted-to.pdf images/MargFX_31082018.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/MargFX_31082018-eps-converted-to.pdf, id=171, 372.39125pt x 294.09875pt
+<images/MargFX_31082018-eps-converted-to.pdf, id=172, 372.39125pt x 294.09875pt
 >
 File: images/MargFX_31082018-eps-converted-to.pdf Graphic file (type pdf)
  <use images/MargFX_31082018-eps-converted-to.pdf>
@@ -1097,7 +1090,7 @@ eps-converted-to.pdf images/ItemByItem_18092018.eps>
 (epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/ItemByItem_18092018-eps-converted-to.pdf, id=189, 483.8075pt x 357.335p
+<images/ItemByItem_18092018-eps-converted-to.pdf, id=190, 483.8075pt x 357.335p
 t>
 File: images/ItemByItem_18092018-eps-converted-to.pdf Graphic file (type pdf)
  <use images/ItemByItem_18092018-eps-converted-to.pdf>
@@ -1126,15 +1119,12 @@ Package rerunfilecheck Info: File `appendix.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
  9597 strings out of 493673
  141509 string characters out of 3141528
- 248285 words of memory out of 3000000
+ 249277 words of memory out of 3000000
  12692 multiletter control sequences out of 15000+200000
  45721 words of font info for 70 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1156,9 +1146,9 @@ msy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on appendix.pdf (13 pages, 4780445 bytes).
+Output written on appendix.pdf (13 pages, 4781205 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
