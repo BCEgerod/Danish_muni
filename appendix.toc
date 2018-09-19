@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {C}Details about Estimation of Municipal Fiscal Policy}{4}{subsection.0.3}
 \contentsline {subsection}{\numberline {D}Some Descriptive Features of Municipal Fiscal Policy}{5}{subsection.0.4}
 \contentsline {subsection}{\numberline {E}Validating Our Measure Of Citizens' Policy Preferences}{8}{subsection.0.5}
-\contentsline {subsection}{\numberline {F}Regression Table for Main Results}{9}{subsection.0.6}
-\contentsline {subsection}{\numberline {G}Does It Simply Reflect Fiscal Stress?}{10}{subsection.0.7}
-\contentsline {subsection}{\numberline {H}Does Fiscal Policy Affect Voter Preferences?}{11}{subsection.0.8}
-\contentsline {subsection}{\numberline {I}Is it Just The Mayoralty?}{12}{subsection.0.9}
-\contentsline {subsection}{\numberline {J}Effects on Individual Policy Indicators}{13}{subsection.0.10}
+\contentsline {subsection}{\numberline {F}Regression Table for Main Results}{10}{subsection.0.6}
+\contentsline {subsection}{\numberline {G}Does It Simply Reflect Fiscal Stress?}{11}{subsection.0.7}
+\contentsline {subsection}{\numberline {H}Does Fiscal Policy Affect Voter Preferences?}{12}{subsection.0.8}
+\contentsline {subsection}{\numberline {I}Is it Just The Mayoralty?}{13}{subsection.0.9}
+\contentsline {subsection}{\numberline {J}Effects on Individual Policy Indicators}{14}{subsection.0.10}

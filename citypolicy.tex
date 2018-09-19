@@ -145,6 +145,8 @@ In this study, we address these limitations related to context, design and data 
 
 Using this comprehensive dataset, we link past changes in preferences to future changes in policy to avoid concerns about reverse causality. We find that changes in the policy preferences of citizens have substantial effects on city policy. We also show that there is no evidence of reverse causality---i.e., past changes in policy do not predict future changes in preferences--- and that our findings are not driven by  fiscal stress. Our findings thus suggest that, at least to some extent, citizens do set city policy.
 
+%Section on contributions? Maybe 100 words.
+
 
 \section*{Empirical Strategy}
 
@@ -181,33 +183,42 @@ In order to find out whether municipal fiscal policy conservatism responds to th
 
 
 \section*{Identifying Dynamic Responsiveness in Cities}
-Figure \ref{fig:scatter} shows that the past changes in support for right-wing parties are related to future changes in fiscal concervatism (full measure), suggesting that  policy adjusts dynamically to changes in preferences. This is striking, as we have minimized concerns related to reverse causality, since  future changes in policy cannot affect past changes in preferences.
+Figure \ref{fig:scatter} shows that the past changes in support for right-wing parties are related to future changes in fiscal concervatism (full measure), suggesting that  policy adjusts dynamically to changes in preferences. This is striking, as we have minimized concerns related to reverse causality by looking at the relationship between past changes in preferences and future changes in policy. Interestingly, we seem to identify a potential asymmetry, where politicians respond less to conservative changes in policy, but this pattern is not robust to alternative specifications (i.e., it disappears in a twoway fixed effects model), so we do not want to make any firm interpretations about this fact.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 1.2]{fd_plot.eps}
-	\caption{Do Changes in Voter Mood Correlate with Changes in Policy? Fitted line is a loess smoother, densities show the marginal distributions of both variables.}
+	\includegraphics[scale = 1]{scatterplot.eps}
+	\caption{Do Changes in Preferences Correlate with Future Changes in Policy? Both variables are trend adjusted (i.e., the year specific means are subtracted). Grey dots represent bins of ten observations, dark dots represent bins of 10 observations. The solid line is a linear fit (b$=0.046$,municipality clustured se$=0.019$) and the dashed line is a LOWESS smoother with a bandwidth of 0.4. The rugplot in the bottom of the graph represents the density of differences in the net proportion voting for right-wing parties variable. }
 	\label{fig:scatter}
 \end{figure}
 
-We model this relationship formally in four different ways. A (1) fixed effects model (municipality and year) regressing net support for conservative parties at a given election on municipal fiscal conservatism four years later (corresponding to an election period), (2) a model allowing for municipalities to be on different time trends (3) a pooled model which excludes the time and year fixed effects, and (4) a first difference model that directly models the data from Figure \ref{fig:scatter}. All models include a control for population size (logged), but the results do not depend on this covariate.
+We model this relationship formally using a fixed effects model (municipality and year) regressing net support for conservative parties at a given election on municipal fiscal conservatism four years later (corresponding to an election cycle) as well as a a first difference model that more directly models the data from Figure \ref{fig:scatter}. All models include a control for population size (logged), but the results do not depend on this covariate.
 
-Figure \ref{fig:FourYearLead} plots the key estimate (i.e., the effect of changes in local policy preferences) from these models. The  left panel uses the full measure of fiscal conservatism as the dependent variable whereas the right panel uses our reduced measure. Across all four models we find a statistically significant and positive effect. Furthermore, we obtain the same results using either measure of fiscal conservatism (differences in the unstandardized coefficients are driven by a larger standard deviation in the reduced measure).
+Figure \ref{fig:FourYearLead} plots the key estimate (i.e., the effect of changes in local policy preferences) from both the fixed effect and the first difference model. The  left panel uses the full measure of fiscal conservatism as the dependent variable whereas the right panel uses our reduced measure. Across all four models we find a statistically significant and positive effect. Furthermore, we obtain the same results using either measure of fiscal conservatism. (Differences in the unstandardized coefficients are driven by a larger standard deviation in the reduced measure.) 
 
-%This means that if net support for right-wing parties increases with 10 percentage points, then policy becomes XX more conservative. 
-
-In our preferred fixed effects model, we estimate the effect to be roughly .12. If we only look at within municipality variation in policy conservatism, then this corresponds to 25 pct. of a standard deviation.  This is a substantive association. With an effect of this magnitude, moving the voters from the socialdemocratic stronghold Albertslund to the highly conservative Gentofte would transform the fiscal policy in Gentofte to roughly that of Slagelse. This would move Gentofte down by more than 40 positions (out of 273 municipalities) in our ranking of fiscal conservatism.
-
-The identifying assumption in the twoway fixed effects model, is that trends in the dependent variable (policy) are independent of selection into the independent variable (preferences). If municipalities that experience changes in support for right-wing parties already were following different trends in policy this could bias our results. We relax the assumption by leveraging the Danish three-tier administrative setup, where municipalities are nested within regions. We interact the time fixed effects with a series of regional dummies as well as population size. This allows municipalities to be on separate time trends depending on both region (semi-parametrically) and population size (log-linearly). It also allows shocks to have heterogeneous effects depending on these factors. The changes to the estimates are diminutive.
-
-Importantly, this strategy should also deal with the confounding effect of the socio-demographic make-up of the municipalities. To make sure that there is no remaining bias due to these factors, we include data on education, unemployment rate and the number of non-western immigrants in the municipality. Since these variables are only available after 1993, and there is a heavy trend in municipal policy, including them would bias our results by censoring the dependent variable. Instead, we follow \citep{pei2018poorly} and regress electoral support for right-wing parties on our three socio-demographic predictors. As we show in Appendix \ref{balance}, the correlations are very small and statistically insignificant. This suggests that these important socio-demographic factors cannot be driving our results. The null-correlation with unemployment is especially noteworthy, as it is a strong indicator of whether the municipality is hit particularly hard by a temporary economic shock, which might drive both preferences and policy.
-
-In Appendix \ref{mechanism}, we examine whether municipal responsiveness is driven by selection. We do so in two ways: (1) by controlling for the mayoral party, and (2) by allowing responsiveness to vary by the mayoral party. Our results are remarkable in that they indicate that the mood in the electorate impacts policy no matter which party controls the mayoralty.
-
-To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} reports the estimated effect of local voter preferences at time $t$ on municipal policy (A) in the long run, and (B) how the baseline effect has changed over time. In particular, in panel A, we plot the effect on policy at the previous election (as a placebo), contemporaneously, and, respectively one, four, eight, 16 and 20 years into the future. This reveals that, as expected, it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is  after four years. After this the effect seems to have some staying power, and while it disappears after the second election, it is remarkable that a change in voter mood can persist as far into the future as eight years (corresponding to two elections).
+In our preferred fixed effects model, we estimate the effect to be roughly .12. If we only look at within municipality variation in policy conservatism, then this corresponds to 25 pct. of a standard deviation.  This is a substantive association. With an effect of this magnitude, moving the voters from the socialdemocratic stronghold Albertslund to the highly conservative Gentofte would transform the fiscal policy in Gentofte to roughly that of Sønderborg. This would move Gentofte down by more than 34 positions (out of 273 municipalities) in our ranking of fiscal conservatism.
 
 
-\begin{figure}[h]
+\subsection*{Exploring the Identifying Assumption}
+The identifying assumption in the twoway fixed effects model, is that trends in the dependent variable (policy) are independent of selection into the independent variable (preferences). If municipalities that experience changes in support for right-wing parties already were following different trends in policy this could bias our results. 
+
+While we cannot test the identifying parallel trends assumption directly, we can see whether trends in the dependent are similar before municipalities "select into" different preferences. Importantly, if voters became \emph{more conservative} as a result of changes in policy \cite[cf.][]{lenz2013follow,slothuus2010can}, then we would expect pre-trends to be different. However, if we regress past levels of policy conservatism on current levels of net support for conservative parties using our two-way fixed effect set-up, the effect is negligible and statistically insignificant (see Figure \ref{fig:LongRun}). Trends in social democratic and conservative municipalities are similar prior to the electorate's change in preferences. To  bolster this analysis further,  we show in Appendix \ref{granger} that changes in municipal policy do not precede changes in electoral support for right-wing parties.
+
+Beyond this indirect test,  we interact the time fixed effects with a series of 13 regional dummies\footnote{These correspond to  13 regional governments (amter) which were responsible for, among other things, health care in the period we study.} as well as population size. This allows municipalities to be on separate time trends depending on both region (semi-parametrically) and population size (log-linearly). Importantly, this strategy should also deal with the confounding effect of the socio-demographic make-up of the municipalities. As such, if there were certain time-specific regional shocks to, for instance, unemployment, which might affect both preferences and policy, then these will be controlled for in this model. As can be seen from Figure \ref{fig:FourYearLead}, estimating this more restrictive model does not change our results.
+
+To make sure that there is no remaining bias due to these factors, we include data on education, unemployment rate and the number of non-western immigrants in the municipality. Since these variables are only available after 1993, and since there is a substantial trend in municipal policy (cf. Appendix \ref{descriptives}), including them would bias our results by censoring the dependent variable. Instead, we follow \citep{pei2018poorly} and regress electoral support for right-wing parties on our three socio-demographic predictors. As we show in Appendix \ref{balance}, the correlations between within-municipality changes in socio-demographic factors and support for right-wing parties are small and statistically insignificant. This suggests that these important socio-demographic factors are not driving our results. The absence of a correlation with unemployment is especially noteworthy, as it is a strong indicator of whether the municipality is hit particularly hard by a temporary economic shock, which might drive both preferences and policy.
+
+Taken together, these auxiliary analyses suggest that our identifying assumption is met, and thus that we have a good estimate of the effect of municipal policy preferences on municipal policy.
+
+\subsection*{How Dynamic is Dynamic Responsiveness?}
+
+To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} reports the estimated effect of local voter preferences at time $t$ on municipal policy over time in two different ways. 
+
+In panel A we look at the short and long run effects of changes in municipal policy preferences on the policy adopted by the municipality. This analysis reveals that, as expected, it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is after four years. After this the effect seems to have some staying power, and while it disappears after the second election, it is remarkable that the effect of a change in preferences can be detected eight years later. One reason for this is probably that once policy is changed it tends to stay changed \citep[see, theories of punctuated equilibria, e.g.,]{baumgartner2009punctuated}.
+
+In Panel B we allow the effect of voter preferences on policy four years into the future to vary through time by including random slopes by year. The results show that municipal policy responsiveness is relatively stable across our period of study. As such, policy does not matter more or less as time goes by.
+
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[scale = 0.8]{CoefPlot_18092018.eps}
 	\caption{Effect of Electoral Support for Right-wing Parties with a 4-year Lead. Points are unstandardized OLS coefficients. Lines are 95 pct. (thin) and 90 pct. (thick) confidence intervals. Beck-Katz standard errors used in first-difference models, Arellano-White standard errors with clustering on municipality level used in the rest to correct for temporal autocorrelation.}
@@ -215,9 +226,9 @@ To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} rep
 \end{figure}
 
 
-While we cannot test the identifying parallel trends assumption directly, we can see whether trends in the dependent are similar before municipalities "select into" different preferences. Importantly, if voters became \emph{more conservative} as a result of changes in policy \cite[cf.][]{lenz2013follow,slothuus2010can}, and this was what was driving our result, then we would expect pre-trends to be different. Figure \ref{fig:LongRun} shows that estimated effects of local policy preferences on policy conservatism at $t=-4$ are statistically insignificant and close to zero. Trends in social democratic and conservative municipalities are similar prior to the electorate's mood changes. After voter preferences evolve, however, trends in policy diverge.  This is notable, because it suggests that the key identifying assumption of our generalized difference in difference model hold. To further bolster this, in Appendix \ref{granger} we show that changes in municipal policy do not precede changes in electoral support for right-wing parties.
 
-In Panel B we allow the effect of voter preferences on policy four years into the future to vary through time by including random slopes by year. The results show that municipal policy responsiveness is a relatively new thing -- prior to 1993 there was no correlation, and the baseline association seems to be driven by more recent years. This is an interesting exploratory finding, and future work could examine further the conditions under which we can expect city policy to be responsive.
+
+
  
 
 \begin{figure}[h]
@@ -231,6 +242,16 @@ In Panel B we allow the effect of voter preferences on policy four years into th
 
 
 \section*{Discussion \& Conclusion}
+
+
+Summary?
+
+Contributes to literature on responsiveness and more broadly the discussion about the normative status of representative democracy.
+
+Why do we find these effects? Selection and sanctioning.
+
+
+In Appendix \ref{mechanism}, we examine whether municipal responsiveness is driven by selection. We do so in two ways: (1) by controlling for the mayoral party, and (2) by allowing responsiveness to vary by the mayoral party. Our results are remarkable in that they indicate that the mood in the electorate impacts policy no matter which party controls the mayoralty.
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  18 SEP 2018 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 SEP 2018 19:52
 entering extended mode
 **./citypolicy.tex
 (citypolicy.tex
@@ -447,10 +447,6 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
 Package xr Info: IMPORTING LABELS FROM "appendix".aux on input line 26.
 
-
-LaTeX Warning: Label `' multiply defined.
-
-
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\tools\longtable
 .sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
@@ -714,39 +710,29 @@ Overfull \vbox (7.56189pt too high) has occurred while \output is active []
 
 
 [5] [6]
-Package epstopdf Info: Source file: <images/fd_plot.eps>
-(epstopdf)                    date: 2018-09-18 18:38:54
-(epstopdf)                    size: 1012429 bytes
-(epstopdf)             Output file: <images/fd_plot-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-09-18 18:38:54
-(epstopdf)                    size: 375180 bytes
-(epstopdf)             Command: <epstopdf --outfile=images/fd_plot-eps-converte
-d-to.pdf images/fd_plot.eps>
-(epstopdf)             \includegraphics on input line 188.
+Package epstopdf Info: Source file: <images/scatterplot.eps>
+(epstopdf)                    date: 2018-09-19 19:18:15
+(epstopdf)                    size: 582524 bytes
+(epstopdf)             Output file: <images/scatterplot-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-09-19 19:18:25
+(epstopdf)                    size: 50122 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/scatterplot-eps-conv
+erted-to.pdf images/scatterplot.eps>
+(epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
-<images/fd_plot-eps-converted-to.pdf, id=173, 378.41376pt x 329.23pt>
-File: images/fd_plot-eps-converted-to.pdf Graphic file (type pdf)
-<use images/fd_plot-eps-converted-to.pdf>
-Package pdftex.def Info: images/fd_plot-eps-converted-to.pdf  used on input lin
-e 188.
-(pdftex.def)             Requested size: 454.09422pt x 395.074pt.
-
-Overfull \hbox (1.12633pt too wide) in paragraph at lines 188--189
- [][] 
- []
-
+<images/scatterplot-eps-converted-to.pdf, id=173, 433.62pt x 289.08pt>
+File: images/scatterplot-eps-converted-to.pdf Graphic file (type pdf)
+<use images/scatterplot-eps-converted-to.pdf>
+Package pdftex.def Info: images/scatterplot-eps-converted-to.pdf  used on input
+ line 190.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 191.
+ [7] [8 <./images/scatterplot-eps-converted-to.pdf>]
+Overfull \vbox (7.56186pt too high) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <./images/fd_plot-eps-converted-to.pdf>]
-Overfull \hbox (17.83278pt too wide) in paragraph at lines 203--204
-[]\OT1/ptm/m/n/12 Importantly, this strat-egy should also deal with the con-fou
-nd-ing ef-fect of the socio-demographic
- []
-
-[9]
+[9] [10]
 Package epstopdf Info: Source file: <images/CoefPlot_18092018.eps>
 (epstopdf)                    date: 2018-09-18 18:38:54
 (epstopdf)                    size: 58566 bytes
@@ -756,62 +742,65 @@ pdf>
 (epstopdf)                    size: 21445 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/CoefPlot_18092018-ep
 s-converted-to.pdf images/CoefPlot_18092018.eps>
-(epstopdf)             \includegraphics on input line 212.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
-<images/CoefPlot_18092018-eps-converted-to.pdf, id=268, 529.98pt x 329.23pt>
+<images/CoefPlot_18092018-eps-converted-to.pdf, id=229, 529.98pt x 329.23pt>
 File: images/CoefPlot_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/CoefPlot_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: images/CoefPlot_18092018-eps-converted-to.pdf  used on
- input line 212.
+ input line 223.
 (pdftex.def)             Requested size: 423.98456pt x 263.38435pt.
- [10 <./images/CoefPlot_18092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/EffectsVsTime.eps>
-(epstopdf)                    date: 2018-09-18 18:38:54
-(epstopdf)                    size: 169038 bytes
+(epstopdf)                    date: 2018-09-19 14:36:26
+(epstopdf)                    size: 124003 bytes
 (epstopdf)             Output file: <images/EffectsVsTime-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2018-09-18 18:38:54
-(epstopdf)                    size: 86822 bytes
+(epstopdf)                    date: 2018-09-19 18:52:06
+(epstopdf)                    size: 49612 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/EffectsVsTime-eps-co
 nverted-to.pdf images/EffectsVsTime.eps>
-(epstopdf)             \includegraphics on input line 225.
+(epstopdf)             \includegraphics on input line 236.
 Package epstopdf Info: Output file is already uptodate.
-<images/EffectsVsTime-eps-converted-to.pdf, id=289, 618.31pt x 418.56375pt>
+<images/EffectsVsTime-eps-converted-to.pdf, id=230, 618.31pt x 469.755pt>
 File: images/EffectsVsTime-eps-converted-to.pdf Graphic file (type pdf)
 <use images/EffectsVsTime-eps-converted-to.pdf>
 Package pdftex.def Info: images/EffectsVsTime-eps-converted-to.pdf  used on inp
-ut line 225.
-(pdftex.def)             Requested size: 370.98886pt x 251.14018pt.
- (citypolicy.bbl
-[11 <./images/EffectsVsTime-eps-converted-to.pdf>] [12] [13]) [14]
+ut line 236.
+(pdftex.def)             Requested size: 370.98886pt x 281.85518pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(citypolicy.bbl [11 <./images/CoefPlot_18092018-eps-converted-to.pdf>] [12 <./i
+mages/EffectsVsTime-eps-converted-to.pdf>] [13]) [14]
 
 Package caption Warning: Unused \captionsetup[table] on input line 40.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
 (citypolicy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
 Package rerunfilecheck Info: File `citypolicy.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
  ) 
 Here is how much of TeX's memory you used:
- 9643 strings out of 492973
- 146931 string characters out of 3125364
- 256464 words of memory out of 3000000
- 13238 multiletter control sequences out of 15000+200000
+ 9648 strings out of 492973
+ 147092 string characters out of 3125364
+ 256650 words of memory out of 3000000
+ 13241 multiletter control sequences out of 15000+200000
  46976 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,1738b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.0.8} has been referenced but does not 
+ 42i,12n,43p,1738b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsection.0.9} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.9} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.0.7} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.7} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.0.8} has been referenced but does not ex
 ist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.0.5} has been referenced but does not ex
@@ -830,24 +819,22 @@ pdfTeX warning (dest): name{subsection.0.2} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+it.enc}{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-rm.enc}{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/
-lm/lm-mathit.enc}{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/base/8r.enc}<C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb><C:/Users/au595748/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/au595748/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/au595748/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/au59574
-8/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/
-au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><
-C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
-vr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/urw/times/utmr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on citypolicy.pdf (14 pages, 647260 bytes).
+base/8r.enc}<C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/au595748/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/au595748/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/au595748/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/au595
+748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/U
+sers/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
+b><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on citypolicy.pdf (14 pages, 286913 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

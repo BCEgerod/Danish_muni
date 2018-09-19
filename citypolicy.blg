@@ -2,14 +2,14 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: citypolicy.aux
 The style file: apa.bst
 Database file #1: bibtex/library.bib
 Warning--entry type for "oecd2016subnational" isn't style-file defined
---line 170 of file bibtex/library.bib
+--line 181 of file bibtex/library.bib
 Warning--entry type for "sances2017voters" isn't style-file defined
---line 204 of file bibtex/library.bib
-Repeated entry---line 278 of file bibtex/library.bib
+--line 215 of file bibtex/library.bib
+Repeated entry---line 289 of file bibtex/library.bib
  : @book{peterson1981city
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 362 of file bibtex/library.bib
+Repeated entry---line 373 of file bibtex/library.bib
  : @article{stimson1995dynamic
  :                            ,
 I'm skipping whatever remains of this entry

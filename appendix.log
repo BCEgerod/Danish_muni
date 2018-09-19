@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 SEP 2018 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 SEP 2018 19:00
 entering extended mode
 **./appendix.tex
 (appendix.tex
@@ -755,16 +755,14 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
  [2
 
-] [3
-
-]
+] (table/measurement.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 145.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+) [3
 
-
-LaTeX Warning: Reference `tab:policies' on page 4 undefined on input line 145.
-
-[4
+] [4
 
 ]
 Package epstopdf Info: Source file: <images/newtimes_lines.eps>
@@ -778,7 +776,7 @@ Package epstopdf Info: Source file: <images/newtimes_lines.eps>
 onverted-to.pdf images/newtimes_lines.eps>
 (epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
-<images/newtimes_lines-eps-converted-to.pdf, id=102, 411.5375pt x 228.855pt>
+<images/newtimes_lines-eps-converted-to.pdf, id=105, 411.5375pt x 228.855pt>
 File: images/newtimes_lines-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newtimes_lines-eps-converted-to.pdf>
 Package pdftex.def Info: images/newtimes_lines-eps-converted-to.pdf  used on in
@@ -797,7 +795,7 @@ df>
 -converted-to.pdf images/newJoyPlotFiscal.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
-<images/newJoyPlotFiscal-eps-converted-to.pdf, id=103, 411.5375pt x 228.855pt>
+<images/newJoyPlotFiscal-eps-converted-to.pdf, id=106, 411.5375pt x 228.855pt>
 File: images/newJoyPlotFiscal-eps-converted-to.pdf Graphic file (type pdf)
 <use images/newJoyPlotFiscal-eps-converted-to.pdf>
 Package pdftex.def Info: images/newJoyPlotFiscal-eps-converted-to.pdf  used on 
@@ -814,7 +812,7 @@ Package epstopdf Info: Source file: <images/Map_of_FiscCon.eps>
 onverted-to.pdf images/Map_of_FiscCon.eps>
 (epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
-<images/Map_of_FiscCon-eps-converted-to.pdf, id=104, 635.37375pt x 305.14pt>
+<images/Map_of_FiscCon-eps-converted-to.pdf, id=107, 635.37375pt x 305.14pt>
 File: images/Map_of_FiscCon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Map_of_FiscCon-eps-converted-to.pdf>
 Package pdftex.def Info: images/Map_of_FiscCon-eps-converted-to.pdf  used on in
@@ -831,7 +829,7 @@ pdf>
 s-converted-to.pdf images/socialdemocratism.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
-<images/socialdemocratism-eps-converted-to.pdf, id=105, 722.7pt x 413.545pt>
+<images/socialdemocratism-eps-converted-to.pdf, id=108, 722.7pt x 413.545pt>
 File: images/socialdemocratism-eps-converted-to.pdf Graphic file (type pdf)
 <use images/socialdemocratism-eps-converted-to.pdf>
 Package pdftex.def Info: images/socialdemocratism-eps-converted-to.pdf  used on
@@ -840,8 +838,8 @@ Package pdftex.def Info: images/socialdemocratism-eps-converted-to.pdf  used on
  [5
 
 ] [6 <./images/newtimes_lines-eps-converted-to.pdf> <./images/newJoyPlotFiscal-
-eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>]
-[7 <./images/socialdemocratism-eps-converted-to.pdf>]
+eps-converted-to.pdf> <./images/Map_of_FiscCon-eps-converted-to.pdf>] [7 <./ima
+ges/socialdemocratism-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 58668 bytes
@@ -850,14 +848,14 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    size: 33875 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation2-eps-conv
 erted-to.pdf images/validation2.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
-<images/validation2-eps-converted-to.pdf, id=150, 433.62pt x 289.08pt>
+<images/validation2-eps-converted-to.pdf, id=157, 433.62pt x 289.08pt>
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf  used on input
- line 205.
-(pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
+ line 211.
+(pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
 Package epstopdf Info: Source file: <images/validation.eps>
 (epstopdf)                    date: 2018-09-09 19:05:57
 (epstopdf)                    size: 47248 bytes
@@ -866,25 +864,25 @@ Package epstopdf Info: Source file: <images/validation.eps>
 (epstopdf)                    size: 20314 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation-eps-conve
 rted-to.pdf images/validation.eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 218.
 Package epstopdf Info: Output file is already uptodate.
-<images/validation-eps-converted-to.pdf, id=151, 433.62pt x 289.08pt>
+<images/validation-eps-converted-to.pdf, id=158, 433.62pt x 289.08pt>
 File: images/validation-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation-eps-converted-to.pdf  used on input 
-line 209.
-(pdftex.def)             Requested size: 203.83417pt x 135.88966pt.
+line 218.
+(pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
  [8
 
- <./images/validation2-eps-converted-to.pdf> <./images/validation-eps-converted
--to.pdf>]
-Overfull \hbox (42.72894pt too wide) in paragraph at lines 227--253
+] [9 <./images/validation2-eps-converted-to.pdf> <./images/validation-eps-conve
+rted-to.pdf>]
+Overfull \hbox (42.72894pt too wide) in paragraph at lines 231--257
  [][] 
  []
 
-[9
+[10
 
-] [10
+] [11
 
 ]
 Package epstopdf Info: Source file: <images/granger_18092018.eps>
@@ -896,16 +894,16 @@ df>
 (epstopdf)                    size: 18961 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/granger_18092018-eps
 -converted-to.pdf images/granger_18092018.eps>
-(epstopdf)             \includegraphics on input line 301.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<images/granger_18092018-eps-converted-to.pdf, id=189, 328.22626pt x 328.22626p
+<images/granger_18092018-eps-converted-to.pdf, id=196, 328.22626pt x 328.22626p
 t>
 File: images/granger_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/granger_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: images/granger_18092018-eps-converted-to.pdf  used on 
-input line 301.
+input line 305.
 (pdftex.def)             Requested size: 328.22545pt x 328.22545pt.
- [11
+ [12
 
  <./images/granger_18092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/PostTreatControl.eps>
@@ -917,13 +915,13 @@ df>
 (epstopdf)                    size: 18822 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/PostTreatControl-eps
 -converted-to.pdf images/PostTreatControl.eps>
-(epstopdf)             \includegraphics on input line 313.
+(epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
-<images/PostTreatControl-eps-converted-to.pdf, id=202, 411.5375pt x 325.215pt>
+<images/PostTreatControl-eps-converted-to.pdf, id=209, 411.5375pt x 325.215pt>
 File: images/PostTreatControl-eps-converted-to.pdf Graphic file (type pdf)
 <use images/PostTreatControl-eps-converted-to.pdf>
 Package pdftex.def Info: images/PostTreatControl-eps-converted-to.pdf  used on 
-input line 313.
+input line 317.
 (pdftex.def)             Requested size: 203.83417pt x 161.07869pt.
 Package epstopdf Info: Source file: <images/MargFX_31082018.eps>
 (epstopdf)                    date: 2018-09-19 16:59:38
@@ -934,15 +932,15 @@ f>
 (epstopdf)                    size: 7179 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/MargFX_31082018-eps-
 converted-to.pdf images/MargFX_31082018.eps>
-(epstopdf)             \includegraphics on input line 317.
+(epstopdf)             \includegraphics on input line 321.
 Package epstopdf Info: Output file is already uptodate.
-<images/MargFX_31082018-eps-converted-to.pdf, id=203, 411.5375pt x 325.215pt>
+<images/MargFX_31082018-eps-converted-to.pdf, id=210, 411.5375pt x 325.215pt>
 File: images/MargFX_31082018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/MargFX_31082018-eps-converted-to.pdf>
 Package pdftex.def Info: images/MargFX_31082018-eps-converted-to.pdf  used on i
-nput line 317.
+nput line 321.
 (pdftex.def)             Requested size: 203.83417pt x 161.07869pt.
- [12
+ [13
 
  <./images/PostTreatControl-eps-converted-to.pdf> <./images/MargFX_31082018-eps
 -converted-to.pdf>]
@@ -955,46 +953,42 @@ o.pdf>
 (epstopdf)                    size: 8479 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/ItemByItem_18092018-
 eps-converted-to.pdf images/ItemByItem_18092018.eps>
-(epstopdf)             \includegraphics on input line 335.
+(epstopdf)             \includegraphics on input line 339.
 Package epstopdf Info: Output file is already uptodate.
-<images/ItemByItem_18092018-eps-converted-to.pdf, id=222, 483.8075pt x 357.335p
+<images/ItemByItem_18092018-eps-converted-to.pdf, id=230, 483.8075pt x 357.335p
 t>
 File: images/ItemByItem_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/ItemByItem_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: images/ItemByItem_18092018-eps-converted-to.pdf  used 
-on input line 335.
+on input line 339.
 (pdftex.def)             Requested size: 483.80632pt x 357.33412pt.
 
-Overfull \hbox (30.83842pt too wide) in paragraph at lines 335--336
+Overfull \hbox (30.83842pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-[13
-
- <./images/ItemByItem_18092018-eps-converted-to.pdf>] (appendix.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-
 [14
 
+ <./images/ItemByItem_18092018-eps-converted-to.pdf>] (appendix.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
+
+[15
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
  (appendix.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
 Package rerunfilecheck Info: File `appendix.out' has not changed.
 (rerunfilecheck)             Checksum: BB453AD18D396DFCF29A61DF965C65D0;833.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
  ) 
 Here is how much of TeX's memory you used:
- 10137 strings out of 492973
- 154792 string characters out of 3125364
- 270531 words of memory out of 3000000
+ 10146 strings out of 492973
+ 154991 string characters out of 3125364
+ 271501 words of memory out of 3000000
  13740 multiletter control sequences out of 15000+200000
- 45721 words of font info for 70 fonts, out of 3000000 for 9000
+ 47347 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,1175b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
@@ -1018,9 +1012,9 @@ fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/au595748/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/au595748/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/au595748/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on appendix.pdf (14 pages, 4794259 bytes).
+Output written on appendix.pdf (15 pages, 4799537 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
