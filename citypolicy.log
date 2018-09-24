@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  20 SEP 2018 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  21 SEP 2018 08:28
 entering extended mode
 **./citypolicy.tex
 (citypolicy.tex
@@ -720,7 +720,7 @@ Package epstopdf Info: Source file: <images/scatterplot.eps>
 erted-to.pdf images/scatterplot.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
-<images/scatterplot-eps-converted-to.pdf, id=169, 433.62pt x 289.08pt>
+<images/scatterplot-eps-converted-to.pdf, id=171, 433.62pt x 289.08pt>
 File: images/scatterplot-eps-converted-to.pdf Graphic file (type pdf)
 <use images/scatterplot-eps-converted-to.pdf>
 Package pdftex.def Info: images/scatterplot-eps-converted-to.pdf  used on input
@@ -743,7 +743,7 @@ pdf>
 s-converted-to.pdf images/CoefPlot_18092018.eps>
 (epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
-<images/CoefPlot_18092018-eps-converted-to.pdf, id=170, 529.98pt x 329.23pt>
+<images/CoefPlot_18092018-eps-converted-to.pdf, id=172, 529.98pt x 329.23pt>
 File: images/CoefPlot_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/CoefPlot_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: images/CoefPlot_18092018-eps-converted-to.pdf  used on
@@ -762,7 +762,7 @@ Package epstopdf Info: Source file: <images/EffectsVsTime.eps>
 nverted-to.pdf images/EffectsVsTime.eps>
 (epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
-<images/EffectsVsTime-eps-converted-to.pdf, id=220, 618.31pt x 469.755pt>
+<images/EffectsVsTime-eps-converted-to.pdf, id=222, 618.31pt x 469.755pt>
 File: images/EffectsVsTime-eps-converted-to.pdf Graphic file (type pdf)
 <use images/EffectsVsTime-eps-converted-to.pdf>
 Package pdftex.def Info: images/EffectsVsTime-eps-converted-to.pdf  used on inp
@@ -784,10 +784,10 @@ Package rerunfilecheck Info: File `citypolicy.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
  ) 
 Here is how much of TeX's memory you used:
- 9648 strings out of 492973
- 147092 string characters out of 3125364
+ 9650 strings out of 492973
+ 147118 string characters out of 3125364
  255808 words of memory out of 3000000
- 13241 multiletter control sequences out of 15000+200000
+ 13242 multiletter control sequences out of 15000+200000
  46976 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,43p,1562b,497s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -829,9 +829,9 @@ sers/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
 b><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on citypolicy.pdf (14 pages, 283956 bytes).
+Output written on citypolicy.pdf (14 pages, 284788 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
