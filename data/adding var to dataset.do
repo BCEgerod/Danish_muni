@@ -7,8 +7,11 @@ xtset muni year
 
 replace fd_bluevote="." if fd_bluevote=="NA" 
 replace bluevote="." if bluevote=="NA" 
-destring fd_bluevote bluevote, replace
+replace fd_pop="." if fd_pop=="NA" 
+replace log_pop="." if log_pop=="NA" 
+destring fd_bluevote bluevote log_pop fd_pop, replace
 replace fd_bluevote=bluevote-l3.bluevote if year==1981
-tostring fd_bluevote bluevote, replace force
+replace fd_pop=log_pop-l3.log_pop if year==1981
+tostring fd_bluevote bluevote log_pop fd_pop, replace force
 
-export delim CityPolicy_20092018, delim(",") replace
+export delim CityPolicy_24092018, delim(",") replace
