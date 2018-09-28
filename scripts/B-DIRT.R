@@ -736,23 +736,41 @@ muni <- readOGR(dsn=data,
 muni <- subset(muni, duplicated(navn) == F)
 #muni <- subset(muni, tid2 < 2007 | tid2 )
 
+muni@data <- muni@data[,1:9]
+test <- muni@data
+
+#Å
+muni@data$navn <- gsub(x= muni@data$navn,
+                       pattern = "Ã.",
+                       replacement = "Aa")
+muni@data$navn <- gsub(x= muni@data$navn,
+                       pattern = "Ã¥",
+                       replacement = "aa")
+
 
 #Ø
+muni@data$navn <- gsub(x= muni@data$navn,
+                       pattern = "Ã¸",
+                       replacement = "ø")
+
+
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Ã~",
                        replacement = "Ø")
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Ã",
                        replacement = "ø")
-muni@data$navn <- gsub(x= muni@data$navn,
-                       pattern = "Ã¸",
-                       replacement = "ø")
+
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "ø¸",
                        replacement = "ø")
 
 
-#Å
+
+muni@data$muniname <- gsub(x= muni@data$muniname,
+                       pattern = "Ringkøbing-Skjern",
+                       replacement = "Ringkøbing")
+
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Ã.",
                        replacement = "Å")
@@ -768,7 +786,7 @@ muni@data$navn <- gsub(x= muni@data$navn,
                        replacement = "å")
 #Æ
 muni@data$navn <- gsub(x= muni@data$navn,
-                       pattern = "ø???",
+                       pattern = "Ã???",
                        replacement = "Æ")
 #æ
 muni@data$navn <- gsub(x= muni@data$navn,
@@ -783,24 +801,28 @@ muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = " Kommune",
                        replacement = "")
 
+muni@data$muniname <- gsub(x= muni@data$muniname,
+                       pattern = "s Kommune",
+                       replacement = "")
+
 # last corrections!
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Lyngby-Tårbæk",
                        replacement = "Lyngby-Taarbæk")
 
-muni@data$navn <- gsub(x= muni@data$navn,
+muni@data$muniname <- gsub(x= muni@data$muniname,
                        pattern = "Faxe",
                        replacement = "Fakse")
 
-muni@data$navn <- gsub(x= muni@data$navn,
-                       pattern = "Lyngby-Tårbæk",
-                       replacement = "Lyngby-Taarbæk")
+muni@data$muniname <- gsub(x= muni@data$muniname,
+                       pattern = "Graasten",
+                       replacement = "Gråsten")
 
 muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Holmegård",
                        replacement = "Holmegaard")
 
-muni@data$navn <- gsub(x= muni@data$navn,
+muni@data$muniname <- gsub(x= muni@data$muniname,
                        pattern = "Nykøbing Falsters",
                        replacement = "Nykøbing Falster")
 
@@ -856,6 +878,10 @@ muni@data$navn <- gsub(x= muni@data$navn,
                        pattern = "Årslev",
                        replacement = "Aarslev")
 
+muni@data$muniname <- gsub(x= muni@data$muniname,
+                       pattern = "Bornholms",
+                       replacement = "Bornholm")
+
 #Aalborg
 # muni@data$navn <- gsub(x= muni@data$navn,
 #                        pattern = "Ålborg",
@@ -866,10 +892,14 @@ muni@data$navn <- gsub(x= muni@data$navn,
 #                        pattern = "Å",
 #                        replacement = "Aa")
 # 
-# # Århus
-# muni@data$navn <- gsub(x= muni@data$navn,
-#                        pattern = "Aarhus",
-#                        replacement = "Århus")
+# Århus
+ muni@data$muniname <- gsub(x= muni@data$muniname,
+                        pattern = "Aarhus",
+                        replacement = "Århus")
+ 
+ muni@data$muniname <- gsub(x= muni@data$muniname,
+                            pattern = "Aarhus",
+                            replacement = "Århus")
 # 
 # # x --> ks
 # muni@data$navn <- gsub(x= muni@data$navn,
@@ -877,11 +907,11 @@ muni@data$navn <- gsub(x= muni@data$navn,
 #                        replacement = "ks")
 
 #fejl i vores eget
-new.df$muniname <- gsub(x= new.df$muniname,
+df$muniname <- gsub(x= df$muniname,
                        pattern = "Hirsthals",
                        replacement = "Hirtshals")
 
-new.df$muniname <- gsub(x= new.df$muniname,
+df$muniname <- gsub(x= df$muniname,
                         pattern = "Årslev",
                         replacement = "Aarslev")
 
@@ -904,14 +934,44 @@ names(muni@data)[2] <- "muniname"
 muni$muniname <- stringCleaning(muni$muniname) # clean
 
 #subset three interesting years & clean muni names
-df1978 <- subset(new.df, year == 1978)
-df1993 <- subset(new.df, year == 1993)
-df1997 <- subset(new.df, year == 1997)
 
-df2005 <- subset(new.df, year == 2005)
-df2001 <- subset(new.df, year == 2001)
+muni2 <- muni
+
+df1978 <- subset(df, year == 1978)
+df1978 <- dplyr::select(df1978, muniname, muni, year, correctsocdem)
+names(df1978)[4] <- "SocDem78"
+df1978$muniname <- stringCleaning(df1978$muniname)
+muni2@data$muniname <- stringCleaning(muni2@data$muniname)
+muni2@data <- left_join(muni2@data, df1978, by = "muniname")
+
+test2 <- muni2@data
+
+df1986 <- subset(df, year == 1986)
+df1986 <- dplyr::select(df1986, muniname, muni, year, correctsocdem)
+names(df1986)[4] <- "SocDem86"
+df1986$muniname <- stringCleaning(df1986$muniname)
+muni2@data$muniname <- stringCleaning(muni2@data$muniname)
+muni2@data <- left_join(muni2@data, df1986, by = "muniname")
+muni2@data$SocDem86 <- muni2@data$SocDem86 - mean(muni2@data$SocDem86,na.rm=T)
+
+
+df1993 <- subset(df, year == 1993)
+df1993 <- dplyr::select(df1993, muniname, muni, year, correctsocdem)
+names(df1993)[4] <- "SocDem93"
+df1993$muniname <- stringCleaning(df1993$muniname)
+muni2@data$muniname <- stringCleaning(muni2@data$muniname)
+muni2@data <- left_join(muni2@data, df1993, by = "muniname")
+muni2@data$SocDem93 <- muni2@data$SocDem93 - mean(muni2@data$SocDem93,na.rm=T)
+
+
+
+df1997 <- subset(df, year == 1997)
+
+df2005 <- subset(df, year == 2005)
+df2001 <- subset(df, year == 2001)
 
 df1978$muniname <- stringCleaning(df1978$muniname)
+
 df1993$muniname <- stringCleaning(df1993$muniname)
 df1997$muniname <- stringCleaning(df1997$muniname)
 
@@ -920,12 +980,12 @@ df2001$muniname <- stringCleaning(df2001$muniname)
 
 
 #rename socialdemocratism variable
-names(df1978)[38] <- "SocDem78"
-names(df1993)[38] <- "SocDem93"
-names(df1997)[38] <- "SocDem97"
+names(df1978)[54] <- "SocDem78"
+names(df1993)[54] <- "SocDem93"
+names(df1997)[54] <- "SocDem97"
 
-names(df2005)[38] <- "SocDem05"
-names(df2001)[38] <- "SocDem01"
+names(df2005)[54] <- "SocDem05"
+names(df2001)[54] <- "SocDem01"
 
 
 
@@ -948,6 +1008,13 @@ test <- dplyr::select(test, muniname, muniname2) #none anymore!
 
 
 library(tmap)
+
+tm_shape(muni2) +
+  tm_fill(c("SocDem86"))+ 
+          #breaks=c(-0.1, 0, 0.1, 0.15, 0.2, 0.25, 0.3),
+          #n = 8, palette = list("Reds", "Reds", "Reds"), 
+          #legend.hist = TRUE, frame = TRUE) +
+  tm_style_grey()
 
 tm_shape(muni2) +
   tm_fill(c("SocDem93", "SocDem97", "SocDem01"), style = "fixed", 
