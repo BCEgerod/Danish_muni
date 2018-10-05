@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  5 OCT 2018 08:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  5 OCT 2018 16:28
 entering extended mode
 **./appendix.tex
 (appendix.tex
@@ -736,32 +736,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/au595748/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
-
-
-Package natbib Warning: Citation `ingvartsen1991kommunalreformen' on page 2 und
-efined on input line 123.
-
-
-Package natbib Warning: Citation `christiansen2008utaenkelige' on page 2 undefi
-ned on input line 123.
-
-
-Package natbib Warning: Citation `blom2013et' on page 2 undefined on input line
- 125.
-
-
-Package natbib Warning: Citation `serritzlew2008explaining' on page 2 undefined
- on input line 127.
-
-
-Package natbib Warning: Citation `kjaer2015urban' on page 2 undefined on input 
-line 127.
-
 [2
 
 ] (table/measurement.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -786,8 +765,8 @@ pdf>
 s-converted-to.pdf images/fiscal_TimeSeries.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-<images/fiscal_TimeSeries-eps-converted-to.pdf, id=85, 580.1675pt x 322.20375pt
->
+<images/fiscal_TimeSeries-eps-converted-to.pdf, id=100, 580.1675pt x 322.20375p
+t>
 File: images/fiscal_TimeSeries-eps-converted-to.pdf Graphic file (type pdf)
 <use images/fiscal_TimeSeries-eps-converted-to.pdf>
 Package pdftex.def Info: images/fiscal_TimeSeries-eps-converted-to.pdf  used on
@@ -805,8 +784,8 @@ converted-to.pdf>
 d_24092018-eps-converted-to.pdf images/ConservatismJOY_trend_24092018.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
-<images/ConservatismJOY_trend_24092018-eps-converted-to.pdf, id=86, 580.1675pt 
-x 414.54875pt>
+<images/ConservatismJOY_trend_24092018-eps-converted-to.pdf, id=101, 580.1675pt
+ x 414.54875pt>
 File: images/ConservatismJOY_trend_24092018-eps-converted-to.pdf Graphic file (
 type pdf)
 <use images/ConservatismJOY_trend_24092018-eps-converted-to.pdf>
@@ -824,8 +803,8 @@ Package epstopdf Info: Source file: <images/conservatism_24092018.eps>
 8-eps-converted-to.pdf images/conservatism_24092018.eps>
 (epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
-<images/conservatism_24092018-eps-converted-to.pdf, id=87, 567.11874pt x 414.54
-875pt>
+<images/conservatism_24092018-eps-converted-to.pdf, id=102, 567.11874pt x 414.5
+4875pt>
 File: images/conservatism_24092018-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/conservatism_24092018-eps-converted-to.pdf>
@@ -837,10 +816,6 @@ d on input line 202.
 ] [6 <./images/fiscal_TimeSeries-eps-converted-to.pdf> <./images/ConservatismJO
 Y_trend_24092018-eps-converted-to.pdf>]
 [7 <./images/conservatism_24092018-eps-converted-to.pdf>]
-
-Package natbib Warning: Citation `elklit2017kv13' on page 8 undefined on input 
-line 220.
-
 Package epstopdf Info: Source file: <images/validation2.eps>
 (epstopdf)                    date: 2018-09-21 08:59:16
 (epstopdf)                    size: 69693 bytes
@@ -851,7 +826,7 @@ Package epstopdf Info: Source file: <images/validation2.eps>
 erted-to.pdf images/validation2.eps>
 (epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
-<images/validation2-eps-converted-to.pdf, id=127, 433.62pt x 289.08pt>
+<images/validation2-eps-converted-to.pdf, id=144, 433.62pt x 289.08pt>
 File: images/validation2-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation2-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation2-eps-converted-to.pdf  used on input
@@ -867,13 +842,13 @@ Package epstopdf Info: Source file: <images/validation1.eps>
 erted-to.pdf images/validation1.eps>
 (epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
-<images/validation1-eps-converted-to.pdf, id=128, 433.62pt x 289.08pt>
+<images/validation1-eps-converted-to.pdf, id=145, 433.62pt x 289.08pt>
 File: images/validation1-eps-converted-to.pdf Graphic file (type pdf)
 <use images/validation1-eps-converted-to.pdf>
 Package pdftex.def Info: images/validation1-eps-converted-to.pdf  used on input
  line 232.
 (pdftex.def)             Requested size: 452.9679pt x 301.99469pt.
-[8
+ [8
 
 ] [9 <./images/validation2-eps-converted-to.pdf> <./images/validation1-eps-conv
 erted-to.pdf>]
@@ -897,7 +872,7 @@ df>
 -converted-to.pdf images/granger_18092018.eps>
 (epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
-<images/granger_18092018-eps-converted-to.pdf, id=165, 328.22626pt x 328.22626p
+<images/granger_18092018-eps-converted-to.pdf, id=183, 328.22626pt x 328.22626p
 t>
 File: images/granger_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/granger_18092018-eps-converted-to.pdf>
@@ -918,7 +893,7 @@ df>
 -converted-to.pdf images/PostTreatControl.eps>
 (epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
-<images/PostTreatControl-eps-converted-to.pdf, id=178, 411.5375pt x 325.215pt>
+<images/PostTreatControl-eps-converted-to.pdf, id=196, 411.5375pt x 325.215pt>
 File: images/PostTreatControl-eps-converted-to.pdf Graphic file (type pdf)
 <use images/PostTreatControl-eps-converted-to.pdf>
 Package pdftex.def Info: images/PostTreatControl-eps-converted-to.pdf  used on 
@@ -937,7 +912,7 @@ f>
 converted-to.pdf images/MargFX_31082018.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
-<images/MargFX_31082018-eps-converted-to.pdf, id=179, 411.5375pt x 325.215pt>
+<images/MargFX_31082018-eps-converted-to.pdf, id=197, 411.5375pt x 325.215pt>
 File: images/MargFX_31082018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/MargFX_31082018-eps-converted-to.pdf>
 Package pdftex.def Info: images/MargFX_31082018-eps-converted-to.pdf  used on i
@@ -958,7 +933,7 @@ o.pdf>
 eps-converted-to.pdf images/ItemByItem_18092018.eps>
 (epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
-<images/ItemByItem_18092018-eps-converted-to.pdf, id=200, 483.8075pt x 357.335p
+<images/ItemByItem_18092018-eps-converted-to.pdf, id=218, 483.8075pt x 357.335p
 t>
 File: images/ItemByItem_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use images/ItemByItem_18092018-eps-converted-to.pdf>
@@ -972,15 +947,9 @@ Overfull \hbox (30.83842pt too wide) in paragraph at lines 366--367
 
 [14
 
- <./images/ItemByItem_18092018-eps-converted-to.pdf>] (appendix.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
+ <./images/ItemByItem_18092018-eps-converted-to.pdf>] (appendix.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+
 [15
 
 ]
@@ -993,10 +962,10 @@ Package rerunfilecheck Info: File `appendix.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
- 10080 strings out of 492973
- 153630 string characters out of 3125364
- 271028 words of memory out of 3000000
- 13688 multiletter control sequences out of 15000+200000
+ 10109 strings out of 492973
+ 154334 string characters out of 3125364
+ 271231 words of memory out of 3000000
+ 13711 multiletter control sequences out of 15000+200000
  46077 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,1112b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1019,9 +988,9 @@ a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmb8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on appendix.pdf (15 pages, 642596 bytes).
+Output written on appendix.pdf (15 pages, 649428 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
