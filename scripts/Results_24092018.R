@@ -147,8 +147,9 @@ c_plot<-ggplot(res, aes(x = PE, y = spec)) +
   labs(x=NULL,y="Coefficient on Electoral Support for\n Right-Wing Parties") 
 c_plot
 
-setwd("C:/Users/ex-bce/Dropbox/Responsiveness/images")
-ggsave(c_plot, filename = "CoefPlot_18092018.eps",
+#setwd("C:/Users/ex-bce/Dropbox/Responsiveness/images")
+setwd("~/GitHub/Danish_muni/images")
+ggsave(c_plot, filename = "CoefPlot_05102018.eps",
        device = cairo_ps, 
        width = 7.34,
        heigh = 4.56)
