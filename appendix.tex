@@ -114,17 +114,17 @@
 \clearpage
 
 
-\subsection{Some More Context On Danish Municipalities} 
+\subsection{Some More Context on Danish Municipalities} 
 
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
 \label{context}
-There have been two large reforms of local politics in the last 50 years in Denmark. The first was conducted in 1970 as the Danish welfare state started to expand. Here the number of municipalities were reduced from more than 1000 to 275 \citep{ingvartsen1991kommunalreformen}. (Although it was 277 the first two years.)  The second reform was conducted in 2007 and further reduced the number of municipalities from 275 to 98. Once again, the increasing complexity of public service provision was a key argument for the reform \citep{christiansen2008utaenkelige}. Since both of these reforms were comprehensive in terms of amalgamations and changes to the relative power of national ctr. local government, we let them be the bookends of our analysis, examining the relationship between citizens policy views and the ideological flavor of municipal policy between the two reforms. Because of data availability we further limit our study period, so that it goes from 1978 and 2008.
+There have been two large reforms of local politics in the last 50 years in Denmark. The first was conducted in 1970 as the Danish welfare state began to expand. Here, the number of municipalities were reduced from more than 1000 to 275 \citep{ingvartsen1991kommunalreformen}. (Although it was 277 the first two years.)  The second reform was conducted in 2007 and further reduced the number of municipalities from 275 to 98. Once again, the increasing complexity of public service provision was a key argument for the reform \citep{christiansen2008utaenkelige}. Since both of these reforms were comprehensive in terms of amalgamations and changes to the relative power of national contra local government, we let them be the bookends of our analysis, examining the relationship between citizens policy views and the ideological flavor of municipal policy between the two reforms. Because of data availability we further limit our study period, so that it goes from 1978 and 2008.
 
-In the period we study, Danish municipalities are governed by small city councils (between 9 and 29 members) which are elected at proportional elections and with a multi-party system which, to a large extent, mirrors the party system at the national level \citep{blom2013et}. Elections are fixed to take place every four years and do not usually coincide with elections at the national or EU level. Before 1981 elections always took place in the spring, but this was changed to November so that there would be a match between calender years and election terms. To make this change there was only three years between the elections of 1981 and 1978. Turnout is high with an average of around 70 percent since 1970.  
+In the period we study, Danish municipalities are governed by small city councils (between 9 and 29 members) that are elected at proportional elections and with a multi-party system that, to a large extent, mirrors the party system at the national level \citep{blom2013et}. Elections are fixed to take place every four years and do not usually coincide with elections at the national or EU level. Before 1981, elections always took place in the spring, but this was changed to November, so that there would be a match between calender years and election terms. To make this change there was only three and a half years between the spring 1978 and fall 1981 election. Turnout at municipal elections is high with an average of around 70 percent since 1970.  
 
-Following each municipal election, a majority in the city council elects a mayor, and the chairmen of the various committees \citep{serritzlew2008explaining}. Mayors are the only full time professional politicians in the city councils and have a number of formal obligations \citep{kjaer2015urban}. Mayors are also responsible for the day-to-day business of the administration and chairs the important economic committee which sets taxes and the budget. The work in the city council is structured by a a number of committees. The number and size of the committees is determined by the council. Committee membership is allocated proportionality between the political parties which means that there is broad political representation in all committees. The committees can decide on matters in their area and the administrative responsibility across areas is therefore essentially divided. 
+Following each municipal election, a majority in the city council elects a mayor, and the chairmen of the various committees \citep{serritzlew2008explaining}. Mayors are the only full time professional politicians in the city councils and have a number of formal obligations \citep{kjaer2015urban}. Mayors are also responsible for the day-to-day business of the administration and chairs the important economic committee that sets taxes and the budget. The work in the city council is structured by a a number of committees. The number and size of the committees are determined by the council. Committee membership is allocated proportionally between the political parties which means that there is broad political representation in all committees. The committees can decide on matters in their area, and the administrative responsibility across areas is therefore essentially divided. 
 
 \clearpage
 
@@ -150,13 +150,13 @@ F_{itk} \sim N(F^*_{itk}, \phi)\\
 F^*_{itk} = \beta_k C_{it} - \alpha_{k}
 \end{gather*}
 
-Where $F$ is the level of the observed fiscal policy variable $k$ in municipality $i$ at time $t$. the distribution of each of these observed variables is drawn from a normally distributed latent variable $F^*$, which has variance $\phi$. $C$ is the quantity of most interest -- the latent fiscal conservatism in that municipality. $\beta$ is the discrimination parameter, which captures how strongly each observed policy variable loads onto the latent dimension. Finally, $\alpha$ represents each item's difficulty parameter, which measures how fiscally conservative a municipality is, if it were to score 0 on the policy variable $k$.
+where $F$ is the level of the observed fiscal policy variable $k$ in municipality $i$ at time $t$. The distribution of each of these observed variables is drawn from a normally distributed latent variable $F^*$, which has variance $\phi$. $C$ is the quantity of most interest -- the latent fiscal conservatism in that municipality. $\beta$ is the discrimination parameter, which captures how strongly each observed policy variable loads onto the latent dimension. Finally, $\alpha$ represents each item's difficulty parameter, which measures how fiscally conservative a municipality is if it scores 0 on the policy variable $k$.
 
-This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques when making inferences about the latent trait is that the simulations will impute missing data during the estimation, which allows us to include items with different numbers of observations in the model -- the variables with missing observations will simply supply less information to the estimation. Additionally, the estimation is simulation based, which allows us to directly estimate uncertainty around all model parameters. 
+This parameterization is in many ways similar to frequentist factor analysis. However, a major advantage to using Bayesian techniques when making inferences about the latent trait is that the simulations will impute missing data during the estimation, which allows us to include items with different numbers of observations in the model. The variables with missing observations will simply supply less information to the estimation. Additionally, the estimation is simulation based, which allows us to directly estimate uncertainty around all model parameters. 
 
-We include the 14 policy variables listed in table  \ref{tab:policies} in the model. Before we do so, all variables are rescaled to have mean zero and variance one. Furthermore, all variables where higher values imply a more left-wing fiscal policy are reversed. This implies that when estimating policy conservatism, higher values on all variables indicate a more conservative policy. This is strictly speaking not necessary, but it makes interpretation of the model parameters simpler.
+We include the 14 policy variables listed in Table  \ref{tab:policies} in the model. Before we do so, all variables are rescaled to have mean zero and variance one. Furthermore, all variables where higher values imply a more left-wing fiscal policy are reversed. This implies that when estimating policy conservatism, higher values on all variables indicate a more conservative policy. This is strictly speaking not necessary, but it makes interpretation of the model parameters simpler.
 
-To identify the direction of the policy space, we constrain the $\beta$'s to be positive, so that municipalities scoring higher on our observed policy variables will be estimated to be more conservative. Location and scale is identified by placing standard normal priors on the distributions of all model parameters. All precision parameters are estimated using uninformative gamma priors.
+To identify the direction of the policy space, we constrain the $\beta$'s to be positive, so that municipalities scoring higher on our observed policy variables will be estimated to be more conservative. Location and scale are identified by placing standard normal priors on the distributions of all model parameters. All precision parameters are estimated using uninformative gamma priors.
 
 Estimation is done by initiating a random walk over the parameter space defined by the model using the Gibbs sampler. We run 25,000 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. To reduce autocorrelation within the chains of sampled values and improve convergence, we set a thinning interval of five, meaning that we only retain every fifth sampled value. This specification ensures  convergence of the model and provides well-behaved, normal posterior distributions.
 
@@ -168,13 +168,13 @@ Estimation is done by initiating a random walk over the parameter space defined 
 \setcounter{figure}{0}
 
 
-Figures \ref{fig:timeline} and \ref{fig:lines} present some descriptive features of the annual measure of fiscal policy conservatism. In particular, it looks at how the measure is distributed across time and space, revealing some interesting patterns in municipal fiscal policy.
+Figures \ref{fig:timeline} and \ref{fig:lines} present some descriptive features of the annual measure of fiscal policy conservatism. In particular, they look at how the measure is distributed across time and space, revealing some interesting patterns in municipal fiscal policy.
 
-Fiscal policy conservatism dropped slightly in the period. The drops are located in '78 to '81 and from '93 to 2000: periods where the Social Democratic Party was in power nationally. This makes sense as liberal national fiscal policies are likely to spill over into local politics through intergovernmental grants etc.
+Fiscal policy conservatism dropped slightly in the period. The drops are located in 1978 to 1981 and from 1993 to 2000: periods when the Social Democratic Party was in power nationally. This makes sense, as liberal national fiscal policies are likely to spill over into local politics through intergovernmental grants, and so on.
 
-Aside from the national trends, however, the most notable feature of the time series seems to be the large variation we identify in fiscal policy. Some municipalities are, apparently, very fiscally conservative while others are not. Although the within-differences are less dramatic, we also see some municipalities start out more conservative and then become more liberal and vice versa.
+However, aside from the national trends, the most notable feature of the time series seems to be the large variation we identify in fiscal policy. Apparently, some municipalities are very fiscally conservative while others are not. Although the within-differences are less dramatic, we also see some municipalities start out more conservatively and then become more liberal and vice versa.
 
-Figure \ref{mostleast} presents an overview of the 50 most and the 50 least conservative municipalities across the entire period. This list what most observers of Danish politics would expect. The most conservative municipalities are in Western Jutland and North of Copenhagen whereas the least Conservative (i.e., Socialist) municipalities are west of Copenhagen and in an around the other large cities (Aaalborg, Aarhus, Odense). 
+Figure \ref{mostleast} presents an overview of the 50 most and the 50 least conservative municipalities across the entire period. This list conforms to what most observers of Danish politics would expect. The most conservative municipalities are located in Western Jutland and North of Copenhagen whereas the least Conservative (i.e., Socialist) municipalities are located west of Copenhagen and in an around the other large cities (Aaalborg, Aarhus, Odense). 
 
 
 
@@ -206,18 +206,18 @@ Figure \ref{mostleast} presents an overview of the 50 most and the 50 least cons
 \clearpage
 
 
-\subsection{Validating Our Measure Of Citizens' Policy Preferences} \label{validation}
+\subsection{Validating Our Measure of Citizens' Policy Preferences} \label{validation}
 
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
 
-In figure \ref{validation2}, we gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if we used election returns from national, rather than local, elections to estimate local policy preferences.
+In figure \ref{validation2}, we gauge the extent to which it matters that our measure relies on data from municipal rather than national elections. To do this, we correlate  municipal-level net support for conservative parties at the 2005 municipal election with municipal-level net support for the same conservative parties at a national election held six months earlier. This analysis reveals a strong, but in no way deterministic, correlation of 0.56. Accordingly, we might miss meaningful variation, if wehad  used election returns from national, rather than local, elections to estimate local policy preferences.
 
 
 
 
-To get an indication of how well our electoral measure capture voters underlying preferences, we look at the 2013 Danish Municipal Election Survey \cite{elklit2017kv13}. In this survey, more than 30 respondents (avg. 46) from each municipality were asked to place themselves on an eleven point ideology scale going from left to right. We calculate the municipality-specific mean of these responses and correlate these with the municipality-specific net support for conservative parties in the 2013 municipal election.  As can be seen from figure \ref{validation1}, the two are strongly correlated, which suggests that we are in fact tapping into relevant variation in policy views, when we measure citizens preferences over parties. Further, its important to note that the correlation is biased downwards, because we have random measurement error in our sample based measure of policy views. The reader should also note that due to the municipal reform of 2006 (see section \ref{context})  we can only have 98 observations corresponding to the 98 (amalgamated) municipalities.
+To have an indication of how well our electoral measure capture voters underlying preferences, we look at the 2013 Danish Municipal Election Survey \cite{elklit2017kv13}. In this survey, more than 30 respondents (avg. 46) from each municipality were asked to place themselves on an 11-point ideology scale going from left to right. We calculate the municipality-specific mean of these responses and correlate these with the municipality-specific net support for conservative parties in the 2013 municipal election.  As can be seen from Figure \ref{validation1}, the two are strongly correlated, which suggests that we are in fact tapping into relevant variation in policy views, when we measure citizens' preferences over parties. Further, it is important to note that the correlation is biased downwards, because we have random measurement error in our sample-based measure of policy views. The reader should also note that because of the municipal reform of 2006 (see section \ref{context})  we only have 98 observations corresponding to the 98 (amalgamated) municipalities.
 
 
 \begin{figure}[htbp]
@@ -240,7 +240,7 @@ To get an indication of how well our electoral measure capture voters underlying
 \setcounter{figure}{0}
 
 
-In Table \ref{main_res} we report a regression table summarizing  numerically the same information as the coefficient plot in the main text does graphically. Columns one through four use as the dependent variable the full measure of fiscal conservatism, while the remaining four columns use the reduced measure, which only include spending pr. capita, as well as taxes in income and property. All models include population size (logged) as a control. Column one shows the result from the pooled model, while column two includes twoway fixed effects. In the third column, we interact the time fixed effects with dummies for region and the log of population size. Finally, column four uses the first difference of all variables in the model instead of demeaning by municipality. Columns five through eight replicates these models with the reduced measure of fiscal policy conservatism. 
+In Table \ref{main_res} we report a regression table numerically summarizing the information that Figure \ref{fig:FourYearLead} presents graphically. Columns 1 through 4 use the full measure of fiscal conservatism as the dependent variable, while the remaining four columns use the reduced measure, which only includes spending per capita, the income tax and the property tax. All models include population size (logged) as a control. Column 1 shows the result from the pooled model, while column 2 includes two-way fixed effects. In the third column, we interact the time fixed effects with dummies for region and the log of population size. Finally, column four uses the first difference of all variables in the model instead of municipality fixed effects. Columns 5 through 8 replicates these models with the reduced measure of fiscal policy conservatism. 
 
 \begin{table}[!htbp] \centering 
 	\caption{} 
@@ -282,7 +282,7 @@ In Table \ref{main_res} we report a regression table summarizing  numerically th
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
-In Table \ref{tab:balance}, we show how the electoral support for right-wing parties relates to changes in municipal socio-demographics. None of the correlations are strong. The largest coefficient is on percentage of college educated, where we estimate that an increase of one percentage point is related to a decrease in support for right-wing parties of approximately 1/20 of a standard deviation. Unsurprisingly, with these low correlations, we cannot reject the null that the coefficients individually nor collectively are zero. Besides this, it should be noted that the model's overall explanatory power is very low, as indicated by the negative adjusted $R^2$.
+In Table \ref{tab:balance}, we show how the electoral support for right-wing parties relates to changes in municipal socio-demographics. None of the correlations are strong. Unsurprisingly, given these low correlations, the coefficients are statistically indistinguishable from zero. Besides this, it should be noted that the model's overall explanatory power is very low, as indicated by the negative adjusted $R^2$.
 
 \begin{table}[!htbp] \centering 
 	\caption{Support for Right-Wing Parties and Socio Demographics.} 
@@ -321,7 +321,7 @@ In Table \ref{tab:balance}, we show how the electoral support for right-wing par
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
-As an additional test of reverse causality, we use the lag of municipal policy as the explanatory variable in a series of fixed effects models predicting electoral support for right-wing parties. We use one through four year lags and report the result of each of these models in  \ref{fig:granger}. All coefficients are small, and in none of the models we can  reject the null that municipal policy does not predict voter behavior. This strengthens our claim that voter preferences explain policy and not the other way around.
+As an additional test of reverse causality, we use the lag of municipal policy as the explanatory variable in a series of fixed effects models predicting electoral support for right-wing parties. We use one- through four-year lags and report the result of each of these models in  \ref{fig:granger}. All coefficients are small and statistically insignificant. This strengthens our claim that changes in voter preferences leads to changes in policy and not the other way around.
 
 
 \begin{figure}[!htb]
@@ -330,11 +330,11 @@ As an additional test of reverse causality, we use the lag of municipal policy a
 	\caption{Reverse Causality? Fiscal Conservatism does not predict future support for Right-Wing parties. Confidence intervals are 95 percent, computed using robust standard errors clustered at the municipality level.} \label{fig:granger}
 \end{figure}
 \clearpage
-\subsection{Is it Just The Mayoralty?}\label{mechanism}
+\subsection{Is It Just the Mayoralty?}\label{mechanism}
 
 There are two important reasons why we would expect municipal policy to be responsive to voter preferences. First, when the electorate chooses to elect more right-wing candidates, we would expect them to enact more fiscally conservative policies. Second, we might observe that parties are differentially responsive to voter preferences. We investigate these mechanisms in Figure \ref{fig:mech}.
 
-In panel A, we include a categorical control for whether the mayoral party is the Liberal Party, the Social Democrats, or some third party.  In doing so, we condition the effect of electoral support for right-wing parties on, whether those parties control the most important municipal policy-making position. This gives us the effect of support for right-wing parties among the voters after taking into account, which politicians they elect. Identifying the direct effect of electoral support net of selection by including a post-treatment control in this way requires very strong assumptions that are unlikely to be met \textbf{REFERENCE}. Still, it is striking how little the coefficient on the policy preferences of the electorate changes, when controlling for the mayoral party. Additionally, it is interesting that policy does not seem to be different when the mayoralty changes from one party to another.
+In panel A, we include a categorical control for whether the mayoral party is the Liberal Party, the Social Democrats, or some third party.  In doing so, we condition the effect of electoral support for right-wing parties on whether those parties control the most important municipal policy-making position. This gives us the effect of support for right-wing parties among the voters after taking into account, which politicians they elect. Identifying the direct effect of electoral support net of selection by including a post-treatment control in this way requires very strong assumptions that are unlikely to be met. Still, it is striking how little the coefficient on policy preferences change, when we control for which party controls the mayoralty. 
 
 \begin{figure}[!htb]
 	\begin{subfigure}{0.45\textwidth}
@@ -349,7 +349,7 @@ In panel A, we include a categorical control for whether the mayoral party is th
 	\label{fig:mech}
 \end{figure}
 
-In panel B, we allow the effect to vary across our three different categories of mayoral party. The differences in the estimates are very small, and we cannot reject that policy under all three mayoralties respond equally to voter preferences.
+In panel B, we allow the effect to vary across our three different categories of mayoral party. The differences in the estimates are very small, suggesting that all mayors are equally responsive.
 
 \clearpage
 
@@ -359,7 +359,7 @@ In panel B, we allow the effect to vary across our three different categories of
 \setcounter{figure}{0}
 
 
-As our measure of municipal policy is made up of many different fiscal policies, it is interesting to investigate, which factor(s) drive the effect. To do so, we regress a four year lead of all policy items presented in Table \ref{tab:policies} individually on the electoral support of right-wing parties including time and year fixed effects. Figure \ref{fig:item} present the results. While some variables are uncorrelated with voter preferences, a majority are quite strongly correlated with preferences, but the individual correlation is estimated with a lot of uncertainty. This suggests that combining the items has added value over only using one, as we reduce statistical noise in the estimation process. 
+As our measure of municipal policy is made up of many different fiscal policies it is interesting to investigate, which factor(s) drive the effect. To do so, we regress a four-year lead of all policy items presented in Table \ref{tab:policies} individually on the electoral support of right-wing parties including time and year fixed effects. Figure \ref{fig:item} presents the results. While some variables are uncorrelated with voter preferences, a majority are quite strongly correlated with preferences, but the individual correlation is estimated with a great deal of uncertainty. This suggests that combining the items has added value over only using one, as we reduce statistical noise in the estimation process. 
 
 \begin{figure}[!htb]
 	\centering

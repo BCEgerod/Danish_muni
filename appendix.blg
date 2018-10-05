@@ -1,5 +1,15 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: appendix.aux
 The style file: apa.bst
-Database file #1: bibtex/library.bib
-Warning--empty journal in elklit2017kv13
-(There was 1 warning)
+I couldn't open database file bibtex/library.bib
+---line 75 of file appendix.aux
+ : \bibdata{bibtex/library
+ :                        }
+I'm skipping whatever remains of this command
+I found no database files---while reading file appendix.aux
+Warning--I didn't find a database entry for "ingvartsen1991kommunalreformen"
+Warning--I didn't find a database entry for "christiansen2008utaenkelige"
+Warning--I didn't find a database entry for "blom2013et"
+Warning--I didn't find a database entry for "serritzlew2008explaining"
+Warning--I didn't find a database entry for "kjaer2015urban"
+Warning--I didn't find a database entry for "elklit2017kv13"
+(There were 2 error messages)

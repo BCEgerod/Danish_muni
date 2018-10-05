@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  24 SEP 2018 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  5 OCT 2018 08:18
 entering extended mode
 **./citypolicy_vol2.tex
 (citypolicy_vol2.tex
@@ -445,7 +445,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\tools\xr.sty"
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-Package xr Info: IMPORTING LABELS FROM "appendix".aux on input line 26.
+Package xr Info: IMPORTING LABELS FROM "appendix".aux on input line 27.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\tools\longtable
 .sty"
@@ -523,21 +523,21 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (citypolicy_vol2.aux)
 \openout1 = `citypolicy_vol2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 99.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\psnfss\ot1ptm.f
 d"
@@ -599,7 +599,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 99.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\hyperref\namere
 f.sty"
@@ -611,9 +611,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
  (citypolicy_vol2.out) (citypolicy_vol2.out)
 \@outlinefile=\write3
 \openout3 = `citypolicy_vol2.out'.
@@ -629,58 +629,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 [2]
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 122.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 123.
 
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\psnfss\ot1phv.f
 d"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 128.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 129.
 
  ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 128.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 129.
 
  ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 128
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 129
 .
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 128
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 129
 .
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 128.
+(Font)              <12> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 128.
+(Font)              <8> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 128.
-LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+(Font)              <6> on input line 129.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\amsfonts\umsa.f
 d"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\amsfonts\umsb.f
 d"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 128.
+(Font)              <10> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 128.
+(Font)              <7> on input line 129.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 128.
+(Font)              <5> on input line 129.
  [3] [4] [5]
 Package epstopdf Info: Source file: <scatterplot.eps>
 (epstopdf)                    date: 2018-09-19 19:18:15
@@ -690,16 +690,16 @@ Package epstopdf Info: Source file: <scatterplot.eps>
 (epstopdf)                    size: 50122 bytes
 (epstopdf)             Command: <epstopdf --outfile=scatterplot-eps-converted-t
 o.pdf scatterplot.eps>
-(epstopdf)             \includegraphics on input line 163.
+(epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
-<scatterplot-eps-converted-to.pdf, id=149, 433.62pt x 289.08pt>
+<scatterplot-eps-converted-to.pdf, id=143, 433.62pt x 289.08pt>
 File: scatterplot-eps-converted-to.pdf Graphic file (type pdf)
 <use scatterplot-eps-converted-to.pdf>
 Package pdftex.def Info: scatterplot-eps-converted-to.pdf  used on input line 1
-63.
+61.
 (pdftex.def)             Requested size: 346.89647pt x 231.2643pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 162.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -712,16 +712,16 @@ Package epstopdf Info: Source file: <CoefPlot_18092018.eps>
 (epstopdf)                    size: 21408 bytes
 (epstopdf)             Command: <epstopdf --outfile=CoefPlot_18092018-eps-conve
 rted-to.pdf CoefPlot_18092018.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
-<CoefPlot_18092018-eps-converted-to.pdf, id=150, 529.98pt x 329.23pt>
+<CoefPlot_18092018-eps-converted-to.pdf, id=144, 529.98pt x 329.23pt>
 File: CoefPlot_18092018-eps-converted-to.pdf Graphic file (type pdf)
 <use CoefPlot_18092018-eps-converted-to.pdf>
 Package pdftex.def Info: CoefPlot_18092018-eps-converted-to.pdf  used on input 
-line 170.
+line 168.
 (pdftex.def)             Requested size: 370.98346pt x 230.45941pt.
 [6] [7 <./scatterplot-eps-converted-to.pdf>] [8 <./CoefPlot_18092018-eps-conver
-ted-to.pdf>]
+ted-to.pdf>] [9]
 Package epstopdf Info: Source file: <EffectsVsTime.eps>
 (epstopdf)                    date: 2018-09-24 14:13:41
 (epstopdf)                    size: 128025 bytes
@@ -730,48 +730,48 @@ Package epstopdf Info: Source file: <EffectsVsTime.eps>
 (epstopdf)                    size: 52922 bytes
 (epstopdf)             Command: <epstopdf --outfile=EffectsVsTime-eps-converted
 -to.pdf EffectsVsTime.eps>
-(epstopdf)             \includegraphics on input line 199.
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
-<EffectsVsTime-eps-converted-to.pdf, id=200, 618.31pt x 469.755pt>
+<EffectsVsTime-eps-converted-to.pdf, id=201, 618.31pt x 469.755pt>
 File: EffectsVsTime-eps-converted-to.pdf Graphic file (type pdf)
 <use EffectsVsTime-eps-converted-to.pdf>
 Package pdftex.def Info: EffectsVsTime-eps-converted-to.pdf  used on input line
- 199.
+ 197.
 (pdftex.def)             Requested size: 370.98886pt x 281.85518pt.
- [9] [10 <./EffectsVsTime-eps-converted-to.pdf>]
+ [10 <./EffectsVsTime-eps-converted-to.pdf>]
 (citypolicy_vol2.bbl [11] [12]) [13]
 
-Package caption Warning: Unused \captionsetup[table] on input line 40.
+Package caption Warning: Unused \captionsetup[table] on input line 41.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
 (citypolicy_vol2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `citypolicy_vol2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 9576 strings out of 492973
- 145940 string characters out of 3125364
- 255322 words of memory out of 3000000
- 13183 multiletter control sequences out of 15000+200000
- 42726 words of font info for 65 fonts, out of 3000000 for 9000
+ 9554 strings out of 492973
+ 145376 string characters out of 3125364
+ 256131 words of memory out of 3000000
+ 13166 multiletter control sequences out of 15000+200000
+ 44410 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,1639b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,1639b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.0.9} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.0.7} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.0.10} has been referenced but does not e
-xist, replaced by a fixed one
-
 pdfTeX warning (dest): name{subsection.0.8} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.0.10} has been referenced but does not e
+xist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.0.5} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -798,9 +798,9 @@ onts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/au595748/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/au595748/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/au595748/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on citypolicy_vol2.pdf (13 pages, 256176 bytes).
+Output written on citypolicy_vol2.pdf (13 pages, 253161 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
