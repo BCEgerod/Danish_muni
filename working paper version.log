@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  8 OCT 2018 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  8 OCT 2018 14:47
 entering extended mode
 **"./working paper version.tex"
 ("working paper version.tex"
@@ -777,27 +777,46 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 107.
 ("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\amsfonts\umsb.f
 d"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 107.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 107.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 107.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 107.
+
+
+("C:\Users\au595748\AppData\Local\Programs\MiKTeX 2.9\tex/latex\psnfss\ot1pcr.f
+d"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[][][]\OT1/ptm/m/n/10 Graduate Stu-dent, De-part-ment of Po-lit-i-cal Sci-ence,
+ Uni-ver-sity of Copen-hagen, e-mail:
+ []
+
+<citypolicy_vol2.pdf, id=5, 597.50829pt x 845.0471pt>
+File: citypolicy_vol2.pdf Graphic file (type pdf)
+<use citypolicy_vol2.pdf>
+Package pdftex.def Info: citypolicy_vol2.pdf  used on input line 124.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: citypolicy_vol2.pdf Graphic file (type pdf)
+<use citypolicy_vol2.pdf>
+Package pdftex.def Info: citypolicy_vol2.pdf  used on input line 124.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<citypolicy_vol2.pdf, id=8, page=1, 597.50829pt x 845.0471pt>
+File: citypolicy_vol2.pdf Graphic file (type pdf)
+<use citypolicy_vol2.pdf, page 1>
+Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: citypolicy_vol2.pdf Graphic file (type pdf)
+<use citypolicy_vol2.pdf, page 1>
+Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[1
 
 {C:/Users/au595748/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<citypolicy_vol2.pdf, id=15, 597.50829pt x 845.0471pt>
-File: citypolicy_vol2.pdf Graphic file (type pdf)
-<use citypolicy_vol2.pdf>
-Package pdftex.def Info: citypolicy_vol2.pdf  used on input line 124.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: citypolicy_vol2.pdf Graphic file (type pdf)
-<use citypolicy_vol2.pdf>
-Package pdftex.def Info: citypolicy_vol2.pdf  used on input line 124.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<citypolicy_vol2.pdf, id=18, page=1, 597.50829pt x 845.0471pt>
-File: citypolicy_vol2.pdf Graphic file (type pdf)
-<use citypolicy_vol2.pdf, page 1>
-Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: citypolicy_vol2.pdf Graphic file (type pdf)
-<use citypolicy_vol2.pdf, page 1>
-Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 1>
 Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
@@ -811,10 +830,8 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page1 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
-[2
-
- <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=34, page=2, 597.50829pt x 845.0471pt>
+[2 <./citypolicy_vol2.pdf>]
+<citypolicy_vol2.pdf, id=35, page=2, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 2>
 Package pdftex.def Info: citypolicy_vol2.pdf , page2 used on input line 124.
@@ -828,7 +845,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page2 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [3 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=39, page=3, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=40, page=3, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 3>
 Package pdftex.def Info: citypolicy_vol2.pdf , page3 used on input line 124.
@@ -842,7 +859,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page3 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [4 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=49, page=4, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=50, page=4, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 4>
 Package pdftex.def Info: citypolicy_vol2.pdf , page4 used on input line 124.
@@ -856,7 +873,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page4 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [5 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=54, page=5, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=55, page=5, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 5>
 Package pdftex.def Info: citypolicy_vol2.pdf , page5 used on input line 124.
@@ -870,7 +887,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page5 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [6 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=59, page=6, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=60, page=6, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 6>
 Package pdftex.def Info: citypolicy_vol2.pdf , page6 used on input line 124.
@@ -884,7 +901,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page6 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [7 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=65, page=7, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=66, page=7, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 7>
 Package pdftex.def Info: citypolicy_vol2.pdf , page7 used on input line 124.
@@ -898,7 +915,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page7 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [8 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=90, page=8, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=91, page=8, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 8>
 Package pdftex.def Info: citypolicy_vol2.pdf , page8 used on input line 124.
@@ -912,7 +929,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page8 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [9 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=102, page=9, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=103, page=9, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 9>
 Package pdftex.def Info: citypolicy_vol2.pdf , page9 used on input line 124.
@@ -926,7 +943,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page9 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [10 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=107, page=10, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=108, page=10, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 10>
 Package pdftex.def Info: citypolicy_vol2.pdf , page10 used on input line 124.
@@ -940,7 +957,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page10 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [11 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=120, page=11, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=121, page=11, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 11>
 Package pdftex.def Info: citypolicy_vol2.pdf , page11 used on input line 124.
@@ -954,7 +971,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page11 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [12 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=125, page=12, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=126, page=12, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 12>
 Package pdftex.def Info: citypolicy_vol2.pdf , page12 used on input line 124.
@@ -969,7 +986,7 @@ Package pdftex.def Info: citypolicy_vol2.pdf , page12 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 [13 <./citypolicy_vol2.pdf>]
-<citypolicy_vol2.pdf, id=131, page=13, 597.50829pt x 845.0471pt>
+<citypolicy_vol2.pdf, id=132, page=13, 597.50829pt x 845.0471pt>
 File: citypolicy_vol2.pdf Graphic file (type pdf)
 <use citypolicy_vol2.pdf, page 13>
 Package pdftex.def Info: citypolicy_vol2.pdf , page13 used on input line 124.
@@ -983,7 +1000,7 @@ File: citypolicy_vol2.pdf Graphic file (type pdf)
 Package pdftex.def Info: citypolicy_vol2.pdf , page13 used on input line 124.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [14 <./citypolicy_vol2.pdf>]
-<appendix.pdf, id=136, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=137, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf>
 Package pdftex.def Info: appendix.pdf  used on input line 127.
@@ -992,7 +1009,7 @@ File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf>
 Package pdftex.def Info: appendix.pdf  used on input line 127.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<appendix.pdf, id=139, page=1, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=140, page=1, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 1>
 Package pdftex.def Info: appendix.pdf , page1 used on input line 127.
@@ -1016,7 +1033,7 @@ Package pdftex.def Info: appendix.pdf , page1 used on input line 127.
  [15
 
  <./appendix.pdf>]
-<appendix.pdf, id=151, page=2, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=152, page=2, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 2>
 Package pdftex.def Info: appendix.pdf , page2 used on input line 127.
@@ -1030,7 +1047,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page2 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 [16 <./appendix.pdf>]
-<appendix.pdf, id=156, page=3, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=157, page=3, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 3>
 Package pdftex.def Info: appendix.pdf , page3 used on input line 127.
@@ -1044,7 +1061,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page3 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [17 <./appendix.pdf>]
-<appendix.pdf, id=167, page=4, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=168, page=4, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 4>
 Package pdftex.def Info: appendix.pdf , page4 used on input line 127.
@@ -1058,7 +1075,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page4 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [18 <./appendix.pdf>]
-<appendix.pdf, id=193, page=5, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=194, page=5, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 5>
 Package pdftex.def Info: appendix.pdf , page5 used on input line 127.
@@ -1072,7 +1089,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page5 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [19 <./appendix.pdf>]
-<appendix.pdf, id=199, page=6, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=200, page=6, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 6>
 Package pdftex.def Info: appendix.pdf , page6 used on input line 127.
@@ -1086,7 +1103,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page6 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [20 <./appendix.pdf>]
-<appendix.pdf, id=221, page=7, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=222, page=7, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 7>
 Package pdftex.def Info: appendix.pdf , page7 used on input line 127.
@@ -1100,7 +1117,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page7 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [21 <./appendix.pdf>]
-<appendix.pdf, id=233, page=8, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=234, page=8, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 8>
 Package pdftex.def Info: appendix.pdf , page8 used on input line 127.
@@ -1114,7 +1131,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page8 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [22 <./appendix.pdf>]
-<appendix.pdf, id=238, page=9, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=239, page=9, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 9>
 Package pdftex.def Info: appendix.pdf , page9 used on input line 127.
@@ -1129,7 +1146,7 @@ Package pdftex.def Info: appendix.pdf , page9 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 [23 <./appendix.pdf>]
-<appendix.pdf, id=253, page=10, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=254, page=10, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 10>
 Package pdftex.def Info: appendix.pdf , page10 used on input line 127.
@@ -1143,7 +1160,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page10 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [24 <./appendix.pdf>]
-<appendix.pdf, id=273, page=11, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=274, page=11, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 11>
 Package pdftex.def Info: appendix.pdf , page11 used on input line 127.
@@ -1157,7 +1174,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page11 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [25 <./appendix.pdf>]
-<appendix.pdf, id=284, page=12, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=285, page=12, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 12>
 Package pdftex.def Info: appendix.pdf , page12 used on input line 127.
@@ -1171,7 +1188,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page12 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [26 <./appendix.pdf>]
-<appendix.pdf, id=296, page=13, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=297, page=13, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 13>
 Package pdftex.def Info: appendix.pdf , page13 used on input line 127.
@@ -1185,7 +1202,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page13 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [27 <./appendix.pdf>]
-<appendix.pdf, id=315, page=14, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=316, page=14, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 14>
 Package pdftex.def Info: appendix.pdf , page14 used on input line 127.
@@ -1199,7 +1216,7 @@ File: appendix.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendix.pdf , page14 used on input line 127.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [28 <./appendix.pdf>]
-<appendix.pdf, id=326, page=15, 597.50829pt x 845.0471pt>
+<appendix.pdf, id=327, page=15, 597.50829pt x 845.0471pt>
 File: appendix.pdf Graphic file (type pdf)
 <use appendix.pdf, page 15>
 Package pdftex.def Info: appendix.pdf , page15 used on input line 127.
@@ -1232,38 +1249,33 @@ Package rerunfilecheck Info: File `"working paper version".out' has not changed
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 11161 strings out of 492973
- 169220 string characters out of 3125364
- 284665 words of memory out of 3000000
- 14783 multiletter control sequences out of 15000+200000
- 29168 words of font info for 48 fonts, out of 3000000 for 9000
+ 11226 strings out of 492973
+ 170077 string characters out of 3125364
+ 285665 words of memory out of 3000000
+ 14832 multiletter control sequences out of 15000+200000
+ 43299 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,46p,860b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
-c}<C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-mi12.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmmi7.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmmi8.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmr12.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmr7.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/au595748/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/au595748/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/au595748/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/au595748/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/au5
-95748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Us
-ers/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
-><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on "working paper version.pdf" (29 pages, 820419 bytes).
+{C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
+enc}<C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmmi12.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi7.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmmi8.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr12.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/au595748/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/au595748/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/au595748/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/au595748/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/au595748/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/au
+595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C
+:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
+.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
+/utmr8a.pfb><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on "working paper version.pdf" (29 pages, 831275 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
+ 362 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
