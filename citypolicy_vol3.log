@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  12 MAR 2019 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  12 MAR 2019 15:01
 entering extended mode
 **./citypolicy_vol3.tex
 (citypolicy_vol3.tex
@@ -681,7 +681,7 @@ Package pdftex.def Info: scatterplot-eps-converted-to.pdf  used on input line 2
 03.
 (pdftex.def)             Requested size: 346.89647pt x 231.2643pt.
 [7] [8 <./scatterplot-eps-converted-to.pdf>]
-Overfull \hbox (43.52666pt too wide) in paragraph at lines 222--247
+Overfull \hbox (35.02654pt too wide) in paragraph at lines 222--247
  [][] 
  []
 
@@ -736,7 +736,7 @@ Here is how much of TeX's memory you used:
  13205 multiletter control sequences out of 15000+200000
  44410 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,1639b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,43p,1639b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.0.9} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -777,7 +777,7 @@ s/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on citypolicy_vol3.pdf (15 pages, 373812 bytes).
+Output written on citypolicy_vol3.pdf (15 pages, 374457 bytes).
 PDF statistics:
  296 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)

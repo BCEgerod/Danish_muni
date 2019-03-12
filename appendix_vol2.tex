@@ -134,6 +134,8 @@ Following each municipal election, a majority in the city council elects a mayor
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
+\textbf{Motivate the use of these variables and why they -- in a Danish context -- should be expected to capture fiscal conservatism.}
+
 \input{table/measurement.tex}
 
 \clearpage
@@ -160,7 +162,9 @@ To identify the direction of the policy space, we constrain the $\beta$'s to be 
 
 Estimation is done by initiating a random walk over the parameter space defined by the model using the Gibbs sampler. We run 25,000 iterations of the model, where the first 2,500 are burn in. We run three parallel chains. To reduce autocorrelation within the chains of sampled values and improve convergence, we set a thinning interval of five, meaning that we only retain every fifth sampled value. This specification ensures  convergence of the model and provides well-behaved, normal posterior distributions.
 
-Figure \ref{fig:ItemRest} shows the correlations between each item and the overall measure of fiscal policy conservatism. The estimated correlation between the overall measure and each single item are printed in the top right corner of each plot. These estimated are obtained from a series of linear regressions. Note that we plot the versions of the variables that were used as input in the IRT model, so to reflect our expectations about conservative policies income tax, property tax, commercial real estate, spending per capita, spending per pupil, number of public employees, public housing and class size are all reversed. Therefore, higher values of all variables are designed to indicate more conservative policy. With the exception of class size, privately operated services and food delevery -- all of which exhibit strong negative correlations with fiscal conservatism -- our expectations generally align well with the measure. Finally, the prices of nursing homes, relief stays, and day care as well as purchases with private suppliers (`competition') have limited relationship with this measure of fiscal conservatism. 
+\subsubsection*{Reliability of the Index and What It Measures}
+
+Figure \ref{fig:ItemRest} shows the correlations between each item and the overall measure of fiscal policy conservatism. The estimated correlation between the overall measure and each single item are printed in the top right corner of each plot. These estimated are obtained from a series of linear regressions. Note that we plot the versions of the variables that were used as input in the IRT model, so to reflect our expectations about conservative policies income tax, property tax, commercial real estate, spending per capita, spending per pupil, number of public employees, public housing and class size are all reversed. Therefore, higher values of all variables are designed to indicate more conservative policy. With the exception of class size, privately operated services and food delevery -- all of which exhibit strong negative correlations with fiscal conservatism -- our expectations generally align well with the measure. Finally, the prices of nursing homes, relief stays, and day care as well as purchases with private suppliers (`competition') have limited relationship with this measure of fiscal conservatism. \textbf{What does this mean for the index? What kind of fiscal conservatism do we capture with it? Write a bit about this.}
 
 \begin{figure}[htbp]
 	\centering 
@@ -171,6 +175,43 @@ Figure \ref{fig:ItemRest} shows the correlations between each item and the overa
 	
 \end{figure}
 
+
+\textbf{Chronbach's alpha is decent. Write a few lines about that.}
+
+
+\begin{table}[!htbp] \centering 
+	\caption{Reliability of the Conservatism Measure} 
+	\label{tab:alpha} 
+	\begin{tabular}{@{\extracolsep{5pt}} lcc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		& \begin{tabular}{c}
+		Chronbach's Alpha\\
+		(if item is dropped)
+		\end{tabular} & Standard Error \\ 
+		\hline \\[-1.8ex] 
+		Income Tax & $0.646$ & $0.006$ \\ 
+		Property Tax & $0.613$ & $0.006$ \\ 
+		Public Employees & $0.626$ & $0.006$ \\ 
+		Day Care & $0.665$ & $0.005$ \\ 
+		Food Delivery & $0.664$ & $0.006$ \\ 
+		Nursing Home & $0.649$ & $0.006$ \\ 
+		Relief Stay & $0.648$ & $0.006$ \\ 
+		Competition & $0.603$ & $0.006$ \\ 
+		Privately Operated
+		Services & $0.602$ & $0.006$ \\ 
+		Public Housing & $0.596$ & $0.007$ \\ 
+		Class Size & $0.600$ & $0.007$ \\ 
+		Spending pr. Pupil & $0.613$ & $0.006$ \\ 
+		Commercial Real Estate Tax & $0.620$ & $0.006$ \\ 
+		Spending/capita & $0.558$ & $0.007$ \\ 
+		\hline \\[-1.8ex] 
+		Overall Alpha & 0.64 & \\
+		95 \% Confidence interval & (0.63; 0.65)\\
+		\hline 
+		\hline \\[-1.8ex] 
+	\end{tabular} 
+\end{table} 
 
 
 \clearpage
@@ -184,27 +225,6 @@ Figure \ref{fig:ItemRest} shows the correlations between each item and the overa
 
 
 Figure \ref{mostleast} presents an overview of the 50 most and the 50 least conservative municipalities across the entire period. This list conforms to what most observers of Danish politics would expect. The most conservative municipalities are located in Western Jutland and North of Copenhagen whereas the least Conservative (i.e., Socialist) municipalities are located west of Copenhagen and in an around the other large cities (Aaalborg, Aarhus, Odense). 
-
-
-
-
-
-
-\begin{figure}[htbp]
-	\centering 
-
-		\includegraphics[width=1\textwidth]{fiscal_TimeSeries.eps}
-		\caption{Average Municipal Fiscal Policy Conservatism (dark line) and Municipal Fiscal Policy Conservatism for Individual Municipalities (grey lines) from 1978 to 2006.}
-		\label{fig:timeline}
-
-
-		\includegraphics[width=1\textwidth]{ConservatismJOY_trend_24092018.eps}
-		\caption{Distribution of Municipal Fiscal Policy Conservatism from 1978 to 2006 (densities).}
-		\label{fig:lines}
-	
-
-	
-\end{figure}
 
 \begin{figure}
 	\centering
@@ -243,48 +263,6 @@ To have an indication of how well our electoral measure capture voters underlyin
 \end{figure}  
 \clearpage
 
-\subsection{Regression Table for Main Results}
-
-\setcounter{table}{0}
-\setcounter{figure}{0}
-
-
-In Table \ref{main_res} we report a regression table numerically summarizing the information that Figure \ref{fig:FourYearLead} presents graphically. Columns 1 through 4 use the full measure of fiscal conservatism as the dependent variable, while the remaining four columns use the reduced measure, which only includes spending per capita, the income tax and the property tax. All models include population size (logged) as a control. Column 1 shows the result from the pooled model, while column 2 includes two-way fixed effects. In the third column, we interact the time fixed effects with dummies for region and the log of population size. Finally, column four uses the first difference of all variables in the model instead of municipality fixed effects. Columns 5 through 8 replicates these models with the reduced measure of fiscal policy conservatism. 
-
-\begin{table}[!htbp] \centering 
-	\caption{} 
-	\footnotesize
-	\label{main_res} 
-	\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
-		\\[-1.8ex]\hline 
-		\hline \\[-1.8ex] 
-		& \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
-		\cline{2-9} 
-		\\[-1.8ex] & &\multicolumn{3}{c}{Full Measure$_{t+4}$} & &  \multicolumn{2}{c}{Spending Only$_{t+4}$} &  \\ 
-		\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
-		\hline \\[-1.8ex] 
-		Right Vote & 0.416$^{***}$ & 0.129$^{***}$ & 0.145$^{***}$ &  & 1.110$^{***}$ & 0.317$^{***}$ & 0.335$^{***}$ &  \\ 
-		& (0.059) & (0.037) & (0.048) &  & (0.122) & (0.081) & (0.099) &  \\ 
-		& & & & & & & & \\ 
-		FD Right Vote &  &  &  & 0.065$^{*}$ &  &  &  & 0.143$^{*}$ \\ 
-		&  &  &  & (0.038) &  &  &  & (0.085) \\ 
-		& & & & & & & & \\ 
-		\hline \\[-1.8ex] 
-		Municipality FE? & No & Yes & Yes & No & No & Yes & Yes & No \\ 
-		Municipality FD? & No & No & No & Yes & No & No & No & Yes \\ 
-		Time FE? & No & Yes & Yes & Yes & No & Yes & Yes & Yes \\ 
-		Time X covariates? & No & No & Yes & No & No & No & Yes & No \\
-		Observations & 1,908 & 1,908 & 1,908 & 1,363 & 1,908 & 1,908 & 1,908 & 1,363 \\ 
-		R$^{2}$ & 0.057 & 0.874 & 0.924 & 0.672 & 0.071 & 0.843 & 0.914 & 0.869 \\ 
-		Adjusted R$^{2}$ & 0.056 & 0.853 & 0.906 & 0.670 & 0.070 & 0.816 & 0.893 & 0.869 \\ 
-		\hline 
-		\hline \\[-1.8ex] 
-		\multicolumn{9}{p{17 cm}}{\emph{Note: Robust standard errors with clustering at the municipality level are in parentheses. First-difference models uses Beck-Katz panel corrected standard errors. Population size (logged) included in all models.}} 
-	\end{tabular} 
-\end{table} 
-
-
-\clearpage
 
 \subsection{Are Changing Socio-demographics Driving Our Results?}\label{balance}
 
