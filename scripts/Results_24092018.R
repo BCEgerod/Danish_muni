@@ -21,9 +21,11 @@ library(simcf); library(readr)
 
 # read in data
 # make sure to change the path to the correct local directory on your machine!
-df <- read_csv("~/GitHub/Danish_muni/data/CityPolicy_20092018.csv", 
-               col_types = cols(bluevote = col_number(), 
-               fd_bluevote = col_number()))
+# df <- read_csv("~/GitHub/Danish_muni/data/CityPolicy_20092018.csv", 
+#                col_types = cols(bluevote = col_number(), 
+#                fd_bluevote = col_number()))
+
+df <- read_csv("~/GitHub/Danish_muni/data/CityPolicy_25092018.csv")
 
 df$socdem_reduced <- df$socdem_reduced*-1
 
@@ -110,6 +112,39 @@ coeftest(fd.mod.red, vcovBK(fd.mod.red, type = "HC1"))
 ########
 # PRESENT RESULTS
 
+#regression table
+
+p_se <- sqrt(diag(vcovHC(pool.mod, type = "HC1")))
+fe_se <- sqrt(diag(vcovHC(fe.mod, type = "HC1")))
+fe2_se <- sqrt(diag(vcov(lfe_mod)))
+fd_se <- sqrt(diag(vcovBK(fd.mod, type = "HC1")))
+p_red_se <- sqrt(diag(vcovHC(pool.mod.red, type = "HC1")))
+fe_red_se <- sqrt(diag(vcovHC(fe.mod.red, type = "HC1")))
+fe2_red_se <- sqrt(diag(vcov(lfe_mod_red)))
+fd_red_se <- sqrt(diag(vcovBK(fd.mod.red, type = "HC1")))
+
+
+stargazer(pool.mod, fe.mod, lfe_mod, fd.mod,
+          pool.mod.red, fe.mod.red, lfe_mod_red, fd.mod.red,
+          se = list(p_se, fe_se, fe2_se, fd_se,
+                    p_red_se, fe_red_se, fe2_red_se, fd_red_se),
+          covariate.labels = c("Right-Wing Vote Share", 
+                               "Population Size (logged)"),
+          dep.var.labels = c("Fiscal Conservatism", "Fiscal Conservatism (Four-Year Differenced)"),
+          column.labels = c("Pooled", "Fixed Effects", "Diff Trend", "First-Difference",
+                            "Pooled", "Fixed Effects", "Diff Trend", "First-Difference"),
+          no.space = T, df=F,
+          model.names = F,
+          omit="factor\\(",
+          omit.stat = c("f", "rsq", "ser"),
+          add.lines = list(c("Municipality FE?", "No", "Yes", "Yes", "No", "No", "Yes", "Yes", "No"),
+                           c("Year FE?", "No", "Yes", "Yes", "Yes", "No", "Yes", "Yes", "Yes"),
+                           c("Year X Region FE?", "No", "No", "Yes", "No", "No", "No", "Yes", "No"),
+                           c("Four-Year Differenced?", "No", "No", "No", "Yes", "No", "No", "No", "Yes"))
+          )
+
+
+# plot results
 # extract
 res <- data.frame(rbind(coef(pool.mod)[2], coef(fe.mod)[1],coef(lfe_mod)[1], coef(fd.mod)[2],
                         coef(pool.mod.red)[2], coef(fe.mod.red)[1], coef(lfe_mod_red)[1], coef(fd.mod.red)[2]),
