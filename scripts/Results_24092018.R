@@ -189,32 +189,6 @@ ggsave(c_plot, filename = "CoefPlot_05102018.eps",
        width = 7.34,
        heigh = 4.56)
 
-###################
-# regression table for the appendix
-
-coef(pool.mod)[2], coef(fe.mod)[1],coef(lfe_mod)[1], coef(fd.mod)[2],
-coef(pool.mod.red)[2], coef(fe.mod.red)[1], coef(lfe_mod_red)[1], coef(fd.mod.red)[2]
-sqrt(diag(vcovHC(pool.mod, type = "HC1"))),
-sqrt(diag(vcovHC(fe.mod, type = "HC1"))),
-sqrt(diag(vcov(lfe_mod))),
-sqrt(diag(vcovBK(fd.mod, type = "HC1"))),
-sqrt(diag(vcovHC(pool.mod.red, type = "HC1"))),
-sqrt(diag(vcovHC(fe.mod.red, type = "HC1"))),
-sqrt(diag(vcov(lfe_mod_red)))[1],
-sqrt(diag(vcovBK(fd.mod.red, type = "HC1")))
-
-stargazer(pool.mod, fe.mod, lfe_mod, fd.mod,
-          pool.mod.red, fe.mod.red, lfe_mod_red, fd.mod.red,
-          omit=c("factor", "Constant", "fd_pop", "log_pop"),
-          omit.stat=c("f"),
-          dep.var.labels = 
-            add.lines = list(c("Municipality FE?", "No", "Yes", "Yes", "No", "No", "Yes", "Yes", "No"),
-                             c("Municipality FD?", "No", "No", "No", "Yes", "No", "No", "No", "Yes"),
-                             c("Time FE?", "No", "Yes", "Yes", "Yes", "No", "Yes", "Yes", "Yes"))
-)
-
-
-
 
 ################################################################
 #
@@ -360,7 +334,7 @@ ggsave(h, filename="EffectsVsTime.eps",
 
 agg.all <- df %>%
   group_by(muniname) %>%
-  summarise(av.score = mean(full.SocDem, na.rm = T) )
+  summarise(av.score = mean(correctsocdem, na.rm = T) )
 
 agg.all <- agg.all[order( agg.all$av.score),]
 
@@ -376,10 +350,12 @@ p2 <- ggplot(agg.all2, aes(x = reorder(muniname, av.score), y = av.score)) +
   geom_bar(stat = "identity") +
   coord_flip() + 
   facet_wrap(~ SocDem, scales = "free_y") +
-  labs(x = " ", y = "Fiscal Social Democratism \n (Averaged over 1974-2006)") +
+  labs(x = " ", y = "Fiscal Conservatism \n (Averaged over 1974-2006)") +
   theme_bw() + theme( axis.line = element_blank(), # axis.line = element_line(colour = "black"),
                       panel.border = element_blank(), plot.title = element_text(hjust = 0.5),
                       axis.text.y = element_text(size = 6.5))
+
+p2
 
 p3 <- grid.arrange(p1, p2)
 

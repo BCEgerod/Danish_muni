@@ -117,4 +117,20 @@ ca_drop <- ca_drop[,c(3,1,2)]
 
 stargazer(ca_drop, summary=F)
 
-cor(alpha_items, use = "pairwise.complete.obs")
+na_items <- na.omit(alpha_items)
+
+
+ggpairs(na_items,
+        title = "", axisLabels = "show",
+        lower=list(continuous=wrap("smooth", colour="grey")),
+        diag=list(continuous=wrap("barDiag", fill="grey")) )
+
+
+
+cor_mat <- cor(alpha_items, 
+               use = "pairwise.complete.obs")
+cor_mat[upper.tri(cor_mat, diag=T)] <- NA
+
+stargazer(cor_mat, summary = F)
+
+
