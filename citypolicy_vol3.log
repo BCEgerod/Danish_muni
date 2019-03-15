@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  15 MAR 2019 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  15 MAR 2019 12:38
 entering extended mode
 **./citypolicy_vol3.tex
 (citypolicy_vol3.tex
@@ -684,7 +684,7 @@ Package pdftex.def Info: scatterplot-eps-converted-to.pdf  used on input line 2
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8] [9 <./scatterplot-eps-converted-to.pdf>]
-Overfull \hbox (35.02654pt too wide) in paragraph at lines 229--254
+Overfull \hbox (50.48236pt too wide) in paragraph at lines 229--255
  [][] 
  []
 
@@ -701,7 +701,7 @@ Package epstopdf Info: Source file: <images/dynamics.eps>
 (epstopdf)                    size: 26206 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/dynamics-eps-convert
 ed-to.pdf images/dynamics.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -711,22 +711,22 @@ pdfTeX warning: pdflatex.exe (file ./images/dynamics-eps-converted-to.pdf): PDF
 File: images/dynamics-eps-converted-to.pdf Graphic file (type pdf)
 <use images/dynamics-eps-converted-to.pdf>
 Package pdftex.def Info: images/dynamics-eps-converted-to.pdf  used on input li
-ne 278.
+ne 279.
 (pdftex.def)             Requested size: 422.77449pt x 305.33713pt.
 [13 <./images/dynamics-eps-converted-to.pdf>] (citypolicy_vol3.bbl [14]
 [15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
  (citypolicy_vol3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `citypolicy_vol3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
  9610 strings out of 492970
@@ -777,7 +777,7 @@ ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on citypolicy_vol3.pdf (16 pages, 372158 bytes).
+Output written on citypolicy_vol3.pdf (16 pages, 372181 bytes).
 PDF statistics:
  330 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
