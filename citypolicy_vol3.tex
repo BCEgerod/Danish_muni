@@ -231,16 +231,29 @@ The estimate from the pooled model is likely to be confounded by the socio-demog
 			\hline \\[-1.8ex] 
 			& \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
 			\cline{2-9} 
-			\\[-1.8ex] & & \multicolumn{3}{c}{Full Fiscal Policy Scale} & 	&\multicolumn{3}{c}{Reduced Fiscal Policy Scale}   \\ 
+			\\[-1.8ex] & & \multicolumn{3}{c}{Full Fiscal Policy Scale$_{t+4}$} & 	&\multicolumn{3}{c}{Reduced Fiscal Policy Scale$_{t+4}$}   \\ 
 			& Pooled & Fixed Effects & Diff Trend & First-Difference & Pooled & Fixed Effects & Diff Trend & First-Difference \\ 
 			\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
 			\hline \\[-1.8ex] 
-			Right-Wing Vote Share & 0.416$^{**}$ & 0.129$^{**}$ & 0.145$^{**}$ & 0.065$^{**}$  & 1.110$^{**}$ & 0.317$^{**}$ & 0.335$^{**}$ & 0.144$^{**}$ \\ 
+			&\multicolumn{8}{c}{\emph{Panel A: Municipal Election Results}} \\
+			\begin{tabular}{l}
+		Right-Wing Vote Share\\(Municipal Elections)
+			\end{tabular} & 0.416$^{***}$ & 0.129$^{***}$ & 0.145$^{***}$ & 0.065$^{***}$  & 1.110$^{***}$ & 0.317$^{***}$ & 0.335$^{***}$ & 0.144$^{***}$ \\ 
 			& (0.083) & (0.044) & (0.048) & (0.025)  & (0.179) & (0.091) & (0.099) &  (0.055) \\ 
-			Population Size (logged) & $-$0.097$^{**}$ & $-$0.711$^{**}$ &  & $-$0.596$^{**}$  & $-$0.180$^{**}$ & $-$1.197$^{**}$ &  & $-$0.977$^{*}$ \\ 
+			Population Size (logged) & $-$0.097$^{***}$ & $-$0.711$^{***}$ &  & $-$0.596$^{***}$  & $-$0.180$^{***}$ & $-$1.197$^{***}$ &  & $-$0.977$^{**}$ \\ 
 			& (0.022) & (0.202) &  & (0.178)  & (0.051) & (0.407) &  &  (0.387) \\ 
-			Constant & 0.802$^{**}$ &  &  & $-$0.010 & 1.454$^{**}$ &  &  & $-$0.070$^{**}$ \\ 
+			Constant & 0.802$^{***}$ &  &  & $-$0.010 & 1.454$^{***}$ &  &  & $-$0.070$^{***}$ \\ 
 			& (0.213) &  &  & (0.009) & (0.488) &  &  & (0.021) \\ 
+			\hline \\[-1.8ex]
+			&\multicolumn{8}{c}{\emph{Panel B: National Election Results}} \\
+			\begin{tabular}{l} 
+			 Right-Wing Vote Share\\ (National Elections) 
+			\end{tabular}& $-$0.353$^{***}$ & $-$0.979$^{***}$ & $-$1.272$^{***}$ & $-$0.649$^{***}$ & 0.200 & $-$1.811$^{***}$ & $-$2.586$^{***}$ &  $-$1.295$^{***}$\\ 
+			& (0.128) & (0.139) & (0.222) & (0.110)  & (0.250) & (0.307) & (0.493) &  (0.247)\\ 
+			Population Size (logged) & $-$0.158$^{***}$ & $-$0.334$^{*}$   & & $-$0.415$^{**}$ & $-$0.258$^{***}$ & $-$0.659 &  & $-$0.810$^{**}$ \\ 
+			& (0.027) & (0.189) &   & (0.173) & (0.055) & (0.417) &  &  (0.385) \\ 
+			Constant & 1.408$^{***}$ &  &  & 0.176$^{***}$ & 2.249$^{***}$ &  &  & 0.331$^{***}$ \\ 
+			& (0.257) &  &  & (0.008) & (0.531) &  &  & (0.019) \\ 
 			\hline \\[-1.8ex] 
 			Municipality FE? & No & Yes & Yes & No & No & Yes & Yes & No \\ 
 			Year FE? & No & Yes & Yes & Yes & No & Yes & Yes & Yes \\ 
@@ -249,7 +262,7 @@ The estimate from the pooled model is likely to be confounded by the socio-demog
 			Observations & 1,908 & 1,908 & 1,908 & 1,633 & 1,908 & 1,908 & 1,908 & 1,633 \\ 
 			\hline 
 			\hline \\[-1.8ex] 
-			\multicolumn{9}{p{25 cm}}{\emph{Note: Unstandardized OLS coefficients. Beck-Katz standard errors in parentheses in first-difference models, Arellano-White standard errors with clustering on municipality level used in the remaining models to correct for temporal autocorrelation. $^{*}$, and $^{**}$ indicate statistical significance at the 5 and 1 percent levels, respectively. Differences in the coefficients between panels are driven by a larger standard deviation in the reduced measure. See Appendix \ref{item} for results using the individual policy indicators.}} \\
+			\multicolumn{9}{p{25 cm}}{\emph{Note: Panel A and B use, respectively, municipal and national electoral support for right-wing parties to gauge the policy preferences of the municipal electorate. Estimates are unstandardized OLS coefficients. Beck-Katz standard errors in parentheses in first-difference models, Arellano-White standard errors with clustering on municipality level used in the remaining models to correct for temporal autocorrelation. $^{*}$, $^{**}$ and $^{***}$ indicate statistical significance at the 10, 5 and 1 percent levels, respectively. Differences in the coefficients between panels are driven by a larger standard deviation in the reduced measure. See Appendix \ref{item} for results using the individual policy indicators.}} \\
 		\end{tabular} 
 	\end{table}
 	
@@ -275,8 +288,8 @@ To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} rep
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale = .6]{EffectsVsTime.eps}
-	\caption{Effects of Local Policy Preferences Over Time. All models include two-way fixed effects with control for population size. Panel A: Black points represent the effect of net electoral support for conservative parties with different leads. Black lines are 95 percent CIs based on Arellano-White robust standard errors clustered on municipalities. Panel B: Points are estimates of random slopes by year with a lagged dependent variable to deal with autocorrelation. Shaded area is a 95 percent CI from the relevant percentiles of a bootstrapped distribution.}
+	\includegraphics[scale = .65]{dynamics.eps}
+	\caption{Effects of Local Policy Preferences Over Time. All models include two-way fixed effects with control for population size. Black points represent the effect of net electoral support for conservative parties with different leads. Black lines are 95 percent CIs based on Arellano-White robust standard errors clustered on municipalities. }
 	\label{fig:LongRun}
 \end{figure}
 

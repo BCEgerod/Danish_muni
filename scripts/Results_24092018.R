@@ -27,12 +27,18 @@ library(simcf); library(readr)
 
 df <- read_csv("~/GitHub/Danish_muni/data/CityPolicy_25092018.csv")
 
-df$socdem_reduced <- df$socdem_reduced*-1
+# df$socdem_reduced <- df$socdem_reduced*-1
+# 
+# df$fd_socdem_reduced <- df$lead_socdem_reduced - df$socdem_reduced
 
-df$fd_socdem_reduced <- df$lead_socdem_reduced - df$socdem_reduced
 
 pan.dat <- pdata.frame(df, index = c("muni", "year")) # reformat data as panel
 
+pan.dat$lag_fv <- plm::lag(pan.dat$estblue_fv, 4)
+
+pan.dat$fd_fv <- pan.dat$estblue_fv - pan.dat$lag_fv
+
+pan.dat$estblue_fv_same <- ifelse(is.na(pan.dat$bluevote)==T, NA,  pan.dat$estblue_fv)
 
 #---------------------------------------------------------------------------
 #
@@ -49,6 +55,10 @@ pan.dat <- pdata.frame(df, index = c("muni", "year")) # reformat data as panel
 #    - Pooled, 2way FE, and FD results.
 #
 #######################################################################
+
+#---------------------------------------------------------------------
+# Results with municipal election results
+
 
 #####
 # pooled results
@@ -109,10 +119,74 @@ fd.mod.red <- plm(fd_socdem_reduced ~ fd_bluevote + fd_pop + factor(year),
                   effects = "time")
 coeftest(fd.mod.red, vcovBK(fd.mod.red, type = "HC1"))
 
+
+#---------------------------------------------------------------------
+# Results with national election results
+
+
+#####
+# pooled results
+
+# full measure
+pool.nat <- plm(lag_socdem1 ~ estblue_fv_same + log_pop, data = pan.dat , 
+                model = "pooling")
+coeftest(pool.nat, vcovHC(pool.nat, type = "HC1", cluster = "group"))
+
+# reduced measure
+pool.nat.red <- plm(lead_socdem_reduced ~ estblue_fv_same+ log_pop, data = pan.dat, 
+                    model = "pooling")
+coeftest(pool.nat.red, vcovHC(pool.nat.red, type = "HC1", cluster = "group"))
+
+#####
+# fixed effects results
+
+#full measure
+fe.nat <- plm(lag_socdem1 ~ estblue_fv_same + log_pop + factor(year), data = pan.dat , 
+              model = "within", effects = "individual")
+coeftest(fe.nat, vcovHC(fe.nat, cluster="group", type = "HC1"))
+
+# allow time-trends/shocks to vary by population size and region (amt)
+lfe_nat <- felm(lag_socdem1 ~ estblue_fv_same 
+                | factor(muni) + factor(year):log_pop + factor(year) + factor(year):factor(region)|
+                  0| muni,
+                data = pan.dat)
+summary(lfe_nat)
+
+#reduced measure
+
+fe.nat.red <- plm(lead_socdem_reduced ~ estblue_fv_same+ log_pop + factor(year), 
+                  data = pan.dat , 
+                  model = "within", effects = "individual")
+coeftest(fe.nat.red, vcovHC(fe.nat.red, cluster = "group", type = "HC1"))
+
+# varying trends
+lfe_nat_red <- felm(lead_socdem_reduced ~ estblue_fv_same 
+                    | factor(muni) + factor(year):log_pop + factor(year) + factor(year):factor(region)|
+                      0| muni,exactDOF=F,
+                    data = pan.dat)
+summary(lfe_nat_red)
+
+####
+# FD results
+
+# four-year lead difference in outcome
+# four-year lagged difference in covariates
+
+fd.nat <- plm(fd_socdem ~ fd_fv +  fd_pop + factor(year), 
+              data = pan.dat, model = "pooling")
+
+coeftest(fd.nat, vcovBK(fd.nat, type = "HC1"))
+
+#reduced measure
+fd.nat.red <- plm(fd_socdem_reduced ~ fd_fv + fd_pop + factor(year), 
+                  data = pan.dat, model = "pooling", 
+                  effects = "time")
+coeftest(fd.nat.red, vcovBK(fd.nat.red, type = "HC1"))
+
 ########
 # PRESENT RESULTS
 
-#regression table
+#regression table municipal election results
 
 p_se <- sqrt(diag(vcovHC(pool.mod, type = "HC1")))
 fe_se <- sqrt(diag(vcovHC(fe.mod, type = "HC1")))
@@ -143,6 +217,33 @@ stargazer(pool.mod, fe.mod, lfe_mod, fd.mod,
                            c("Four-Year Differenced?", "No", "No", "No", "Yes", "No", "No", "No", "Yes"))
           )
 
+# table with national election results
+# insert manually into table above .tex file
+
+p_se_nat <- sqrt(diag(vcovHC(pool.nat, type = "HC1")))
+fe_se_nat <- sqrt(diag(vcovHC(fe.nat, type = "HC1")))
+fe2_se_nat <- sqrt(diag(vcov(lfe_nat)))
+fd_se_nat <- sqrt(diag(vcovBK(fd.nat, type = "HC1")))
+p_red_se_nat <- sqrt(diag(vcovHC(pool.nat.red, type = "HC1")))
+fe_red_se_nat <- sqrt(diag(vcovHC(fe.nat.red, type = "HC1")))
+fe2_red_se_nat <- sqrt(diag(vcov(lfe_nat_red)))
+fd_red_se_nat <- sqrt(diag(vcovBK(fd.nat.red, type = "HC1")))
+
+
+stargazer(pool.nat, fe.nat, lfe_nat, fd.nat,
+          pool.nat.red, fe.nat.red, lfe_nat_red, fd.nat.red,
+          se = list(p_se_nat, fe_se_nat, fe2_se_nat, fd_se_nat,
+                    p_red_se_nat, fe_red_se_nat, fe2_red_se_nat, fd_red_se_nat),
+          covariate.labels = c("Right-Wing Vote Share National", 
+                               "Population Size (logged)"),
+          dep.var.labels = c("Fiscal Conservatism", "Fiscal Conservatism (Four-Year Differenced)"),
+          column.labels = c("Pooled", "Fixed Effects", "Diff Trend", "First-Difference",
+                            "Pooled", "Fixed Effects", "Diff Trend", "First-Difference"),
+          no.space = T, df=F,
+          model.names = F,
+          omit="factor\\(",
+          omit.stat = c("f", "rsq", "ser")
+)
 
 # plot results
 # extract
