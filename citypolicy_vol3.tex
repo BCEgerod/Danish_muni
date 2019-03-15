@@ -215,7 +215,7 @@ Figure \ref{fig:scatter} shows that the past changes in support for right-wing p
 
 
 
-Table \ref{tab:FourYearLead} presents the key estimate (i.e., the effect of changes in local policy preferences) from a pooled OLS regression, as well as from two types of difference-in-differences (diff-in-diff) models: a fixed effects and a first-difference model (both with time fixed effects). All models include a control for population size (logged), but the results do not depend on the inclusion of this covariate.  The  left panel uses the full measure of fiscal conservatism as the dependent variable whereas the right panel uses our reduced measure. Across all models, we find a statistically significant and positive effect.
+Table \ref{tab:FourYearLead} presents the key estimate (i.e., the effect of changes in local policy preferences) from a pooled OLS regression, as well as from three types of difference-in-differences (diff-in-diff) models: one estimated using municipality and time fixed effects, one allowing municipalities to follow differential trends in a highly flexible manner, and a first-difference model with time fixed effects. All models include a control for population size (logged), but the results do not depend on the inclusion of this covariate.  The  first four columns uses the full measure of fiscal conservatism as the dependent variable. There could be concerns that the results were affected by missing observations in the items, which are imputed in the Bayesian model we use to estimate fiscal policy conservatism. To alleviate these concerns, the final four columns uses our reduced measure, where there are no missing observations on the items. Across all models, we find a statistically significant and positive effect. The larger coefficients in the final four models are driven by a larger standard deviation in the reduced measure.
 
 The estimate from the pooled model is likely to be confounded by the socio-demographic make-up of the municipality. To the extent that this is stable over time and driven by common shocks, the difference between the estimates from the pooled and diff-in-diff models can be interpreted as removing the confounding effect of sticky socio-demographics. In our preferred fixed effects model, we estimate the effect to be roughly .12. This corresponds to 25 percent of a within-municipality standard deviation -- a substantive association. 
 
@@ -235,26 +235,13 @@ The estimate from the pooled model is likely to be confounded by the socio-demog
 			& Pooled & Fixed Effects & Diff Trend & First-Difference & Pooled & Fixed Effects & Diff Trend & First-Difference \\ 
 			\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
 			\hline \\[-1.8ex] 
-			&\multicolumn{8}{c}{\emph{Panel A: Municipal Election Results}} \\
-			\begin{tabular}{l}
-		Right-Wing Vote Share\\(Municipal Elections)
-			\end{tabular} & 0.416$^{***}$ & 0.129$^{***}$ & 0.145$^{***}$ & 0.065$^{***}$  & 1.110$^{***}$ & 0.317$^{***}$ & 0.335$^{***}$ & 0.144$^{***}$ \\ 
+		Right-Wing Vote Share\\(Municipal Elections)  & 0.416$^{**}$ & 0.129$^{**}$ & 0.145$^{**}$ & 0.065$^{**}$  & 1.110$^{**}$ & 0.317$^{**}$ & 0.335$^{**}$ & 0.144$^{**}$ \\ 
 			& (0.083) & (0.044) & (0.048) & (0.025)  & (0.179) & (0.091) & (0.099) &  (0.055) \\ 
-			Population Size (logged) & $-$0.097$^{***}$ & $-$0.711$^{***}$ &  & $-$0.596$^{***}$  & $-$0.180$^{***}$ & $-$1.197$^{***}$ &  & $-$0.977$^{**}$ \\ 
+			Population Size (logged) & $-$0.097$^{**}$ & $-$0.711$^{**}$ &  & $-$0.596$^{**}$  & $-$0.180$^{**}$ & $-$1.197$^{**}$ &  & $-$0.977$^{*}$ \\ 
 			& (0.022) & (0.202) &  & (0.178)  & (0.051) & (0.407) &  &  (0.387) \\ 
-			Constant & 0.802$^{***}$ &  &  & $-$0.010 & 1.454$^{***}$ &  &  & $-$0.070$^{***}$ \\ 
+			Constant & 0.802$^{**}$ &  &  & $-$0.010 & 1.454$^{**}$ &  &  & $-$0.070$^{**}$ \\ 
 			& (0.213) &  &  & (0.009) & (0.488) &  &  & (0.021) \\ 
 			\hline \\[-1.8ex]
-			&\multicolumn{8}{c}{\emph{Panel B: National Election Results}} \\
-			\begin{tabular}{l} 
-			 Right-Wing Vote Share\\ (National Elections) 
-			\end{tabular}& $-$0.353$^{***}$ & $-$0.979$^{***}$ & $-$1.272$^{***}$ & $-$0.649$^{***}$ & 0.200 & $-$1.811$^{***}$ & $-$2.586$^{***}$ &  $-$1.295$^{***}$\\ 
-			& (0.128) & (0.139) & (0.222) & (0.110)  & (0.250) & (0.307) & (0.493) &  (0.247)\\ 
-			Population Size (logged) & $-$0.158$^{***}$ & $-$0.334$^{*}$   & & $-$0.415$^{**}$ & $-$0.258$^{***}$ & $-$0.659 &  & $-$0.810$^{**}$ \\ 
-			& (0.027) & (0.189) &   & (0.173) & (0.055) & (0.417) &  &  (0.385) \\ 
-			Constant & 1.408$^{***}$ &  &  & 0.176$^{***}$ & 2.249$^{***}$ &  &  & 0.331$^{***}$ \\ 
-			& (0.257) &  &  & (0.008) & (0.531) &  &  & (0.019) \\ 
-			\hline \\[-1.8ex] 
 			Municipality FE? & No & Yes & Yes & No & No & Yes & Yes & No \\ 
 			Year FE? & No & Yes & Yes & Yes & No & Yes & Yes & Yes \\ 
 			Year X Region FE? & No & No & Yes & No & No & No & Yes & No \\ 
@@ -262,7 +249,7 @@ The estimate from the pooled model is likely to be confounded by the socio-demog
 			Observations & 1,908 & 1,908 & 1,908 & 1,633 & 1,908 & 1,908 & 1,908 & 1,633 \\ 
 			\hline 
 			\hline \\[-1.8ex] 
-			\multicolumn{9}{p{25 cm}}{\emph{Note: Panel A and B use, respectively, municipal and national electoral support for right-wing parties to gauge the policy preferences of the municipal electorate. Estimates are unstandardized OLS coefficients. Beck-Katz standard errors in parentheses in first-difference models, Arellano-White standard errors with clustering on municipality level used in the remaining models to correct for temporal autocorrelation. $^{*}$, $^{**}$ and $^{***}$ indicate statistical significance at the 10, 5 and 1 percent levels, respectively. Differences in the coefficients between panels are driven by a larger standard deviation in the reduced measure. See Appendix \ref{item} for results using the individual policy indicators.}} \\
+			\multicolumn{9}{p{25 cm}}{\emph{Note: Estimates are unstandardized OLS coefficients. Beck-Katz standard errors in parentheses in first-difference models, Arellano-White standard errors with clustering on municipality level used in the remaining models to correct for temporal autocorrelation. $^{*}$ and $^{**}$ indicate statistical significance at the 5 and 1 percent levels, respectively. See Appendix \ref{item} for results using the individual policy indicators.}} \\
 		\end{tabular} 
 	\end{table}
 	
@@ -276,7 +263,7 @@ The identifying assumption in our diff-in-diff models is that trends in the depe
 While we cannot test the identifying parallel trends assumption directly, we can see whether trends in the dependent variable are similar before municipalities "select into" different preferences.  To do this, we regress past levels of policy conservatism on current levels of net support for conservative parties using our two-way fixed effect set-up. The resulting effect is negligible and statistically insignificant, suggesting that trends in policy are parallel across municipalities that become more and municipalities that become less conservative  (see Figure \ref{fig:LongRun}). To  bolster this analysis further,  we show in Appendix \ref{granger} that past changes in municipal policy is unrelated with future changes in electoral support for right-wing parties.
 
 
-Beyond this test,  we estimate a more restrictive model, where we interact the time fixed effects with a series of 13 regional dummies\footnote{These correspond to  13 regional governments (\textit{amter}) which were responsible for, among other things, health care in the period we study.} as well as population size. This allows municipalities to be on separate time trends depending on both region (semi-parametrically) and population size (log-linearly). Importantly, this strategy should deal with the confounding effect of the socio-demographic make-up of the municipalities: If there were certain time-specific regional shocks to, for instance, unemployment, which might affect both preferences and policy, then these will be removed in this model. As can be seen from Figure \ref{fig:FourYearLead}, estimating this more restrictive model does not change our results. If anything, the point estimate increases.
+Beyond this test, in columns three and seven of Table \ref{tab:FourYearLead} we estimate a more restrictive model, where we interact the time fixed effects with a series of 13 regional dummies\footnote{These correspond to  13 regional governments (\textit{amter}) which were responsible for, among other things, health care in the period we study.} as well as population size. This allows municipalities to be on separate time trends depending on both region (semi-parametrically) and population size (log-linearly). Importantly, this strategy should deal with the confounding effect of the socio-demographic make-up of the municipalities: If there were certain time-specific regional shocks to, for instance, unemployment, which might affect both preferences and policy, then these will be removed in this model. As can be seen from Table \ref{tab:FourYearLead}, estimating this more restrictive model does not change our results. If anything, the point estimate increases.
 
 To make sure that there is no remaining bias because of socio-demographic factors, we include data on education, unemployment rate and the number of non-western immigrants in the municipality. Since these variables are only available after 1993, and there is a substantial trend in municipal policy (cf. Appendix \ref{descriptives}), simply including them in our model would bias our results by censoring the dependent variable. Instead, we follow \citep{pei2018poorly} and regress electoral support for right-wing parties on our three socio-demographic predictors. As we show in Appendix \ref{balance}, the correlations between within-municipality changes in socio-demographic factors and support for right-wing parties are very small and statistically insignificant. This suggests that these important socio-demographic factors are not driving our results, as right-wing and left-wing municipalities are balanced on these socio-demographic factors once we include fixed effects for time and year. The absence of a partial correlation with unemployment is especially noteworthy, as it is a strong indicator of whether a municipality is hit particularly hard by a temporary economic shock, which could feasibly drive both preferences and policy.
 
@@ -284,7 +271,7 @@ Taken together, these auxiliary analyses suggest that our identifying assumption
 
 \subsection*{How Adaptive is the Dynamic Responsiveness?}
 
-To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} reports the estimated effect of changes in net support for conservative parties on municipal fiscal policy conservatism over time. In panel A, we look at the short- and long-term effects of changes in municipal policy preferences on the policy adopted by the municipality. This analysis reveals that it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is after four years. The effect is detactable up to eight years later. One reason for this long-term effect is probably that once policy shifts, it typically does not naturally revert back to it's starting point, but needs to be actively changed back \citep[e.g.,][]{baumgartner2009punctuated}. In Panel B we allow the effect of voter preferences on policy four years into the future to vary across time by including random slopes by year. The results show that municipal policy responsiveness is relatively stable across our period of study. Preferences do not seem to matter more or less as time goes by.
+To examine the temporal dynamics of responsiveness, figure \ref{fig:LongRun} reports the estimated effect of changes in net support for conservative parties on municipal fiscal policy conservatism for changing time horizons. The analysis reveals that it takes some time for policy to respond. There is only a small effect one year after local policy preferences change and the largest effect is after four years. The effect is detactable up to eight years later. One reason for this long-term effect is probably that once policy shifts, it typically does not naturally revert back to it's starting point, but needs to be actively changed back \citep[e.g.,][]{baumgartner2009punctuated}. In Appendix \textbf{XX} we allow the effect of voter preferences on policy four years into the future to vary across time by including random slopes by year. The results show that municipal policy responsiveness is highly stable across our period of study. Preferences do not seem to matter more or less as time goes by.
 
 \begin{figure}[htbp]
 	\centering

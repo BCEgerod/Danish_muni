@@ -142,7 +142,7 @@ coeftest(pool.nat.red, vcovHC(pool.nat.red, type = "HC1", cluster = "group"))
 
 #full measure
 fe.nat <- plm(lag_socdem1 ~ estblue_fv_same + log_pop + factor(year), data = pan.dat , 
-              model = "within", effects = "individual")
+              model = "within", effects = "twoway")
 coeftest(fe.nat, vcovHC(fe.nat, cluster="group", type = "HC1"))
 
 # allow time-trends/shocks to vary by population size and region (amt)
@@ -306,13 +306,30 @@ ggsave(c_plot, filename = "CoefPlot_05102018.eps",
 mod1 <- plm(plac ~ bluevote + log_pop + factor(year), data = pan.dat, 
             model = "within", effects = "indvidual")
 
+coeftest(mod1, vcovHC(mod1, cluster = "group"))
+
+
+plac_res <- cbind(estimate = coef(mod1)[1], 
+                  SE = sqrt(diag(vcovHC(mod1, cluster = "group",
+                                        type = "HC1")))[1], -4)
+
+for(y in 1:3){
+  crnt_mod <- plm(plm::lag(correctsocdem, y) ~ bluevote+ log_pop + factor(year), 
+                  data = pan.dat , model = "within", effects = "individual")
+  crnt_res <- cbind(estimate = coef(crnt_mod)[1], 
+                    SE = sqrt(diag(vcovHC(crnt_mod, cluster = "group",
+                                          type = "HC1")))[1], -y)
+  plac_res<-rbind(plac_res, crnt_res)
+}
+
+
 # model at year zero -- to append all leads on within the loop
 mod2 <- plm(correctsocdem ~ bluevote+ log_pop + factor(year), 
             data = pan.dat , model = "within", effects = "individual")
 
 # extract results from year zero
 loop_res <- cbind(estimate = coef(mod2)[1], 
-                  SE = sqrt(diag(vcovHC(mod2)))[1])
+                  SE = sqrt(diag(vcovHC(mod2)))[1],0)
 
 #loop over lead 1:20 and append results on year zero
 for(i in 1:20){
@@ -321,19 +338,18 @@ for(i in 1:20){
                   data = pan.dat , model = "within", effects = "individual")
   crnt_res <- cbind(estimate = coef(crnt_mod)[1], 
                     SE = sqrt(diag(vcovHC(crnt_mod, cluster = "group",
-                                          type = "HC1")))[1])
+                                          type = "HC1")))[1],i)
   loop_res<-rbind(loop_res, crnt_res)
   
 }
 
-plac_res <- cbind(estimate = coef(mod1)[1], 
-                  SE = sqrt(diag(vcovHC(mod1, cluster = "group",
-                                        type = "HC1")))[1])
+
 
 
 loop_res <- rbind(plac_res, loop_res)
 loop_res <- as.data.frame(loop_res)
-loop_res$years <- c(-4,0:20)
+names(loop_res)[3]<-"years"
+#loop_res$years <- c(-4,0:20)
 
 h1<-ggplot(loop_res, aes( x = years, y = estimate)) +
   geom_point() +
@@ -345,7 +361,10 @@ h1<-ggplot(loop_res, aes( x = years, y = estimate)) +
   scale_x_continuous(limits = c(-5,22),
                      breaks = loop_res$years,
                       labels = c("4 years earlier\n(Previous election)",
-                                 "0",
+                                 " ",
+                                 " ",
+                                 " ",
+                                 "Year 0\n(This election)",
                                  " ",
                                  " ",
                                  " ",
@@ -367,10 +386,15 @@ h1<-ggplot(loop_res, aes( x = years, y = estimate)) +
                                  " ",
                                  "20 years later\n(5th election)"))+
   labs(x = "Years until Election", 
-       y = "Coefficient on Electoral Support for\nRight-Wing Parties",
-       title = "A: Varying Time Horizons")
+       y = "Coefficient on Electoral Support for\nRight-Wing Parties")
 h1
 
+setwd("~/GitHub/Danish_muni/images")
+
+ggsave(h1, filename="dynamics.eps",
+       device = cairo_ps,
+       width = 9,
+       height = 6.5)
 #----------------------------------------------------------------
 # PANEL B: Varying effects over time (Random slopes by year)
 
