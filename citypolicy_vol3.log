@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 MAR 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 MAR 2019 10:12
 entering extended mode
 **./citypolicy_vol3.tex
 (citypolicy_vol3.tex
@@ -708,7 +708,7 @@ Package pdftex.def Info: images/fiscal_TimeSeries-eps-converted-to.pdf  used on
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 160.
  [6] [7 <./images/fiscal_TimeSeries-eps-converted-to.pdf>]
-Overfull \hbox (21.54773pt too wide) in paragraph at lines 183--200
+Overfull \hbox (21.54773pt too wide) in paragraph at lines 182--199
  [][] 
  []
 
@@ -721,16 +721,20 @@ Package epstopdf Info: Source file: <scatterplot.eps>
 (epstopdf)                    size: 50122 bytes
 (epstopdf)             Command: <epstopdf --outfile=scatterplot-eps-converted-t
 o.pdf scatterplot.eps>
-(epstopdf)             \includegraphics on input line 212.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 <scatterplot-eps-converted-to.pdf, id=200, 433.62pt x 289.08pt>
 File: scatterplot-eps-converted-to.pdf Graphic file (type pdf)
 <use scatterplot-eps-converted-to.pdf>
 Package pdftex.def Info: scatterplot-eps-converted-to.pdf  used on input line 2
-12.
+11.
 (pdftex.def)             Requested size: 346.89647pt x 231.2643pt.
- [9 <./scatterplot-eps-converted-to.pdf>] [10]
-Overfull \hbox (50.48236pt too wide) in paragraph at lines 231--257
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./scatterplot-eps-converted-to.pdf>]
+Overfull \hbox (50.48236pt too wide) in paragraph at lines 230--256
  [][] 
  []
 
@@ -747,7 +751,7 @@ Package epstopdf Info: Source file: <images/dynamics.eps>
 (epstopdf)                    size: 26206 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/dynamics-eps-convert
 ed-to.pdf images/dynamics.eps>
-(epstopdf)             \includegraphics on input line 281.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -757,22 +761,22 @@ pdfTeX warning: pdflatex.exe (file ./images/dynamics-eps-converted-to.pdf): PDF
 File: images/dynamics-eps-converted-to.pdf Graphic file (type pdf)
 <use images/dynamics-eps-converted-to.pdf>
 Package pdftex.def Info: images/dynamics-eps-converted-to.pdf  used on input li
-ne 281.
+ne 280.
 (pdftex.def)             Requested size: 422.77449pt x 305.33713pt.
 [14 <./images/dynamics-eps-converted-to.pdf>] (citypolicy_vol3.bbl [15]
 [16]) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (citypolicy_vol3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `citypolicy_vol3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
  9584 strings out of 492973
@@ -825,7 +829,7 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/au5
 ers/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on citypolicy_vol3.pdf (17 pages, 376783 bytes).
+Output written on citypolicy_vol3.pdf (17 pages, 376740 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
