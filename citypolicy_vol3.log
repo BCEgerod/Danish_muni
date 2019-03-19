@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 MAR 2019 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.2)  19 MAR 2019 11:08
 entering extended mode
 **./citypolicy_vol3.tex
 (citypolicy_vol3.tex
@@ -698,7 +698,7 @@ pdf>
 s-converted-to.pdf images/fiscal_TimeSeries.eps>
 (epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
-<images/fiscal_TimeSeries-eps-converted-to.pdf, id=151, 580.1675pt x 322.20375p
+<images/fiscal_TimeSeries-eps-converted-to.pdf, id=153, 580.1675pt x 322.20375p
 t>
 File: images/fiscal_TimeSeries-eps-converted-to.pdf Graphic file (type pdf)
 <use images/fiscal_TimeSeries-eps-converted-to.pdf>
@@ -723,7 +723,7 @@ Package epstopdf Info: Source file: <scatterplot.eps>
 o.pdf scatterplot.eps>
 (epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
-<scatterplot-eps-converted-to.pdf, id=200, 433.62pt x 289.08pt>
+<scatterplot-eps-converted-to.pdf, id=201, 433.62pt x 289.08pt>
 File: scatterplot-eps-converted-to.pdf Graphic file (type pdf)
 <use scatterplot-eps-converted-to.pdf>
 Package pdftex.def Info: scatterplot-eps-converted-to.pdf  used on input line 2
@@ -757,7 +757,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./images/dynamics-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/dynamics-eps-converted-to.pdf, id=257, 650.43pt x 469.755pt>
+<images/dynamics-eps-converted-to.pdf, id=258, 650.43pt x 469.755pt>
 File: images/dynamics-eps-converted-to.pdf Graphic file (type pdf)
 <use images/dynamics-eps-converted-to.pdf>
 Package pdftex.def Info: images/dynamics-eps-converted-to.pdf  used on input li
@@ -781,11 +781,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
 Here is how much of TeX's memory you used:
  9584 strings out of 492973
  146017 string characters out of 3125364
- 256668 words of memory out of 3000000
+ 256669 words of memory out of 3000000
  13182 multiletter control sequences out of 15000+200000
  44410 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,1753b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,43p,1715b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.0.9} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -829,9 +829,9 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/au5
 ers/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Users/au595748/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on citypolicy_vol3.pdf (17 pages, 376740 bytes).
+Output written on citypolicy_vol3.pdf (17 pages, 376849 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
+ 341 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
