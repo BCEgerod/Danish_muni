@@ -34,11 +34,11 @@ df <- read_csv("~/GitHub/Danish_muni/data/CityPolicy_25092018.csv")
 
 pan.dat <- pdata.frame(df, index = c("muni", "year")) # reformat data as panel
 
-pan.dat$lag_fv <- plm::lag(pan.dat$estblue_fv, 4)
+pan.dat$lag_fv <- plm::lag(pan.dat$estbluevote, 4)
 
 pan.dat$fd_fv <- pan.dat$estblue_fv - pan.dat$lag_fv
 
-pan.dat$estblue_fv_same <- ifelse(is.na(pan.dat$bluevote)==T, NA,  pan.dat$estblue_fv)
+pan.dat$estblue_same <- ifelse(is.na(pan.dat$bluevote)==T, NA,  pan.dat$estbluevote)
 
 #---------------------------------------------------------------------------
 #
@@ -128,20 +128,22 @@ coeftest(fd.mod.red, vcovBK(fd.mod.red, type = "HC1"))
 # pooled results
 
 # full measure
-pool.nat <- plm(lag_socdem1 ~ estblue_fv_same + log_pop, data = pan.dat , 
+pool.nat <- plm(lag_socdem1 ~ estbluevote + log_pop, data = pan.dat , 
                 model = "pooling")
 coeftest(pool.nat, vcovHC(pool.nat, type = "HC1", cluster = "group"))
 
 # reduced measure
-pool.nat.red <- plm(lead_socdem_reduced ~ estblue_fv_same+ log_pop, data = pan.dat, 
+pool.nat.red <- plm(lead_socdem_reduced ~ estblue_same + log_pop, data = pan.dat, 
                     model = "pooling")
 coeftest(pool.nat.red, vcovHC(pool.nat.red, type = "HC1", cluster = "group"))
 
 #####
 # fixed effects results
 
+pan.dat$muni_nat <- pan.dat$bluevote - pan.dat$estblue_same 
+
 #full measure
-fe.nat <- plm(lag_socdem1 ~ estblue_fv_same + log_pop + factor(year), data = pan.dat , 
+fe.nat <- plm(plm::lag(correctsocdem, 1) ~  estblue_same + log_pop + factor(year), data = pan.dat , 
               model = "within", effects = "twoway")
 coeftest(fe.nat, vcovHC(fe.nat, cluster="group", type = "HC1"))
 
@@ -154,7 +156,7 @@ summary(lfe_nat)
 
 #reduced measure
 
-fe.nat.red <- plm(lead_socdem_reduced ~ estblue_fv_same+ log_pop + factor(year), 
+fe.nat.red <- plm(spendcap_scale ~ estblue_fv_same+ log_pop + factor(year), 
                   data = pan.dat , 
                   model = "within", effects = "individual")
 coeftest(fe.nat.red, vcovHC(fe.nat.red, cluster = "group", type = "HC1"))
