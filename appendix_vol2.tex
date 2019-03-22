@@ -138,6 +138,34 @@ Following each municipal election, a majority in the city council elects a mayor
 
 \input{table/measurement.tex}
 
+
+\begin{table}[!htbp] \centering 
+	\caption{Summary Statistics on Fiscal Policy Indicators} 
+	\label{tab:SumInd} 
+	\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+		\hline \\[-1.8ex] 
+		Income Tax & 7,895 & 18.380 & 1.570 & 10.400 & 23.300 \\ 
+		Property Tax & 7,900 & 9.294 & 5.360 & 0.000 & 55.000 \\ 
+		Public Employees & 2,437 & 70.316 & 7.444 & 13.000 & 144.600 \\ 
+		Day Care & 1,236 & 2,548.014 & 388.988 & 1,242.738 & 3,541.622 \\ 
+		Food Delivery & 1,868 & 44.661 & 4.648 & 31.000 & 86.800 \\ 
+		Nursing Home & 1,725 & 2,583.972 & 356.181 & 31.950 & 4,602.000 \\ 
+		Relief Stay & 1,665 & 95.343 & 18.434 & 6.810 & 188.000 \\ 
+		Private Services & 3,805 & 11.235 & 2.439 & 4.500 & 43.500 \\ 
+		Private Supplier & 3,805 & 17.650 & 3.392 & 7.800 & 53.400 \\ 
+		Public Housing & 3,799 & 12.150 & 10.608 & 0.100 & 68.000 \\ 
+		Class Size & 3,802 & 18.677 & 1.710 & 11.200 & 24.800 \\ 
+		Spending per Pupil & 1,894 & 49,643.730 & 5,609.046 & 37,735.070 & 101,711.800 \\ 
+		Commercial Real Estate Tax & 1,084 & 7.052 & 2.887 & 0.327 & 10.000 \\ 
+		Spending per Capita & 7,772 & 43.253 & 5.937 & 11.935 & 68.838 \\ 
+		\hline \\[-1.8ex] 
+	\end{tabular} 
+\end{table} 
+
+
 \clearpage
 
 \subsection{Details about Estimation of Municipal Fiscal Policy} \label{estimation}
@@ -343,6 +371,17 @@ As our measure of municipal policy is made up of many different fiscal policies 
 	\caption{Effect of Right-Wing Electoral Support Across Components of our Measure. Note that all measures of taxes and spending are reversed to capture that higher values equal more conservative policy. Confidence intervals are 95 percent, computed using robust standard errors clustered at the municipality level.} \label{fig:item}
 \end{figure}
 \clearpage
+
+
+
+\subsection{Stability of Effects Across Time}
+\label{stability}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale = .65]{StabilityOfEffects.eps}
+	\caption{How Stablea Feature is Dynamic Responsiveness? Points are estimates of random slopes by year with a lagged dependent variable to deal with autocorrelation. Shaded area is a 95 percent CI from the relevant percentiles of a bootstrapped distribution from 100 resamples.} \label{fig:stab}
+\end{figure}
 
 \bibliographystyle{apa}
 \bibliography{library}

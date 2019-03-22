@@ -430,10 +430,17 @@ h2<-ggplot(year.fx, aes(x = year, y = bootMed)) +
   annotate(geom = "text", x = 1984, y = 0.14, 
            label = "Baseline Estimate", size = 3.5) +
   labs(x = NULL, y = "Simulated Median Coefficient\n(Random slope by year)",
-       title = "B: Varying Effects Over Time") +
+       title = NULL) +
   scale_x_continuous(breaks = as.vector(year.fx$year))
 
 h2
+
+setwd("~/GitHub/Danish_muni/images")
+ggsave(h2, filename="StabilityOfEffects.eps",
+       device = cairo_ps,
+       width = 8.56,
+       heigh = 6.5)
+
 
 h <- grid.arrange(h1, h2, ncol = 1)
 
