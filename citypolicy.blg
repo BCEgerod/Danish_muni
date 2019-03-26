@@ -1,18 +1,42 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: citypolicy.aux
 The style file: apa.bst
-Database file #1: bibtex/library.bib
-Warning--entry type for "oecd2016subnational" isn't style-file defined
---line 181 of file bibtex/library.bib
-Warning--entry type for "sances2017voters" isn't style-file defined
---line 215 of file bibtex/library.bib
-Repeated entry---line 289 of file bibtex/library.bib
- : @book{peterson1981city
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 373 of file bibtex/library.bib
- : @article{stimson1995dynamic
- :                            ,
-I'm skipping whatever remains of this entry
-Warning--empty journal in ansolabehere2015beyond
-Warning--there's a number but no volume in pei2018poorly
+I couldn't open database file bibtex/library.bib
+---line 56 of file citypolicy.aux
+ : \bibdata{bibtex/library
+ :                        }
+I'm skipping whatever remains of this command
+I found no database files---while reading file citypolicy.aux
+Warning--I didn't find a database entry for "trounstine2009all"
+Warning--I didn't find a database entry for "kersting2013reforming"
+Warning--I didn't find a database entry for "oecd2016subnational"
+Warning--I didn't find a database entry for "peterson1981city"
+Warning--I didn't find a database entry for "salmon2006horizontal"
+Warning--I didn't find a database entry for "tiebout1956pure"
+Warning--I didn't find a database entry for "sances2017attribution"
+Warning--I didn't find a database entry for "gerber2011mayors"
+Warning--I didn't find a database entry for "arnold2012holding"
+Warning--I didn't find a database entry for "burnett2017politics"
+Warning--I didn't find a database entry for "boyne2009democracy"
+Warning--I didn't find a database entry for "sances2017ideology"
+Warning--I didn't find a database entry for "boudreau2015lost"
+Warning--I didn't find a database entry for "hopkins2017retrospective"
+Warning--I didn't find a database entry for "fiva2016power"
+Warning--I didn't find a database entry for "folke2014shades"
+Warning--I didn't find a database entry for "blom2006parties"
+Warning--I didn't find a database entry for "de2016mayoral"
+Warning--I didn't find a database entry for "hajnal2010or"
+Warning--I didn't find a database entry for "palus2010responsiveness"
+Warning--I didn't find a database entry for "einstein2016pushing"
+Warning--I didn't find a database entry for "tausanovitch2014representation"
+Warning--I didn't find a database entry for "sances2017voters"
+Warning--I didn't find a database entry for "stimson1995dynamic"
+Warning--I didn't find a database entry for "berry2009imperfect"
+Warning--I didn't find a database entry for "caughey2016dynamics"
+Warning--I didn't find a database entry for "abrams2012big"
+Warning--I didn't find a database entry for "ansolabehere2015beyond"
+Warning--I didn't find a database entry for "hansen2017social"
+Warning--I didn't find a database entry for "lenz2013follow"
+Warning--I didn't find a database entry for "slothuus2010can"
+Warning--I didn't find a database entry for "pei2018poorly"
+Warning--I didn't find a database entry for "baumgartner2009punctuated"
 (There were 2 error messages)

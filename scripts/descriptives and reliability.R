@@ -29,6 +29,23 @@ stargazer(desc_df,
           summary.stat = c("n", "mean", "sd", "min", "max"))
 
 
+################################
+# descriptives of each item
+
+desc_df <- as.data.frame(df[,c(13,19,24:30,32:35,39)])
+
+stargazer(desc_df,
+          summary.stat = c("n", "mean", "sd", "min", "max"),
+          covariate.labels = c("Income Tax", "Property Tax",
+                               "Public Employees", "Day Care",
+                               "Food Delivery", "Nursing Home",
+                               "Relief Stay", "Private Services",
+                               "Private Supplier", "Public Housing",
+                               "Class Size", "Spending pr Pupil",
+                               "Commercial Real Estate Tax",
+                               "Spending per Capita"))
+
+
 ##################################
 # item-index correlation
 
