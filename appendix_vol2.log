@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  26 MAR 2019 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.3)  12 JUN 2019 13:15
 entering extended mode
 **./appendix_vol2.tex
 (appendix_vol2.tex
@@ -713,10 +713,10 @@ Overfull \hbox (18.38235pt too wide) in paragraph at lines 151--172
 
 ]
 Package epstopdf Info: Source file: <images/ItemRest.eps>
-(epstopdf)                    date: 2019-03-12 08:49:07
+(epstopdf)                    date: 2019-03-12 13:49:07
 (epstopdf)                    size: 11826150 bytes
 (epstopdf)             Output file: <images/ItemRest-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-12 08:49:19
+(epstopdf)                    date: 2019-03-12 13:49:19
 (epstopdf)                    size: 1619563 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/ItemRest-eps-convert
 ed-to.pdf images/ItemRest.eps>
@@ -739,11 +739,11 @@ Overfull \hbox (52.91866pt too wide) in paragraph at lines 210--211
 
 [6] [7 <./images/ItemRest-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/conservatism_24092018.eps>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 91341 bytes
 (epstopdf)             Output file: <images/conservatism_24092018-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 30014 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/conservatism_2409201
 8-eps-converted-to.pdf images/conservatism_24092018.eps>
@@ -759,10 +759,10 @@ d on input line 260.
 (pdftex.def)             Requested size: 452.9679pt x 331.12074pt.
  [8 <./images/conservatism_24092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/validation1.eps>
-(epstopdf)                    date: 2019-03-12 04:15:58
+(epstopdf)                    date: 2019-03-12 09:15:58
 (epstopdf)                    size: 54131 bytes
 (epstopdf)             Output file: <images/validation1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-12 04:15:58
+(epstopdf)                    date: 2019-03-12 09:15:58
 (epstopdf)                    size: 21103 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/validation1-eps-conv
 erted-to.pdf images/validation1.eps>
@@ -781,11 +781,11 @@ Package pdftex.def Info: images/validation1-eps-converted-to.pdf  used on input
 
 ]
 Package epstopdf Info: Source file: <images/granger_18092018.eps>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 50298 bytes
 (epstopdf)             Output file: <images/granger_18092018-eps-converted-to.p
 df>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 18961 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/granger_18092018-eps
 -converted-to.pdf images/granger_18092018.eps>
@@ -802,11 +802,11 @@ input line 334.
 
  <./images/granger_18092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/PostTreatControl.eps>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 49784 bytes
 (epstopdf)             Output file: <images/PostTreatControl-eps-converted-to.p
 df>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 18822 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/PostTreatControl-eps
 -converted-to.pdf images/PostTreatControl.eps>
@@ -821,11 +821,11 @@ input line 346.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 347.
 Package epstopdf Info: Source file: <images/MargFX_31082018.eps>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 9085 bytes
 (epstopdf)             Output file: <images/MargFX_31082018-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 7179 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/MargFX_31082018-eps-
 converted-to.pdf images/MargFX_31082018.eps>
@@ -842,11 +842,11 @@ nput line 350.
  <./images/PostTreatControl-eps-converted-to.pdf> <./images/MargFX_31082018-eps
 -converted-to.pdf>]
 Package epstopdf Info: Source file: <images/ItemByItem_18092018.eps>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 11374 bytes
 (epstopdf)             Output file: <images/ItemByItem_18092018-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2019-03-12 04:15:57
+(epstopdf)                    date: 2019-03-12 09:15:57
 (epstopdf)                    size: 8479 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/ItemByItem_18092018-
 eps-converted-to.pdf images/ItemByItem_18092018.eps>
@@ -868,11 +868,11 @@ Overfull \hbox (30.83842pt too wide) in paragraph at lines 371--372
 
  <./images/ItemByItem_18092018-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/StabilityOfEffects.eps>
-(epstopdf)                    date: 2019-03-22 09:08:07
+(epstopdf)                    date: 2019-03-22 14:08:07
 (epstopdf)                    size: 87868 bytes
 (epstopdf)             Output file: <images/StabilityOfEffects-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2019-03-22 09:08:10
+(epstopdf)                    date: 2019-03-22 14:08:10
 (epstopdf)                    size: 42665 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/StabilityOfEffects-e
 ps-converted-to.pdf images/StabilityOfEffects.eps>
@@ -922,7 +922,7 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on appendix_vol2.pdf (15 pages, 1916228 bytes).
+Output written on appendix_vol2.pdf (15 pages, 1916225 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  43 named destinations out of 1000 (max. 500000)
