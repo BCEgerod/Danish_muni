@@ -1,13 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: citypolicy_vol3.aux
-The style file: apa.bst
+The style file: apsr.bst
 Database file #1: library.bib
-Repeated entry---line 316 of file library.bib
+Repeated entry---line 331 of file library.bib
  : @book{peterson1981city
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 435 of file library.bib
+Repeated entry---line 450 of file library.bib
  : @article{stimson1995dynamic
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--there's a number but no volume in pei2018poorly
 (There were 2 error messages)
