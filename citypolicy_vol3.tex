@@ -19,8 +19,11 @@
 \usepackage{hyperref}
 \usepackage{subcaption}
 \usepackage{rotating}
-
+\setcitestyle{aysep={}}
 %\usepackage{etoc}
+\usepackage{endnotes}
+\let\footnote=\endnote
+
 
 
 \usepackage{xr}
@@ -112,7 +115,7 @@ This provides \textit{indirect} evidence that municipalities are responsive, yet
 
 Just because more conservative citizens live in more conservative places does not mean that politicians have responded to citizen demands. It could just as easily be that citizens have moved to places that are more conservative \citep{tiebout1956pure}, or that citizen preferences respond to city policy \citep{slothuus2010can,broockman2017causal}. In addition to these concerns, a cross-sectional correlation tells us little about how quickly politicians \textit{adapt} to changes in citizen preferences. 
 
-Adaptiveness is important from the point of view of electoral accountability. As such, if adaption is too slow, citizens will not be able to observe whether politicians have responded to their concerns, making it impossible to reward or punish politicians for policy changes. Beyond this, adaptiveness might also speak to the mechanisms underlying local responsiveness. If adaption is instant, then responsiveness is more likely to stem from politicians picking up signals from their voters through engaging with the constituents \citep{butler2011can}. If adaption is slower, then electoral selection, that is, changes in who gets elected, is a more likely culprit \citep{mansbridge2009selection}. Finally, if adaption only occurs very slowly, then more structural explanations are a better fit \citep[][90]{erikson1993statehouse}.\footnote{Previous studies have tried to address some of these questions using panel data on policy or preferences \citep[see][]{einstein2016pushing,sances2017voters}. However, as we lay out below, even these studies are not able to adequately capture how local policy responds to changes in citizen preferences.}
+Adaptiveness is important from the point of view of electoral accountability. As such, if adaption takes longer than an election cycle, citizens will not be able to observe whether politicians have responded to their concerns, making it impossible to reward or punish politicians for policy changes. Beyond this, adaptiveness might also speak to the mechanisms underlying local responsiveness. If adaption is instant, then responsiveness is more likely to stem from politicians picking up signals from their voters through engaging with the constituents \citep{butler2011can}. If adaption takes little less than an election cycle, then electoral selection, that is, changes in who gets elected, is a more likely culprit \citep{mansbridge2009selection}. Finally, if adaption only occurs after an election cycle, then more structural explanations are a better fit \citep[][90]{erikson1993statehouse}. \footnote{Previous studies have tried to address some of these questions using panel data on policy or preferences \citep[see][]{einstein2016pushing,sances2017voters}. However, as we lay out below, even these studies are not able to adequately capture how local policy responds to changes in citizen preferences.}
 
 In this article, we study the dynamics of local responsiveness in Danish municipalities. In particular, we develop an annual measure of municipal policy conservatism based on 14 fiscal policy indicators (1978-2006), which we link to a dataset of net support for conservative (right-wing) parties at local elections dating back to 1978.  This dataset allows us to examine how past changes in preferences are related to future changes in policy. In particular, we are able to identify how long it takes for a change in citizen preference to affect city policy, and how long the effect persists.
 
@@ -132,9 +135,9 @@ Research in the area of municipal responsiveness has thus made impressive progre
 
 As a result, existing research has not been able to delineate whether and how fast municipal policy responds to \textit{changes} in preferences over time. That is, whether and to what extent municipal policy is dynamically responsive. 
 
-While the importance of dynamic responsiveness has been well-established \citep{stimson1995dynamic}, the importance of adaptive responsiveness might not be so obvious. If policy responds, why does it matter how fast it responds? For one, slower adaption of city policy to citizen preferences will mean that policy and preferences will be ``out of sync’’ for longer. Slow adaption will also mean that voters will not able to discern whether elected officials has set policy on a course that is aligned with what the voters want, making it difficult for voters to hold politicians accountable.
+While the importance of dynamic responsiveness has been well-established \citep{stimson1995dynamic}, the importance of adaptive responsiveness might not be so obvious. If policy responds, why does it matter how fast it responds? For one, slower adaption of city policy to citizen preferences will mean that policy and preferences will be ``out of sync’’ for longer. Adaption that takes longer than an election cycle will also mean that voters will not able to discern whether elected officials has set policy on a course that is aligned with what the voters want, making it difficult for voters to hold politicians accountable.
 
-The pace of responsiveness might also give an indication of \textit{why} policy is responsive \citep{tausanovitch2019subnational}. In particular, if policy instantly responds to changes in preferences, then it suggests that politicians have observed the changing mood of the electorate---perhaps as a result of constituent interaction---and already tried to push policy in the direction that the voters want. If policy responds only a few years after the preferences of the voters' have changed, then it suggests that voters need to express their wishes in the electoral process in order to change the re-election incentives of the politicians in office \citep[e.g.,][]{boyne2009democracy}. Finally, if policy only adapts slowly, over a decade or so, then it suggests that a more slow-moving force is at work. \citet[][90]{erikson1993statehouse} describe one such slow-moving force, namely that: ``...recruitment of candidates from the same constituencies as  the voters they hope to represent means that the values of the legislators should reflect state ideology to some extent.''
+The pace of responsiveness might also give an indication of \textit{why} policy is responsive \citep{tausanovitch2019subnational}. In particular, if policy instantly responds to changes in preferences, then it suggests that politicians have observed the changing mood of the electorate---perhaps as a result of constituent interaction---and already tried to push policy in the direction that the voters want. If policy responds only a few years after the preferences of the voters' have changed, then it suggests that voters need to express their wishes in the electoral process in order to change the re-election incentives of the politicians in office \citep[e.g.,][]{boyne2009democracy}. Finally, if policy adapts more slowly, over a decade or so, then it suggests that a more slow-moving force is at work. \citet[][90]{erikson1993statehouse} describe one such slow-moving force, namely that: ``...recruitment of candidates from the same constituencies as  the voters they hope to represent means that the values of the legislators should reflect state ideology to some extent.''
 
 Of course, adaptiveness cannot be used as definitive proof that one or another mechanism explains the link between preferences and policy, but it should furnish us with a clue about the mechanism that other scholars can use in developing theories about local responsiveness \citep{tausanovitch2019subnational}.
 
@@ -148,7 +151,10 @@ We examine municipal responsiveness in Denmark. Denmark is a decentralized welfa
 Danish municipalities are different from the US counties and cities which have been the focus of previous studies. They are small (average size 16,000 inhabitants), organized in general rather than special-purpose governments \citep{berry2009imperfect}, with a multi party, PR system in which turnout is relatively high.\footnote{An important feature of the system is that the pool of candidates is very large. In the latest election in 2017, more than 1/400 of citizens eligible to run for local office did so. The combination of high turnout, a proportional electoral system and large candidate pool means that seats are contested, and voters always have a choice between many different candidates. When investigating the link between voting behavior and fiscal policy in other settings, this might have been a problem \citep[see][]{suzuki2018does}. See Appendix \ref{context} for more details on the political system in Danish municipalities.} 
 
 
-It is not clear whether Denmark is an easy or hard case for responsiveness.  Some factors---such as the small size of the municipalities---seem to make responsiveness less likely than in the US, whereas others---such as the general purpose organization of local government---seem to make responsiveness more likely. The Danish case cannot be seen as especially typical or atypical. Instead, we think that Danish municipalities constitute a critical case. A case which is particularly interesting for those concerned with the prospects for responsive local governments. As mentioned above, municipalities in Denmark are entrusted with spending one third of the GDP and are responsible for running large parts the vast Danish welfare state. If local citizens are not able to steer local policy in Denmark, where policy is so consequential and play such an integral part in the life of most voters, it is especially democratically problematic.
+It is not clear whether Denmark is an easy or hard case for responsiveness.  Some factors---such as the small size of the municipalities---seem to make responsiveness less likely than in the US, whereas others---such as the general purpose organization of local government---seem to make responsiveness more likely. In that sense, the Danish case cannot be seen as especially typical or atypical. However, in relation to the normative implications of local responsiveness, it bears repeating that Municipalities in Denmark are entrusted with spending one third of the GDP and are responsible for running large parts the vast Danish welfare state. If local citizens are not able to steer local policy in Denmark, where policy is so consequential and play such an integral part in the life of most voters, it is especially democratically problematic.
+
+ In terms of generalizability, some features of the Danish municipalities, such as general purpose organization and (some) autonomy to tax and spend, are common features of municipalities in many western democracies. Other features, such as relatively high turnout and competitiveness of the elections is more unique to the Danish municipalities. 
+
 
 
 
@@ -269,7 +275,7 @@ The estimate from the pooled model is likely to be confounded by the socio-demog
 	
 \end{landscape}
 
-While the notion of fiscal policy conservatism can seem highly abstract, changes in our measure arise from fluctuations in municipal spending on particular public services and how this spending is financed. All of which has real consequences for the citizens of a given municipality. An increase in overall conservatism of 1 is expected to be made up of reductions amounting to 13 and 11 percent of a standard deviation in income and property taxes, respectively, 17 percent of a standard deviation in spending per pupils in public schools, 9 percent of a standard deviation in the prevalence of public housing, 11 percent of a standard deviation in the number of public employees, and 23 percent of a standard deviation in overall spending per capita.\footnote{We arrive at these estimates by using the correlation between each item and the overall measure of fiscal policy conservatism. The full list of correlations is presented in Appendix \ref{estimation}.} These results indicate that when citizens change their preferences, it is likely to have notable real-world consequences for municipal fiscal policy and---by extension---the provision of specific local public services. 
+While the notion of fiscal policy conservatism can seem highly abstract, changes in our measure arise from fluctuations in municipal spending on particular public services and how this spending is financed. All of which has real consequences for the citizens of a given municipality. An increase in overall conservatism of 1 is expected to be made up of reductions amounting to 13 and 10 percent of a standard deviation in income and property taxes, respectively, 16 percent of a standard deviation in spending per pupils in public schools, 9 percent of a standard deviation in the prevalence of public housing, 10 percent of a standard deviation in the number of public employees, and 21 percent of a standard deviation in overall spending per capita.\footnote{We arrive at these estimates by using the correlation between each item and the overall measure of fiscal policy conservatism. The full list of correlations is presented in Appendix \ref{estimation}.} These results indicate that when citizens change their preferences, it is likely to have notable real-world consequences for municipal fiscal policy and---by extension---the provision of specific local public services. 
 
 \subsection*{Exploring the Identifying Assumption}
 The identifying assumption in our diff-in-diff models is that trends in the dependent variable (policy) are independent of selection into the independent variable (preferences). Importantly, if voters became \emph{more conservative} as a result of changes in policy, then this assumption will be violated.
@@ -290,7 +296,6 @@ To examine the temporal dynamics of responsiveness, Figure \ref{fig:LongRun} rep
 
 
 
-
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale = .65]{dynamics.eps}
@@ -303,23 +308,26 @@ To examine the temporal dynamics of responsiveness, Figure \ref{fig:LongRun} rep
 
 \section*{Discussion}
 
-In this study, we have found that changes in the policy preferences of citizens are robustly related to changes in city policy.  Using a detailed and comprehensive measure of municipal policy, we were able to link past changes in preferences to future changes in policy, sidestepping concenrns related to reverse causality, and we were able to see how fast municipal policy adapted to changing preferences. Our results suggest that the effect is not immediate, but it is also not very slow to materialize---in particular, it takes less than four years for citizen preferences to affect city policy.
+In this study, we have found that changes in the policy preferences of citizens are robustly related to changes in city policy.  Using a detailed and comprehensive measure of municipal policy, we were able to link past changes in preferences to future changes in policy, sidestepping concenrns related to reverse causality, and we were able to see how fast municipal policy adapted to changing preferences. Our results suggest that the effect is not immediate, but it does materialize within an election cycle (four years).
 
-As discussed earlier in the article, the pace of change in policy may give clues as to the mechanism by which responsiveness works. As such, the fact that the effect of changes in policy takes some time to materialize, could suggest that politicians are not continuously  attuned to the changing mood of the electorate. At the same time, responsiveness does not take a very long time to materialize, suggesting that it is not slow-moving structural forces, such as changes in the type of politician that runs for office, that aligns policy with preferences. Instead, the timing could be more congruent with politicians learning from election results how the mood of the electorate has changed, correcting the course of municipal policy-making. 
+As discussed earlier in the article, the pace of change in policy may give clues as to the mechanism by which responsiveness works. As such, the fact that the effect of changes in policy takes some time to materialize, could suggest that politicians are not continuously  attuned to the changing mood of the electorate. At the same time, responsiveness does not take a very long time to materialize, suggesting that it is not structural forces, such as changes in the type of politician that runs for office, that aligns policy with preferences. Instead, the timing can be explained by politicians learning from election results how the mood of the electorate has changed, correcting the course of municipal policy-making. 
 
 From the standpoint of electoral accountability it is also reassuring that policy responds within the four year election cycle. In this way, citizens will be able to recognize and act on whether politicians have changed policy based on the change in preference they expressed at the last election.  
 
-It is difficult to say whether or how far these findings generalize. Some features of the Danish municipalities, such as general purpose organization and (some) autonomy to tax and spend, are common features of municipalities in many western democracies. Other features, such as relatively high turnout and competitiveness of the elections is more unique to the Danish municipalities. Even so, these results should be broadly interesting and encouraging to those who study the propsects for local democracy. 
-
-Denmark has decided to delegate a lot of (fiscal) power to local governments, and it seems like this democratic experiment has worked---at least to some extent. As such, our study suggests that if you give voters an opportunity to express their preferences at municipal elections, they are able to use it to direct policy, substantially constraining local policy-makers.
+As mentioned above, it is difficult to say whether or how far these findings generalize. Even so, these results should be broadly interesting and encouraging to those who study the prospects for local democracy.  Denmark has decided to delegate a lot of (fiscal) power to local governments, and it seems like this democratic experiment has worked---at least to some extent. As such, our study suggests that if you give voters an opportunity to express their preferences at municipal elections, they are able to use it to direct policy, substantially constraining local policy-makers.
 
 
+\section*{Acknowledgements}
+We are thankful for comments from Lars Thorup Larsen, Mikael Persson, Anne Rasmussen, Michael Sances, Søren Serritzlew and Chris Wlezien, panelists at the 2017 Danish Political Science Association and and seminar participants at the seminar "New Avenues in the Study of Policy Responsiveness” at the University of Copenhagen.
 
 
+\section*{Funding}
+The author(s) received no financial support for the research, authorship, and/or publication of this article
 
+\theendnotes
 
 \onehalfspacing
-\bibliographystyle{apa}
+\bibliographystyle{apsr}
 \bibliography{library}
 
 \clearpage
@@ -328,6 +336,12 @@ Denmark has decided to delegate a lot of (fiscal) power to local governments, an
 \renewcommand{\thetable}{\Alph{subsection}\arabic{table}}
 \renewcommand{\thefigure}{\Alph{subsection}\arabic{figure}}
 
+
+\section*{Author Biographis}
+
+\noindent \textbf{Benjamin C.K. Egerod} is an 
+
+\noindent \textbf{Martin Vinæs Larsen} is an assistant professor in Department of Politics at Aarhus University. His research focuses on representation,  electoral accountability and the politics of housing. His work has appeared or is forthcoming in American Political Science Review, Journal of Politics and British Journal of Political Sicnece.
 
 \end{document}
 
