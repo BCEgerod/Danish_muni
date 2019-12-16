@@ -1,10 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: citypolicy_vol3.aux
 The style file: apa.bst
 Database file #1: library.bib
-Warning--entry type for "oecd2016subnational" isn't style-file defined
---line 208 of file library.bib
-Warning--entry type for "sances2017voters" isn't style-file defined
---line 242 of file library.bib
 Repeated entry---line 316 of file library.bib
  : @book{peterson1981city
  :                       ,
@@ -13,6 +9,5 @@ Repeated entry---line 435 of file library.bib
  : @article{stimson1995dynamic
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--empty journal in ansolabehere2015beyond
 Warning--there's a number but no volume in pei2018poorly
 (There were 2 error messages)

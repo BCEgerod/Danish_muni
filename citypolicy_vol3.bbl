@@ -5,12 +5,6 @@ Abrams, S. and Fiorina, M. (2012).
 \newblock “the big sort” that wasn't: A skeptical reexamination.
 \newblock {\em PS: Political Science \& Politics}, 45(2):203--210.
 
-\bibitem[\protect\astroncite{Ansolabehere and
-  Schaffner}{2015}]{ansolabehere2015beyond}
-Ansolabehere, S. and Schaffner, B. (2015).
-\newblock Beyond the core and periphery: A new look at voter participation
-  across elections.
-
 \bibitem[\protect\astroncite{Baumgartner
   et~al.}{2009}]{baumgartner2009punctuated}
 Baumgartner, F., Breunig, C., Green-Pedersen, C., Jones, B., Mortensen, P.,
@@ -23,6 +17,12 @@ Berry, C. (2009).
 \newblock {\em Imperfect Union: Representation and taxation in multilevel
   governments}.
 \newblock Cambridge University Press.
+
+\bibitem[\protect\astroncite{Bhatti et~al.}{2019}]{bhatti2019core}
+Bhatti, Y., Dahlgaard, J.~O., Hansen, J.~H., and Hansen, K.~M. (2019).
+\newblock Core and peripheral voters: predictors of turnout across three types
+  of elections.
+\newblock {\em Political Studies}, 67(2):348--366.
 
 \bibitem[\protect\astroncite{Blom-Hansen et~al.}{2006}]{blom2006parties}
 Blom-Hansen, J., Monkerud, L.~C., and S{\o}rensen, R. (2006).
@@ -77,11 +77,11 @@ Erikson, R.~S., Wright, G.~C., and McIver, J.~P. (1993).
   states}.
 \newblock Cambridge University Press.
 
-\bibitem[\protect\astroncite{Fiva et~al.}{2016}]{fiva2016power}
-Fiva, J., Folke, O., and S{\o}rensen, R. (2016).
-\newblock The power of parties: Evidence from close municipal elections in
+\bibitem[\protect\astroncite{Fiva et~al.}{2018}]{fiva2018power}
+Fiva, J.~H., Folke, O., and S{\o}rensen, R.~J. (2018).
+\newblock The power of parties: evidence from close municipal elections in
   norway.
-\newblock {\em Scandinavian Journal of Economics}.
+\newblock {\em The Scandinavian Journal of Economics}, 120(1):3--30.
 
 \bibitem[\protect\astroncite{Gerber and Hopkins}{2011}]{gerber2011mayors}
 Gerber, E. and Hopkins, D. (2011).
@@ -126,7 +126,9 @@ Mansbridge, J. (2009).
 
 \bibitem[\protect\astroncite{OECD}{2016}]{oecd2016subnational}
 OECD (2016).
-\newblock Subnational governments around the world.
+\newblock {\em Subnational governments around the world}.
+\newblock Located:
+  https://www.oecd.org/regional/regional-policy/sngs-around-the-world.htm.
 
 \bibitem[\protect\astroncite{Palus}{2010}]{palus2010responsiveness}
 Palus, C. (2010).
@@ -152,8 +154,10 @@ Salmon, P. (2006).
 
 \bibitem[\protect\astroncite{Sances}{2019}]{sances2017voters}
 Sances, M. (2019).
-\newblock When voters matter: The growth and limits of local government
-  responsiveness.
+\newblock {\em When Voters Matter: The Growth and Limits of Local Government
+  Responsiveness.}
+\newblock Located:
+  http://umdrive.memphis.edu/msances/www/papers/polarization.pdf.
 
 \bibitem[\protect\astroncite{Sances}{2018}]{sances2017ideology}
 Sances, M.~W. (2018).
